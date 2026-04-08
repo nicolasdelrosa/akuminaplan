@@ -1,0 +1,17 @@
+{
+  "name": "mobile-command-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phone-to-laptop command bridge for VS Code task and command execution",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "token": "node scripts/generate-token.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
