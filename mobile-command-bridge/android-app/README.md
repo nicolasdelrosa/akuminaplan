@@ -4,13 +4,19 @@ Small native Android client for the Mobile Command Bridge.
 
 ## What it does
 - Connects to `ws://<host>:<port>/ws`
-- Sends auth header `x-bridge-token`
+- In secure mode, can send auth header `x-bridge-token`
 - Lets you type plain text from a single textbox
-- Keeps host/port/token inside a collapsible Settings panel
-- Shows streamed server events in a terminal-style output panel
+- Lets you switch agents using tabs (`ren`, `scott`, `andrew`, `jason`, `udai`, `theri`, `luke`)
+- Supports microphone speech-to-text so you can talk instead of typing
+- Keeps connection fields in a collapsible Settings panel
+- Includes secure mode toggle in settings (token on/off without rebuild)
+- Includes Stop and Regenerate controls for quick iteration
+- Renders chat bubbles for user/system/assistant messages
+- Streams assistant responses in chunks for a live typing effect
+- Persists recent chat history on device between app restarts
 
 ## Textbox Behavior
-- Any plain text you send is dispatched as `prompt.dispatch` to `ren` by default.
+- Any plain text you send is dispatched as `prompt.dispatch` to the selected agent.
 - Optional agent targeting: start with `@agentName`.
 
 Examples:

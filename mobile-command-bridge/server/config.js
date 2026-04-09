@@ -33,9 +33,10 @@ loadDotEnv(path.join(rootDir, ".env"));
 const config = {
   rootDir,
   workspaceRoot: path.resolve(rootDir, ".."),
-  host: process.env.BRIDGE_HOST || "0.0.0.0",
+  host: process.env.BRIDGE_HOST || "192.168.0.11",
   port: Number(process.env.BRIDGE_PORT || 8787),
   token: process.env.BRIDGE_TOKEN || "",
+  insecureNoAuth: toBoolean(process.env.BRIDGE_INSECURE_NO_AUTH || "true"),
   requestTtlMs: Number(process.env.BRIDGE_REQUEST_TTL_MS || 120000),
   logDir: path.resolve(rootDir, process.env.BRIDGE_LOG_DIR || "runtime-logs"),
   allowedClientIps: parseCsv(process.env.BRIDGE_ALLOWED_CLIENT_IPS || ""),
@@ -45,7 +46,7 @@ const config = {
   maxPromptChars: Number(process.env.BRIDGE_MAX_PROMPT_CHARS || 4000)
 };
 
-if (!config.token) {
+if (!config.insecureNoAuth && !config.token) {
   throw new Error("Missing BRIDGE_TOKEN. Set it in mobile-command-bridge/.env");
 }
 

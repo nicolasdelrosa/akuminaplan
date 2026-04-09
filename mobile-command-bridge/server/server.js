@@ -12,6 +12,10 @@ const processRegistry = new ProcessRegistry();
 const recentNonces = new Map();
 const activeSockets = new Set();
 const promptArtifactDir = path.join(config.logDir, "prompt-artifacts");
+const copilotReplyTimeoutMs = 120000;
+const copilotReplyPollIntervalMs = 2500;
+const assistantChunkSize = 120;
+const assistantChunkDelayMs = 80;
 
 ensureLogDir();
 ensureDirectory(promptArtifactDir);
@@ -76,7 +80,11 @@ wsServer.on("connection", (socket, request) => {
 
 server.listen(config.port, config.host, () => {
   console.log(`Mobile command bridge listening on ws://${config.host}:${config.port}/ws`);
-  console.log("Use BRIDGE_TOKEN from .env in the x-bridge-token header");
+  if (config.insecureNoAuth) {
+    console.log("Insecure mode enabled: token authentication is disabled");
+  } else {
+    console.log("Use BRIDGE_TOKEN from .env in the x-bridge-token header");
+  }
   console.log(`Active connection limit: ${config.maxActiveConnections}`);
   if (config.requireTailscale) {
     console.log("Tailscale-only mode is enabled");
@@ -336,6 +344,15 @@ async function runPromptDispatch(socket, message) {
       target: prompt.target,
       agent: prompt.agent,
       promptPath: prompt.path
+    },
+    onComplete: ({ code }) => {
+      if (code === 0) {
+        watchForCopilotReply(socket, {
+          requestId,
+          promptBody: prompt.promptBody,
+          dispatchedAt: Date.now()
+        });
+      }
     }
   });
 }
@@ -434,7 +451,7 @@ function findCommandInPath(commandName) {
 }
 
 function spawnAndStream(socket, options) {
-  const { requestId, action, command, args, cwd, shell = false, meta } = options;
+  const { requestId, action, command, args, cwd, shell = false, meta, onComplete } = options;
 
   send(socket, {
     type: "started",
@@ -494,6 +511,10 @@ function spawnAndStream(socket, options) {
       exitCode: code,
       signal: signal || null
     });
+
+    if (typeof onComplete === "function") {
+      onComplete({ code, signal: signal || null });
+    }
   });
 
   child.on("error", (error) => {
@@ -516,6 +537,307 @@ function spawnAndStream(socket, options) {
   });
 }
 
+function watchForCopilotReply(socket, options) {
+  const { requestId, promptBody, dispatchedAt } = options;
+  const watchStartedAt = Date.now();
+
+  send(socket, {
+    type: "assistant_reply_waiting",
+    requestId,
+    message: "Waiting for Copilot response...",
+    timestamp: Date.now()
+  });
+
+  const poll = () => {
+    if (socket.readyState !== socket.OPEN) {
+      return;
+    }
+
+    const found = findCopilotReply({ promptBody, minTimestamp: dispatchedAt - 10000 });
+    if (found) {
+      streamAssistantReply(socket, {
+        requestId,
+        text: found.text,
+        meta: {
+          sid: found.sid,
+          userTs: found.userTs,
+          replyTs: found.replyTs
+        }
+      });
+      return;
+    }
+
+    if (Date.now() - watchStartedAt >= copilotReplyTimeoutMs) {
+      send(socket, {
+        type: "assistant_reply_timeout",
+        requestId,
+        message: "No Copilot response found within timeout window",
+        timestamp: Date.now()
+      });
+      return;
+    }
+
+    setTimeout(poll, copilotReplyPollIntervalMs);
+  };
+
+  setTimeout(poll, copilotReplyPollIntervalMs);
+}
+
+function streamAssistantReply(socket, options) {
+  const { requestId, text, meta } = options;
+  const normalized = String(text || "");
+
+  if (!normalized.trim()) {
+    send(socket, {
+      type: "assistant_reply_timeout",
+      requestId,
+      message: "Assistant response was empty",
+      timestamp: Date.now()
+    });
+    return;
+  }
+
+  const chunks = [];
+  for (let i = 0; i < normalized.length; i += assistantChunkSize) {
+    chunks.push(normalized.slice(i, i + assistantChunkSize));
+  }
+
+  let index = 0;
+  const pump = () => {
+    if (socket.readyState !== socket.OPEN) {
+      return;
+    }
+
+    if (index >= chunks.length) {
+      send(socket, {
+        type: "assistant_reply_done",
+        requestId,
+        timestamp: Date.now(),
+        meta
+      });
+      return;
+    }
+
+    const chunk = chunks[index];
+    index += 1;
+
+    send(socket, {
+      type: "assistant_reply_chunk",
+      requestId,
+      chunk,
+      index,
+      total: chunks.length,
+      timestamp: Date.now(),
+      meta
+    });
+
+    if (index >= chunks.length) {
+      send(socket, {
+        type: "assistant_reply",
+        requestId,
+        text: normalized,
+        timestamp: Date.now(),
+        meta
+      });
+      send(socket, {
+        type: "assistant_reply_done",
+        requestId,
+        timestamp: Date.now(),
+        meta
+      });
+      return;
+    }
+
+    setTimeout(pump, assistantChunkDelayMs);
+  };
+
+  pump();
+}
+
+function findCopilotReply(options) {
+  const { promptBody, minTimestamp } = options;
+  const logFiles = discoverCopilotMainLogs();
+  for (const filePath of logFiles) {
+    const result = scanCopilotMainLog(filePath, promptBody, minTimestamp);
+    if (result) {
+      return result;
+    }
+  }
+
+  return null;
+}
+
+function discoverCopilotMainLogs() {
+  const appData = process.env.APPDATA;
+  if (!appData) {
+    return [];
+  }
+
+  const root = path.join(appData, "Code", "User", "workspaceStorage");
+  if (!fs.existsSync(root)) {
+    return [];
+  }
+
+  const mainLogFiles = [];
+  const workspaceEntries = safeReadDir(root, { withFileTypes: true });
+  for (const entry of workspaceEntries) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+
+    const mainLogPath = path.join(
+      root,
+      entry.name,
+      "GitHub.copilot-chat",
+      "debug-logs"
+    );
+
+    if (!fs.existsSync(mainLogPath)) {
+      continue;
+    }
+
+    const sessions = safeReadDir(mainLogPath, { withFileTypes: true });
+    for (const sessionEntry of sessions) {
+      if (!sessionEntry.isDirectory()) {
+        continue;
+      }
+
+      const filePath = path.join(mainLogPath, sessionEntry.name, "main.jsonl");
+      if (!fs.existsSync(filePath)) {
+        continue;
+      }
+
+      let mtimeMs = 0;
+      try {
+        mtimeMs = fs.statSync(filePath).mtimeMs;
+      } catch {
+        mtimeMs = 0;
+      }
+
+      mainLogFiles.push({ filePath, mtimeMs });
+    }
+  }
+
+  return mainLogFiles
+    .sort((a, b) => b.mtimeMs - a.mtimeMs)
+    .slice(0, 8)
+    .map((item) => item.filePath);
+}
+
+function scanCopilotMainLog(filePath, promptBody, minTimestamp) {
+  let raw;
+  try {
+    raw = fs.readFileSync(filePath, "utf8");
+  } catch {
+    return null;
+  }
+
+  if (!raw.trim()) {
+    return null;
+  }
+
+  const lines = raw.split(/\r?\n/).filter(Boolean);
+  const events = [];
+  for (const line of lines) {
+    try {
+      const parsed = JSON.parse(line);
+      if (parsed && typeof parsed === "object") {
+        events.push(parsed);
+      }
+    } catch {
+      // ignore bad line
+    }
+  }
+
+  for (let i = events.length - 1; i >= 0; i -= 1) {
+    const event = events[i];
+    if (event.type !== "user_message") {
+      continue;
+    }
+
+    const content = event.attrs && typeof event.attrs.content === "string" ? event.attrs.content.trim() : "";
+    if (content !== promptBody) {
+      continue;
+    }
+
+    const userTs = Number(event.ts || 0);
+    if (!Number.isFinite(userTs) || userTs < minTimestamp) {
+      continue;
+    }
+
+    const userSpanId = event.spanId;
+    if (!userSpanId) {
+      continue;
+    }
+
+    for (let j = i + 1; j < events.length; j += 1) {
+      const nextEvent = events[j];
+      if (nextEvent.type !== "agent_response") {
+        continue;
+      }
+
+      if (nextEvent.parentSpanId !== userSpanId) {
+        continue;
+      }
+
+      const responseRaw = nextEvent.attrs && typeof nextEvent.attrs.response === "string"
+        ? nextEvent.attrs.response
+        : "";
+      const text = extractAssistantText(responseRaw);
+      if (!text) {
+        continue;
+      }
+
+      return {
+        text,
+        sid: nextEvent.sid || null,
+        userTs,
+        replyTs: Number(nextEvent.ts || 0)
+      };
+    }
+  }
+
+  return null;
+}
+
+function extractAssistantText(responseRaw) {
+  if (!responseRaw) {
+    return "";
+  }
+
+  try {
+    const parsed = JSON.parse(responseRaw);
+    if (!Array.isArray(parsed)) {
+      return String(responseRaw).trim();
+    }
+
+    const chunks = [];
+    for (const msg of parsed) {
+      if (!msg || !Array.isArray(msg.parts)) {
+        continue;
+      }
+
+      for (const part of msg.parts) {
+        if (part && part.type === "text" && typeof part.content === "string") {
+          chunks.push(part.content.trim());
+        }
+      }
+    }
+
+    return chunks.filter(Boolean).join("\n\n").trim();
+  } catch {
+    return String(responseRaw).trim();
+  }
+}
+
+function safeReadDir(directoryPath, options) {
+  try {
+    return fs.readdirSync(directoryPath, options);
+  } catch {
+    return [];
+  }
+}
+
 function authenticateSocket(request) {
   const remoteAddress = normalizeRemoteAddress(request.socket.remoteAddress || "");
 
@@ -535,13 +857,15 @@ function authenticateSocket(request) {
     };
   }
 
-  const token = request.headers["x-bridge-token"];
-  if (!token || token !== config.token) {
-    return {
-      ok: false,
-      code: "unauthorized",
-      message: "Missing or invalid x-bridge-token"
-    };
+  if (!config.insecureNoAuth) {
+    const token = request.headers["x-bridge-token"];
+    if (!token || token !== config.token) {
+      return {
+        ok: false,
+        code: "unauthorized",
+        message: "Missing or invalid x-bridge-token"
+      };
+    }
   }
 
   return { ok: true };

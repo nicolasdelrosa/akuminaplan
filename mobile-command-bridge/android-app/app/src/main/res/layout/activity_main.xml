@@ -55,54 +55,110 @@
             android:hint="Bridge token"
             android:inputType="textPassword" />
 
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/secureModeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secure mode (require token)" />
+
     </LinearLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/agentTabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:tabIndicatorColor="#63b3ff"
+        app:tabMode="scrollable"
+        app:tabPaddingStart="10dp"
+        app:tabPaddingEnd="10dp"
+        app:tabSelectedTextColor="#e8f3ff"
+        app:tabTextColor="#9fb3c8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsPanel" />
 
-    <HorizontalScrollView
-        android:id="@+id/outputScrollHorizontal"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#10151a"
-        android:fillViewport="true"
+        android:background="#0f1419"
+        android:clipToPadding="false"
+        android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@id/commandInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settingsPanel"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ScrollView
-            android:id="@+id/outputScroll"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <TextView
-                android:id="@+id/outputText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#d8e6f2"
-                android:textIsSelectable="true"
-                android:textSize="13sp"
-                android:typeface="monospace" />
-        </ScrollView>
-    </HorizontalScrollView>
+        app:layout_constraintTop_toBottomOf="@id/agentTabLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/commandInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
         android:hint="Type your message"
         android:imeOptions="actionSend"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintBottom_toBottomOf="@id/sendButton"
+        app:layout_constraintEnd_toStartOf="@id/stopButtonBottom"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/stopButtonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="@id/sendButton"
+        app:layout_constraintEnd_toStartOf="@id/regenerateButtonBottom"
+        app:layout_constraintTop_toTopOf="@id/sendButton" />
+
+    <Button
+        android:id="@+id/regenerateButtonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="Again"
+        app:layout_constraintBottom_toBottomOf="@id/sendButton"
+        app:layout_constraintEnd_toStartOf="@id/micButton"
+        app:layout_constraintTop_toTopOf="@id/sendButton" />
+
+    <Button
+        android:id="@+id/micButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="Mic"
+        app:layout_constraintBottom_toBottomOf="@id/sendButton"
+        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintTop_toTopOf="@id/sendButton" />
 
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
         android:text="Send"
         app:layout_constraintBottom_toBottomOf="@id/commandInput"
         app:layout_constraintEnd_toEndOf="parent"
