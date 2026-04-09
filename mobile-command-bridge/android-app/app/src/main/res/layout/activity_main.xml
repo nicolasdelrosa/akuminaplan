@@ -86,82 +86,77 @@
         android:background="#0f1419"
         android:clipToPadding="false"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@id/commandInput"
+        app:layout_constraintBottom_toTopOf="@id/composerRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/agentTabLayout"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/commandInput"
+    <LinearLayout
+        android:id="@+id/composerRow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:hint="Type your message"
-        android:imeOptions="actionSend"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@id/sendButton"
-        app:layout_constraintEnd_toStartOf="@id/stopButtonBottom"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/stopButtonBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="8dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="8dp"
-        android:text="Stop"
-        app:layout_constraintBottom_toBottomOf="@id/sendButton"
-        app:layout_constraintEnd_toStartOf="@id/regenerateButtonBottom"
-        app:layout_constraintTop_toTopOf="@id/sendButton" />
-
-    <Button
-        android:id="@+id/regenerateButtonBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="8dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="8dp"
-        android:text="Again"
-        app:layout_constraintBottom_toBottomOf="@id/sendButton"
-        app:layout_constraintEnd_toStartOf="@id/micButton"
-        app:layout_constraintTop_toTopOf="@id/sendButton" />
-
-    <Button
-        android:id="@+id/micButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="8dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="8dp"
-        android:text="Mic"
-        app:layout_constraintBottom_toBottomOf="@id/sendButton"
-        app:layout_constraintEnd_toStartOf="@id/sendButton"
-        app:layout_constraintTop_toTopOf="@id/sendButton" />
-
-    <Button
-        android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="8dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="8dp"
-        android:text="Send"
-        app:layout_constraintBottom_toBottomOf="@id/commandInput"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/commandInput" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/commandInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type your message"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="4"
+            android:minHeight="44dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <ImageButton
+            android:id="@+id/stopButtonBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Stop"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_media_pause"
+            app:tint="#c9d6e3" />
+
+        <Button
+            android:id="@+id/regenerateButtonBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:minWidth="0dp"
+            android:text="Again" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Microphone"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:tint="#c9d6e3" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Send"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="#7fd0ff" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

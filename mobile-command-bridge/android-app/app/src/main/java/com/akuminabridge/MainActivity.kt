@@ -11,6 +11,7 @@ import android.text.style.AbsoluteSizeSpan
 import android.view.KeyEvent
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.appcompat.widget.SwitchCompat
 import androidx.appcompat.app.AppCompatActivity
@@ -41,10 +42,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var commandInput: EditText
     private lateinit var chatRecyclerView: RecyclerView
     private lateinit var connectButton: Button
-    private lateinit var sendButton: Button
-    private lateinit var stopButtonBottom: Button
+    private lateinit var sendButton: ImageButton
+    private lateinit var stopButtonBottom: ImageButton
     private lateinit var regenerateButtonBottom: Button
-    private lateinit var micButton: Button
+    private lateinit var micButton: ImageButton
     private lateinit var settingsToggleButton: Button
     private lateinit var settingsPanel: LinearLayout
 
