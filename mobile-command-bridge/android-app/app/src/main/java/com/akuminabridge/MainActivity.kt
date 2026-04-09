@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
     private val lastRequestIdByAgent = mutableMapOf<String, String>()
     private val lastPromptByAgent = mutableMapOf<String, String>()
     private val requestAgentById = mutableMapOf<String, String>()
+    private var pendingPayloadJson: String? = null
+    private var pendingRequestId: String? = null
     private val chatMessages = mutableListOf<ChatMessage>()
     private val assistantMessageIndexByRequest = mutableMapOf<String, Int>()
     private val chatHistoryByAgent = mutableMapOf<String, MutableList<ChatMessage>>()
@@ -239,6 +241,13 @@ class MainActivity : AppCompatActivity() {
                     connected = true
                     connectButton.text = "Disconnect"
                     addChatMessage(role = "system", text = "Connected")
+
+                    if (!pendingPayloadJson.isNullOrBlank()) {
+                        webSocket.send(pendingPayloadJson!!)
+                        addChatMessage(role = "system", text = "Queued message sent")
+                        pendingPayloadJson = null
+                        pendingRequestId = null
+                    }
                 }
             }
 
@@ -302,6 +311,15 @@ class MainActivity : AppCompatActivity() {
         requestAgentById[requestId] = selectedAgent
         lastRequestIdByAgent[selectedAgent] = requestId
         lastPromptByAgent[selectedAgent] = inputText
+
+        if (!connected || webSocket == null) {
+            pendingPayloadJson = payload.toString()
+            pendingRequestId = requestId
+            addChatMessage(role = "system", text = "Connecting and sending...")
+            connect()
+            return
+        }
+
         webSocket?.send(payload.toString())
     }
 
