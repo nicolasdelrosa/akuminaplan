@@ -163,12 +163,8 @@ class MainActivity : AppCompatActivity() {
                 label
             }
 
-            val tab = agentTabLayout.newTab().setText(text).setTag(key)
+            val tab = agentTabLayout.newTab().setText(text)
             agentTabLayout.addTab(tab)
-        }
-
-        if (compactTabs) {
-            agentTabLayout.tabMinWidth = 0
         }
 
         val initialIndex = availableAgents.indexOf(initialAgent).coerceAtLeast(0)
@@ -176,7 +172,7 @@ class MainActivity : AppCompatActivity() {
 
         agentTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
-                val key = tab.tag as? String ?: return
+                val key = availableAgents.getOrNull(tab.position) ?: return
                 selectedAgent = key
                 prefs.edit().putString("selected_agent", selectedAgent).apply()
                 refreshVisibleChatForSelectedAgent()
