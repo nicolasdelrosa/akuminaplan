@@ -1,0 +1,55 @@
+- main "main-header" [ref=e4]:
+  - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+  - button "Skip to content" [ref=e6] [cursor=pointer]
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - link "Company logo." [ref=e13] [cursor=pointer]:
+        - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+        - img "Company logo." [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - text: 
+          - generic [ref=e17]:
+            - textbox "Search this site." [ref=e18]:
+              - /placeholder: Search
+            - button "Search this site." [ref=e19] [cursor=pointer]:
+              - generic "Search this site." [ref=e20]: 
+        - generic: 
+        - generic "Notifications"
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - button "Notifications" [ref=e23] [cursor=pointer]:
+              - img "My profile picture." [ref=e24]
+              - generic "Offline" [ref=e25]
+            - text:    
+    - generic [ref=e30]:
+      - generic [ref=e38]:
+        - navigation [ref=e39]:
+          - tablist [ref=e40]:
+            - tab "Company News" [expanded] [selected] [ref=e41]:
+              - link "Company News" [ref=e42] [cursor=pointer]:
+                - /url: "#ak-tabwidget-tabs-773e4981-04ea-4042-8bbf-23f5bf42e189"
+            - tab "Featured News" [ref=e43]:
+              - link "Featured News" [ref=e44] [cursor=pointer]:
+                - /url: "#ak-tabwidget-tabs-6c9c2fd5-323e-4c25-9364-bd0903ef589c"
+        - tabpanel "Company News"
+      - paragraph [ref=e55]:
+        - strong [ref=e56]:
+          - text: Guest Wifi for the Dec 2025
+          - img "wifi-icon-15" [ref=e57]
+        - text: XXyyZZxxYYzz
+    - generic [ref=e58]:
+      - text: 
+      - generic [ref=e59]:
+        - generic [ref=e60]: How do you like the intranet?
+        - link "Tell Us What You Think" [ref=e61] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e62]: 
+          - text: Tell Us What You Think
+      - generic [ref=e64]:
+        - link "Company Logo. (loading)" [ref=e66] [cursor=pointer]:
+          - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+          - img "Company Logo. (loading)" [ref=e67]
+        - text: "|"
+        - generic [ref=e68]: © 2026 The J.M. Smucker Co. All rights reserved.
+  - text:    

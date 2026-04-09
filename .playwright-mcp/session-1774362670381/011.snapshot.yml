@@ -1,0 +1,35 @@
+- main "main-header" [ref=e4]:
+  - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+  - button "Skip to content" [ref=e6] [cursor=pointer]
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - link "Company logo." [ref=e13] [cursor=pointer]:
+          - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/
+          - img "Company logo." [ref=e14]
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - text: 
+            - generic [ref=e17]:
+              - textbox "Search this site." [ref=e18]
+              - button "Search this site." [ref=e19] [cursor=pointer]:
+                - generic "Search this site." [ref=e20]: 
+          - generic: 
+          - list [ref=e21]:
+            - listitem [ref=e22]:
+              - button "Notifications" [ref=e23] [cursor=pointer]:
+                - img "My profile picture." [ref=e24]
+              - text:    
+      - navigation [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]
+    - generic [ref=e34]:
+      - text: 
+      - generic [ref=e35]: 
+      - generic [ref=e37]:
+        - link "Company Logo." [ref=e39] [cursor=pointer]:
+          - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+          - img "Company Logo." [ref=e40]
+        - text: "|"
+        - generic [ref=e41]: © Superior Court of California, County of Los Angeles All rights reserved.
+  - text:    

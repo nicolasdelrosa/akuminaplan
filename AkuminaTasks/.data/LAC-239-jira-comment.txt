@@ -1,0 +1,10 @@
+LAC-239 implementation is complete and ready for QA.
+
+Implemented a mobile/tablet clear icon between the Resource Directory search box and the grid/list controls, wired it into the existing clear-filter behavior, and kept desktop behavior separate by explicitly hiding the icon on desktop while preserving the existing desktop clear action.
+
+Source commits:
+- 8293e2c
+- 4b8292f
+- fb47803
+
+Ready for Ren / Copilot validation across desktop, tablet, and phone viewports.

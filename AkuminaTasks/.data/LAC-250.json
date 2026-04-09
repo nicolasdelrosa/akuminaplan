@@ -1,0 +1,626 @@
+{
+  "key": "LAC-250",
+  "url": "https://akumina.atlassian.net/browse/LAC-250",
+  "summary": "LOE: Enable Resource Library search in typeahead and full search with proper linking",
+  "descriptionText": "Currently, Resource Library items are not easily searchable via typeahead or clearly categorized within search results. Users need a way to quickly find and access Resource Library content directly from search.\n\nRequest:\nEnhance search functionality to include Resource Library items in both typeahead and full search results.\n\nProposed Solution:\n\n- Add a “Resource Directory” category under the Media section in typeahead search\n- Include Resource Library items in typeahead suggestions\n- Add a filter option for “Resource Directory” on the full search results page\n- Ensure all links route to the correct, functional destination (e.g., Time Entry → Workday)\n\nExpected Behavior:\n\n- Users can search for Resource Library items directly via typeahead\n- Resource items appear under a clearly labeled category (e.g., Resource Directory)\n- Users can filter to Resource Directory content on the full search results page\n- Clicking a result takes the user to the correct working destination\n\nCurrent Behavior:\n\n- Resource Library items are not easily discoverable via typeahead\n- No dedicated category or filter exists for Resource content\n- Navigation to key tools/resources is less efficient\n\nBusiness Impact:\n\n- Improves discoverability of key tools and resources\n- Reduces time spent navigating or manually locating resources\n- Enhances overall search usability and user experience\n\nPriority: Medium\n\nAcceptance Criteria:\n\n- Resource Library items appear in typeahead results\n- “Resource Directory” category is available in typeahead and full search\n- Full search includes a filter for Resource Directory\n- All links correctly resolve to intended destinations\n- No regression in existing Media search functionality\n\nNote: Terry Asking client about icon to use",
+  "status": "New",
+  "issueType": "Task",
+  "priority": "High",
+  "assignee": "Diego Rosa",
+  "created": "2026-03-17T08:17:27.929-0400",
+  "updated": "2026-03-20T09:09:03.673-0400",
+  "labels": [],
+  "parentKey": "",
+  "attachments": [
+    {
+      "id": "49433",
+      "filename": "image-20260320-130836.png",
+      "mimeType": "image/png",
+      "size": 196756,
+      "created": "2026-03-20T09:08:53.173-0400",
+      "author": "Theresa Ferris",
+      "content": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/attachment/content/49433",
+      "thumbnail": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/attachment/thumbnail/49433"
+    }
+  ],
+  "comments": [],
+  "linkedIssues": [],
+  "raw": {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "assignee": {
+        "accountId": "557058:77f20f66-c2e6-4cb9-914a-dd218c84358f",
+        "accountType": "atlassian",
+        "active": true,
+        "avatarUrls": {
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:77f20f66-c2e6-4cb9-914a-dd218c84358f/da112b89-40c9-42d1-b16d-08fdccd561f6/16",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:77f20f66-c2e6-4cb9-914a-dd218c84358f/da112b89-40c9-42d1-b16d-08fdccd561f6/24",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:77f20f66-c2e6-4cb9-914a-dd218c84358f/da112b89-40c9-42d1-b16d-08fdccd561f6/32",
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:77f20f66-c2e6-4cb9-914a-dd218c84358f/da112b89-40c9-42d1-b16d-08fdccd561f6/48"
+        },
+        "displayName": "Diego Rosa",
+        "emailAddress": "diego.rosa@akumina.com",
+        "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/user?accountId=557058%3A77f20f66-c2e6-4cb9-914a-dd218c84358f",
+        "timeZone": "America/New_York"
+      },
+      "attachment": [
+        {
+          "author": {
+            "accountId": "712020:4e125559-5505-4023-a97c-ef6c1bac116c",
+            "accountType": "atlassian",
+            "active": true,
+            "avatarUrls": {
+              "16x16": "https://secure.gravatar.com/avatar/f1d0568fa287600dbf966b48a051a85a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTF-4.png",
+              "24x24": "https://secure.gravatar.com/avatar/f1d0568fa287600dbf966b48a051a85a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTF-4.png",
+              "32x32": "https://secure.gravatar.com/avatar/f1d0568fa287600dbf966b48a051a85a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTF-4.png",
+              "48x48": "https://secure.gravatar.com/avatar/f1d0568fa287600dbf966b48a051a85a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTF-4.png"
+            },
+            "displayName": "Theresa Ferris",
+            "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/user?accountId=712020%3A4e125559-5505-4023-a97c-ef6c1bac116c",
+            "timeZone": "America/New_York"
+          },
+          "content": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/attachment/content/49433",
+          "created": "2026-03-20T09:08:53.173-0400",
+          "filename": "image-20260320-130836.png",
+          "id": "49433",
+          "mimeType": "image/png",
+          "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/attachment/49433",
+          "size": 196756,
+          "thumbnail": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/attachment/thumbnail/49433"
+        }
+      ],
+      "comment": {
+        "comments": [],
+        "maxResults": 0,
+        "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/issue/35801/comment",
+        "startAt": 0,
+        "total": 0
+      },
+      "created": "2026-03-17T08:17:27.929-0400",
+      "description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "Currently, Resource Library items are not easily searchable via typeahead or clearly categorized within search results. Users need a way to quickly find and access Resource Library content directly from search.",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Request:",
+                "type": "text"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "text": "Enhance search functionality to include Resource Library items in both typeahead and full search results.",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Proposed Solution:",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Add a ",
+                        "type": "text"
+                      },
+                      {
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ],
+                        "text": "“Resource Directory”",
+                        "type": "text"
+                      },
+                      {
+                        "text": " category under the ",
+                        "type": "text"
+                      },
+                      {
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ],
+                        "text": "Media",
+                        "type": "text"
+                      },
+                      {
+                        "text": " section in typeahead search",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Include Resource Library items in typeahead suggestions",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Add a ",
+                        "type": "text"
+                      },
+                      {
+                        "marks": [
+                          {
+                            "type": "strong"
+                          }
+                        ],
+                        "text": "filter option",
+                        "type": "text"
+                      },
+                      {
+                        "text": " for “Resource Directory” on the full search results page",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Ensure all links route to the correct, functional destination (e.g., ",
+                        "type": "text"
+                      },
+                      {
+                        "marks": [
+                          {
+                            "type": "em"
+                          }
+                        ],
+                        "text": "Time Entry → Workday",
+                        "type": "text"
+                      },
+                      {
+                        "text": ")",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              }
+            ],
+            "type": "bulletList"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Expected Behavior:",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Users can search for Resource Library items directly via typeahead",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Resource items appear under a clearly labeled category (e.g., Resource Directory)",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Users can filter to Resource Directory content on the full search results page",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Clicking a result takes the user to the correct working destination",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              }
+            ],
+            "type": "bulletList"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Current Behavior:",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Resource Library items are not easily discoverable via typeahead",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "No dedicated category or filter exists for Resource content",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Navigation to key tools/resources is less efficient",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              }
+            ],
+            "type": "bulletList"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Business Impact:",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Improves discoverability of key tools and resources",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Reduces time spent navigating or manually locating resources",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Enhances overall search usability and user experience",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              }
+            ],
+            "type": "bulletList"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Priority:",
+                "type": "text"
+              },
+              {
+                "text": " Medium",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ],
+                "text": "Acceptance Criteria:",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "content": [
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Resource Library items appear in typeahead results",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "“Resource Directory” category is available in typeahead and full search",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "Full search includes a filter for Resource Directory",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "All links correctly resolve to intended destinations",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              },
+              {
+                "content": [
+                  {
+                    "content": [
+                      {
+                        "text": "No regression in existing Media search functionality",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "paragraph"
+                  }
+                ],
+                "type": "listItem"
+              }
+            ],
+            "type": "bulletList"
+          },
+          {
+            "attrs": {
+              "layout": "align-start",
+              "width": 676,
+              "widthType": "pixel"
+            },
+            "content": [
+              {
+                "attrs": {
+                  "alt": "image-20260320-130836.png",
+                  "collection": "",
+                  "height": 676,
+                  "id": "f3351997-88e2-4fd1-a36f-5b7a655bf8dd",
+                  "type": "file",
+                  "width": 1091
+                },
+                "type": "media"
+              }
+            ],
+            "type": "mediaSingle"
+          },
+          {
+            "content": [
+              {
+                "text": "Note: Terry Asking client about icon to use",
+                "type": "text"
+              }
+            ],
+            "type": "paragraph"
+          }
+        ],
+        "type": "doc",
+        "version": 1
+      },
+      "issuelinks": [],
+      "issuetype": {
+        "avatarId": 10318,
+        "description": "A small, distinct piece of work.",
+        "hierarchyLevel": 0,
+        "iconUrl": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "id": "10002",
+        "name": "Task",
+        "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/issuetype/10002",
+        "subtask": false
+      },
+      "labels": [],
+      "priority": {
+        "iconUrl": "https://jira-prod-us-38-as-3.prod.atl-paas.net/images/icons/priorities/high_new.svg",
+        "id": "2",
+        "name": "High",
+        "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/priority/2"
+      },
+      "status": {
+        "description": "",
+        "iconUrl": "https://jira-prod-us-38-as-3.prod.atl-paas.net/images/icons/statuses/generic.png",
+        "id": "10000",
+        "name": "New",
+        "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/status/10000",
+        "statusCategory": {
+          "colorName": "blue-gray",
+          "id": 2,
+          "key": "new",
+          "name": "To Do",
+          "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/statuscategory/2"
+        }
+      },
+      "summary": "LOE: Enable Resource Library search in typeahead and full search with proper linking",
+      "updated": "2026-03-20T09:09:03.673-0400"
+    },
+    "fieldsToInclude": null,
+    "id": "35801",
+    "key": "LAC-250",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-38-as-3.prod.atl-paas.net/rest/api/3/issue/35801",
+    "transitions": null,
+    "versionedRepresentations": null
+  }
+}

@@ -306,29 +306,43 @@ async function runPromptDispatch(socket, message) {
     return;
   }
 
-  const dispatcherScript = path.resolve(
+  const dispatcherScriptAhk = path.resolve(
     config.workspaceRoot,
     "tools",
     "browser-request-automation",
     "send-to-copilot.ahk"
   );
-  if (!fs.existsSync(dispatcherScript)) {
+  const dispatcherScriptPs1 = path.resolve(
+    config.workspaceRoot,
+    "tools",
+    "browser-request-automation",
+    "send-to-copilot.ps1"
+  );
+
+  let dispatcherScript = null;
+  let dispatcherCommand = null;
+  let dispatcherArgs = null;
+
+  // Try AutoHotkey first if available
+  const autoHotkeyCommand = resolveAutoHotkeyCommand();
+  if (autoHotkeyCommand && fs.existsSync(dispatcherScriptAhk)) {
+    dispatcherScript = dispatcherScriptAhk;
+    dispatcherCommand = autoHotkeyCommand;
+    dispatcherArgs = [dispatcherScriptAhk, prompt.path];
+  }
+  // Fall back to PowerShell
+  else if (fs.existsSync(dispatcherScriptPs1)) {
+    dispatcherScript = dispatcherScriptPs1;
+    dispatcherCommand = "pwsh.exe";
+    dispatcherArgs = ["-NoProfile", "-Command", `& '${dispatcherScriptPs1}' -PromptArtifactPath '${prompt.path}'`];
+  }
+
+  if (!dispatcherScript) {
     send(socket, {
       type: "error",
       requestId,
       code: "dispatcher_missing",
-      message: `Dispatcher script not found: ${dispatcherScript}`
-    });
-    return;
-  }
-
-  const autoHotkeyCommand = resolveAutoHotkeyCommand();
-  if (!autoHotkeyCommand) {
-    send(socket, {
-      type: "error",
-      requestId,
-      code: "autohotkey_missing",
-      message: "AutoHotkey executable not found. Install AutoHotkey v2 to use prompt.dispatch"
+      message: "No dispatcher script found (neither AutoHotkey nor PowerShell version available)"
     });
     return;
   }
@@ -336,8 +350,8 @@ async function runPromptDispatch(socket, message) {
   spawnAndStream(socket, {
     requestId,
     action: "prompt.dispatch",
-    command: autoHotkeyCommand,
-    args: [dispatcherScript, prompt.path],
+    command: dispatcherCommand,
+    args: dispatcherArgs,
     cwd: config.workspaceRoot,
     shell: false,
     meta: {

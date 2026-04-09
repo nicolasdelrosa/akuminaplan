@@ -1,0 +1,7 @@
+interface:
+  display_name: "Docling Workflows"
+  short_description: "Convert and extract documents with Docling."
+  default_prompt: "Use $docling-workflows to convert or extract content from documents with Docling."
+
+policy:
+  allow_implicit_invocation: true

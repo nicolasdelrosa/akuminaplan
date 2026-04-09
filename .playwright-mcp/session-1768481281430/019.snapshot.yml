@@ -1,0 +1,27 @@
+- generic [ref=e5]:
+  - img "Imagem do plano de fundo da organização" [ref=e6]
+  - generic [ref=e8]:
+    - generic [ref=e14]:
+      - img "Logotipo da faixa da organização" [ref=e17]
+      - main [ref=e18]:
+        - generic [ref=e21]:
+          - heading "Escolha uma conta" [level=1] [ref=e25]
+          - alert [ref=e27]: A conta de usuário selecionada não existe no locatário 'Akumina' e não pode acessar o aplicativo '499b84ac-1321-427f-aa17-267ca6975798' no locatário. Primeiro, a conta deve ser adicionada como um usuário externo no locatário. Use uma conta diferente.
+          - list "A conta de usuário selecionada não existe no locatário 'Akumina' e não pode acessar o aplicativo '499b84ac-1321-427f-aa17-267ca6975798' no locatário. Primeiro, a conta deve ser adicionada como um usuário externo no locatário. Use uma conta diferente. Escolha uma conta" [ref=e30]:
+            - listitem [ref=e32] [cursor=pointer]:
+              - button "Entre com a conta corporativa ou de estudante akumina@akbps.onmicrosoft.com." [active] [ref=e33]:
+                - generic [ref=e36]:
+                  - generic [ref=e37]: Akumina Inc.
+                  - generic [ref=e38]: akumina@akbps.onmicrosoft.com
+                  - generic [ref=e39]: Entrou
+              - button "Abrir o menu" [ref=e41]
+            - listitem [ref=e42] [cursor=pointer]:
+              - button "Use outra conta" [ref=e43]:
+                - generic [ref=e47]: Use outra conta
+    - contentinfo [ref=e48]:
+      - generic [ref=e49]:
+        - link "Termos de uso" [ref=e50] [cursor=pointer]:
+          - /url: https://www.microsoft.com/pt-BR/servicesagreement/
+        - link "Privacidade e cookies" [ref=e51] [cursor=pointer]:
+          - /url: https://privacy.microsoft.com/pt-BR/privacystatement
+        - button "Clique aqui para obter informações sobre solução de problemas" [ref=e52] [cursor=pointer]: ...

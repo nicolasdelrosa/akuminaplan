@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - heading "Detalhes da solução de problemas" [level=2] [ref=e15]
+        - generic [ref=e16]: Se você entrar em contato com o administrador, envie estas informações para ele.
+        - button "Copiar informações para a área de transferência" [ref=e17] [cursor=pointer]
+      - generic [ref=e18]:
+        - generic [ref=e19]: "Request Id: 93e9e755-803c-4923-8f49-0a3bc3371000"
+        - generic [ref=e20]: "Correlation Id: 87e3b09c-71ce-4fa6-8641-b2e239c8d078"
+        - generic [ref=e21]: "Timestamp: 2026-01-21T17:16:24Z"
+        - generic [ref=e22]: "Message: AADSTS700016: Application with identifier '08ac2650-b9ef-42c9-8c22-16b036376ceb' was not found in the directory 'Akumina, Inc.,'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant."
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - text: "Sinalizar os erros de entrada para revisão:"
+          - button "Habilitar a sinalização" [ref=e25] [cursor=pointer]
+        - generic [ref=e26]: Se você planeja obter ajuda para este problema, habilite a sinalização e tente reproduzir o erro em 20 minutos. Os eventos sinalizados disponibilizam o diagnóstico e chamam a atenção do administrador.
+    - button "Fechar os detalhes da solução de problemas" [ref=e27] [cursor=pointer]
+  - textbox [ref=e28]: "Request Id: 93e9e755-803c-4923-8f49-0a3bc3371000 Correlation Id: 87e3b09c-71ce-4fa6-8641-b2e239c8d078 Timestamp: 2026-01-21T17:16:24Z Message: AADSTS700016: Application with identifier '08ac2650-b9ef-42c9-8c22-16b036376ceb' was not found in the directory 'Akumina, Inc.,'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant."

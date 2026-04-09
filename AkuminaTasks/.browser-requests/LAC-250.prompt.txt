@@ -1,0 +1,18 @@
+@Ren read c:\AkuminaPlan\AkuminaTasks\LAC-250.md and fulfill the Browser Request section.
+
+Use MCP/browser tools in the LA Courts sandbox.
+Open https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/search.aspx.
+Collect exactly this data:
+- capture `request.lookIn` when the `Resources` option is selected in typeahead
+- capture `request.lookIn` when the `Resources` option is selected on the full search page
+- confirm whether only Court Resource items are returned under `Resources`
+- capture one example result payload for a Court Resource item after the new callback/view wiring
+- confirm whether the rendered click target is `CourtResourceURLOWSURLH` or still a SharePoint item URL
+Return it in this format:
+- flat bullets
+- include short raw payload snippets for `request.lookIn`
+- include one short raw result snippet for a Court Resource item
+Write the results into the Browser Findings section in the same file.
+Do not rewrite other sections.
+
+Reason: Codex needs the live `request.lookIn` shape to tighten `lacourtsearchquerycallback` so Resources can be scoped cleanly without regressing Pages/Documents/Media.

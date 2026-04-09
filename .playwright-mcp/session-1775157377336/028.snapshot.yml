@@ -1,0 +1,837 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:  
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "Company logo." [ref=e13] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e14]
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - text: 
+              - generic [ref=e17]:
+                - textbox "Search this site." [ref=e18]:
+                  - /placeholder: Search
+                  - text: workplace
+                - button "Search this site." [ref=e19] [cursor=pointer]:
+                  - generic "Search this site." [ref=e20]: 
+            - text: 
+            - generic "Notifications" [ref=e21]:
+              - generic [ref=e23]:
+                - link "" [ref=e24] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e25]: 
+                - generic:  
+            - list [ref=e26]:
+              - listitem [ref=e27]:
+                - button "Notifications" [ref=e28] [cursor=pointer]:
+                  - img "My profile picture." [ref=e29]
+                  - generic "Offline" [ref=e30]
+                - text:    
+        - navigation [ref=e31]:
+          - generic [ref=e33]:
+            - text: 
+            - navigation [ref=e34]:
+              - text: 
+              - list [ref=e35]:
+                - listitem [ref=e36]:
+                  - generic [ref=e37]:
+                    - link "Company" [ref=e38] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e40]: 
+                  - text:   
+                - listitem [ref=e41]:
+                  - generic [ref=e42]:
+                    - link "Departments" [ref=e43] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e45]: 
+                  - text: 
+                - listitem [ref=e46]:
+                  - link "News Center" [ref=e48] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                - listitem [ref=e49]:
+                  - link "Activity Stream" [ref=e51] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/activitystream.aspx
+                - listitem [ref=e52]:
+                  - generic [ref=e53]:
+                    - link "Directory" [ref=e54] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e56]: 
+                  - text:  
+                - listitem [ref=e57]:
+                  - generic [ref=e58]:
+                    - link "Alison Menu" [ref=e59] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e61]: 
+                - listitem [ref=e62]:
+                  - generic [ref=e63]:
+                    - link "AlisonTest" [ref=e64] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e66]: 
+      - generic [ref=e67]:
+        - navigation "breadcrumb" [ref=e73]:
+          - list [ref=e74]:
+            - listitem [ref=e75]:
+              - link "Home" [ref=e76] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e77]: / Search
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - heading "Filters" [level=2] [ref=e92]
+                - text: 
+              - generic [ref=e94]:
+                - button "Apply Filters" [ref=e95] [cursor=pointer]
+                - button "Clear Filters" [ref=e96] [cursor=pointer]
+              - generic [ref=e97]:
+                - generic [ref=e98]:
+                  - generic [ref=e99]:
+                    - heading "Look in" [level=3] [ref=e100]
+                    - link "" [ref=e101] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e102]: 
+                  - list [ref=e104]:
+                    - listitem [ref=e105]:
+                      - generic [ref=e106]: Site Content
+                      - list [ref=e107]:
+                        - listitem [ref=e108]:
+                          - generic [ref=e109] [cursor=pointer]:
+                            - checkbox "Document" [checked] [ref=e110]
+                            - generic [ref=e111]: Document
+                        - listitem [ref=e113]:
+                          - generic [ref=e114] [cursor=pointer]:
+                            - checkbox "Pages" [checked] [ref=e115]
+                            - generic [ref=e116]: Pages
+                        - listitem [ref=e118]:
+                          - generic [ref=e119] [cursor=pointer]:
+                            - checkbox "Media" [checked] [ref=e120]
+                            - generic [ref=e121]: Media
+                    - listitem [ref=e123]:
+                      - generic [ref=e124] [cursor=pointer]:
+                        - checkbox "People" [ref=e125]
+                        - generic [ref=e126]: People
+                - generic [ref=e128]:
+                  - generic [ref=e129]:
+                    - heading "Created By" [level=3] [ref=e130]
+                    - link "" [ref=e131] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e132]: 
+                  - generic [ref=e133]:
+                    - textbox "Search" [ref=e134]
+                    - list [ref=e135]:
+                      - listitem [ref=e136]:
+                        - generic [ref=e137] [cursor=pointer]:
+                          - checkbox "Jaikrishnan Srinivasagam (14)" [ref=e138]
+                          - generic [ref=e140]: Jaikrishnan Srinivasagam (14)
+                      - listitem [ref=e141]:
+                        - generic [ref=e142] [cursor=pointer]:
+                          - checkbox "Akumina Inc. (5)" [ref=e143]
+                          - generic [ref=e145]: Akumina Inc. (5)
+                      - listitem [ref=e146]:
+                        - generic [ref=e147] [cursor=pointer]:
+                          - checkbox "Puramsetti, Saikiran (AK) (2)" [ref=e148]
+                          - generic [ref=e150]: Puramsetti, Saikiran (AK) (2)
+                      - listitem [ref=e151]:
+                        - generic [ref=e152] [cursor=pointer]:
+                          - checkbox "Alison Haynes (1)" [ref=e153]
+                          - generic [ref=e155]: Alison Haynes (1)
+                      - listitem [ref=e156]:
+                        - generic [ref=e157] [cursor=pointer]:
+                          - checkbox "Gil St. Brum (1)" [ref=e158]
+                          - generic [ref=e160]: Gil St. Brum (1)
+                - generic [ref=e161]:
+                  - generic [ref=e162]:
+                    - heading "FileType" [level=3] [ref=e163]
+                    - link "" [ref=e164] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e165]: 
+                  - generic [ref=e166]:
+                    - textbox "Search" [ref=e167]
+                    - list [ref=e168]:
+                      - listitem [ref=e169]:
+                        - generic [ref=e170] [cursor=pointer]:
+                          - checkbox "pdf (9)" [ref=e171]
+                          - generic [ref=e173]: pdf (9)
+                      - listitem [ref=e174]:
+                        - generic [ref=e175] [cursor=pointer]:
+                          - checkbox "jpg (1)" [ref=e176]
+                          - generic [ref=e178]: jpg (1)
+                - generic [ref=e179]:
+                  - generic [ref=e180]:
+                    - heading "Sites" [level=3] [ref=e181]
+                    - link "" [ref=e182] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e183]: 
+                  - generic [ref=e184]:
+                    - textbox "Search" [ref=e185]
+                    - list [ref=e186]:
+                      - listitem [ref=e187]:
+                        - generic [ref=e188] [cursor=pointer]:
+                          - checkbox "ufa-sandbox-delivery (18)" [ref=e189]
+                          - generic [ref=e191]: ufa-sandbox-delivery (18)
+                      - listitem [ref=e192]:
+                        - generic [ref=e193] [cursor=pointer]:
+                          - checkbox "ufa-sandbox-department (5)" [ref=e194]
+                          - generic [ref=e196]: ufa-sandbox-department (5)
+                - generic [ref=e197]:
+                  - generic [ref=e198]:
+                    - heading "Last Modified By" [level=3] [ref=e199]
+                    - link "" [ref=e200] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e201]: 
+                  - generic [ref=e202]:
+                    - textbox "Search" [ref=e203]
+                    - list [ref=e204]:
+                      - listitem [ref=e205]:
+                        - generic [ref=e206] [cursor=pointer]:
+                          - checkbox "Akumina Inc. (16)" [ref=e207]
+                          - generic [ref=e209]: Akumina Inc. (16)
+                      - listitem [ref=e210]:
+                        - generic [ref=e211] [cursor=pointer]:
+                          - checkbox "Jaikrishnan Srinivasagam (4)" [ref=e212]
+                          - generic [ref=e214]: Jaikrishnan Srinivasagam (4)
+                      - listitem [ref=e215]:
+                        - generic [ref=e216] [cursor=pointer]:
+                          - checkbox "Alison Haynes (3)" [ref=e217]
+                          - generic [ref=e219]: Alison Haynes (3)
+                - generic [ref=e220]:
+                  - generic [ref=e221]:
+                    - heading "Categories" [level=3] [ref=e222]
+                    - link "" [ref=e223] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e224]: 
+                  - generic [ref=e225]:
+                    - textbox "Search" [ref=e226]
+                    - list [ref=e227]:
+                      - listitem [ref=e228]:
+                        - generic [ref=e229] [cursor=pointer]:
+                          - checkbox "Americas (13)" [ref=e230]
+                          - generic [ref=e232]: Americas (13)
+                      - listitem [ref=e233]:
+                        - generic [ref=e234] [cursor=pointer]:
+                          - checkbox "Engineering (12)" [ref=e235]
+                          - generic [ref=e237]: Engineering (12)
+                      - listitem [ref=e238]:
+                        - generic [ref=e239] [cursor=pointer]:
+                          - checkbox "Digital Workplace (8)" [ref=e240]
+                          - generic [ref=e242]: Digital Workplace (8)
+                      - listitem [ref=e243]:
+                        - generic [ref=e244] [cursor=pointer]:
+                          - checkbox "Human Resources (8)" [ref=e245]
+                          - generic [ref=e247]: Human Resources (8)
+                      - listitem [ref=e248]:
+                        - generic [ref=e249] [cursor=pointer]:
+                          - checkbox "Awards (8)" [ref=e250]
+                          - generic [ref=e252]: Awards (8)
+                      - listitem [ref=e253]:
+                        - generic [ref=e254] [cursor=pointer]:
+                          - checkbox "Finance (7)" [ref=e255]
+                          - generic [ref=e257]: Finance (7)
+                      - listitem [ref=e258]:
+                        - generic [ref=e259] [cursor=pointer]:
+                          - checkbox "Integration (6)" [ref=e260]
+                          - generic [ref=e262]: Integration (6)
+                      - listitem [ref=e263]:
+                        - generic [ref=e264] [cursor=pointer]:
+                          - checkbox "Innovation (6)" [ref=e265]
+                          - generic [ref=e267]: Innovation (6)
+                      - listitem [ref=e268]:
+                        - generic [ref=e269] [cursor=pointer]:
+                          - checkbox "Activity Streams (5)" [ref=e270]
+                          - generic [ref=e272]: Activity Streams (5)
+                      - listitem [ref=e273]:
+                        - generic [ref=e274] [cursor=pointer]:
+                          - checkbox "Information Technology (5)" [ref=e275]
+                          - generic [ref=e277]: Information Technology (5)
+                      - listitem [ref=e278]:
+                        - generic [ref=e279] [cursor=pointer]:
+                          - checkbox "Communication (5)" [ref=e280]
+                          - generic [ref=e282]: Communication (5)
+                      - listitem [ref=e283]:
+                        - generic [ref=e284] [cursor=pointer]:
+                          - checkbox "Analysts (5)" [ref=e285]
+                          - generic [ref=e287]: Analysts (5)
+                      - listitem [ref=e288]:
+                        - generic [ref=e289] [cursor=pointer]:
+                          - checkbox "Collaboration (4)" [ref=e290]
+                          - generic [ref=e292]: Collaboration (4)
+                      - listitem [ref=e293]:
+                        - generic [ref=e294] [cursor=pointer]:
+                          - checkbox "Cloud (4)" [ref=e295]
+                          - generic [ref=e297]: Cloud (4)
+                      - listitem [ref=e298]:
+                        - generic [ref=e299] [cursor=pointer]:
+                          - checkbox "Global (4)" [ref=e300]
+                          - generic [ref=e302]: Global (4)
+                      - listitem [ref=e303]:
+                        - generic [ref=e304] [cursor=pointer]:
+                          - checkbox "Europe (3)" [ref=e305]
+                          - generic [ref=e307]: Europe (3)
+                      - listitem [ref=e308]:
+                        - generic [ref=e309] [cursor=pointer]:
+                          - checkbox "Operations (3)" [ref=e310]
+                          - generic [ref=e312]: Operations (3)
+                      - listitem [ref=e313]:
+                        - generic [ref=e314] [cursor=pointer]:
+                          - checkbox "Research (3)" [ref=e315]
+                          - generic [ref=e317]: Research (3)
+                      - listitem [ref=e318]:
+                        - generic [ref=e319] [cursor=pointer]:
+                          - checkbox "Azure (3)" [ref=e320]
+                          - generic [ref=e322]: Azure (3)
+                      - listitem [ref=e323]:
+                        - generic [ref=e324] [cursor=pointer]:
+                          - checkbox "Marketing (3)" [ref=e325]
+                          - generic [ref=e327]: Marketing (3)
+                      - listitem [ref=e328]:
+                        - generic [ref=e329] [cursor=pointer]:
+                          - checkbox "Leadership (3)" [ref=e330]
+                          - generic [ref=e332]: Leadership (3)
+                      - listitem [ref=e333]:
+                        - generic [ref=e334] [cursor=pointer]:
+                          - checkbox "Legal (3)" [ref=e335]
+                          - generic [ref=e337]: Legal (3)
+                      - listitem [ref=e338]:
+                        - generic [ref=e339] [cursor=pointer]:
+                          - checkbox "Sales (3)" [ref=e340]
+                          - generic [ref=e342]: Sales (3)
+                      - listitem [ref=e343]:
+                        - generic [ref=e344] [cursor=pointer]:
+                          - checkbox "Roadmap (2)" [ref=e345]
+                          - generic [ref=e347]: Roadmap (2)
+                      - listitem [ref=e348]:
+                        - generic [ref=e349] [cursor=pointer]:
+                          - checkbox "Microsoft (2)" [ref=e350]
+                          - generic [ref=e352]: Microsoft (2)
+                      - listitem [ref=e353]:
+                        - generic [ref=e354] [cursor=pointer]:
+                          - checkbox "Healthcare (2)" [ref=e355]
+                          - generic [ref=e357]: Healthcare (2)
+                      - listitem [ref=e358]:
+                        - generic [ref=e359] [cursor=pointer]:
+                          - checkbox "Intranet (2)" [ref=e360]
+                          - generic [ref=e362]: Intranet (2)
+                      - listitem [ref=e363]:
+                        - generic [ref=e364] [cursor=pointer]:
+                          - checkbox "Search (1)" [ref=e365]
+                          - generic [ref=e367]: Search (1)
+                      - listitem [ref=e368]:
+                        - generic [ref=e369] [cursor=pointer]:
+                          - checkbox "Trends (1)" [ref=e370]
+                          - generic [ref=e372]: Trends (1)
+                      - listitem [ref=e373]:
+                        - generic [ref=e374] [cursor=pointer]:
+                          - checkbox "Middle East and Africa (1)" [ref=e375]
+                          - generic [ref=e377]: Middle East and Africa (1)
+                      - listitem [ref=e378]:
+                        - generic [ref=e379] [cursor=pointer]:
+                          - checkbox "IT Department News (1)" [ref=e380]
+                          - generic [ref=e382]: IT Department News (1)
+                      - listitem [ref=e383]:
+                        - generic [ref=e384] [cursor=pointer]:
+                          - checkbox "outdoor (1)" [ref=e385]
+                          - generic [ref=e387]: outdoor (1)
+                      - listitem [ref=e388]:
+                        - generic [ref=e389] [cursor=pointer]:
+                          - checkbox "Services (1)" [ref=e390]
+                          - generic [ref=e392]: Services (1)
+                      - listitem [ref=e393]:
+                        - generic [ref=e394] [cursor=pointer]:
+                          - checkbox "Canada (1)" [ref=e395]
+                          - generic [ref=e397]: Canada (1)
+                      - listitem [ref=e398]:
+                        - generic [ref=e399] [cursor=pointer]:
+                          - checkbox "Notifications (1)" [ref=e400]
+                          - generic [ref=e402]: Notifications (1)
+                      - listitem [ref=e403]:
+                        - generic [ref=e404] [cursor=pointer]:
+                          - checkbox "Personalization (1)" [ref=e405]
+                          - generic [ref=e407]: Personalization (1)
+                      - listitem [ref=e408]:
+                        - generic [ref=e409] [cursor=pointer]:
+                          - checkbox "Asia Pacific (1)" [ref=e410]
+                          - generic [ref=e412]: Asia Pacific (1)
+                      - listitem [ref=e413]:
+                        - generic [ref=e414] [cursor=pointer]:
+                          - checkbox "Reports (1)" [ref=e415]
+                          - generic [ref=e417]: Reports (1)
+                      - listitem [ref=e418]:
+                        - generic [ref=e419] [cursor=pointer]:
+                          - checkbox "Partner (1)" [ref=e420]
+                          - generic [ref=e422]: Partner (1)
+                      - listitem [ref=e423]:
+                        - generic [ref=e424] [cursor=pointer]:
+                          - checkbox "North America (1)" [ref=e425]
+                          - generic [ref=e427]: North America (1)
+                - generic [ref=e428]:
+                  - generic [ref=e429]:
+                    - heading "Last Modified On" [level=3] [ref=e430]
+                    - link "" [ref=e431] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e432]: 
+                  - generic [ref=e433]:
+                    - generic [ref=e434]:
+                      - generic [ref=e436] [cursor=pointer]:
+                        - radio "Any date" [checked] [ref=e437]
+                        - generic [ref=e439]: Any date
+                      - generic [ref=e441] [cursor=pointer]:
+                        - radio "Today" [ref=e442]
+                        - generic [ref=e444]: Today
+                      - generic [ref=e446] [cursor=pointer]:
+                        - radio "Last 7 days" [ref=e447]
+                        - generic [ref=e449]: Last 7 days
+                      - generic [ref=e451] [cursor=pointer]:
+                        - radio "Last 30 days" [ref=e452]
+                        - generic [ref=e454]: Last 30 days
+                      - generic [ref=e456] [cursor=pointer]:
+                        - radio "Last 90 days" [ref=e457]
+                        - generic [ref=e459]: Last 90 days
+                      - generic [ref=e461] [cursor=pointer]:
+                        - radio "Date range" [ref=e462]
+                        - generic [ref=e464]: Date range
+                    - text:  
+            - generic [ref=e465]:
+              - generic [ref=e466]:
+                - paragraph [ref=e468]:
+                  - text: Your search for "
+                  - strong [ref=e469]: workplace
+                  - text: "\" returned 21 results, prioritized by the current site."
+                  - link "Click here" [ref=e470] [cursor=pointer]:
+                    - /url: "#!"
+                  - text: to show results ordered by relevance for all sites.
+                - generic [ref=e471]:
+                  - generic [ref=e472]:
+                    - generic [ref=e473]: "Sort by:"
+                    - link "Relevance " [ref=e474] [cursor=pointer]:
+                      - /url: "#!"
+                  - link "" [ref=e475] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - generic [ref=e476]: 
+                  - text: 
+              - generic [ref=e477]:
+                - generic [ref=e478]:
+                  - generic [ref=e479]: Document
+                  - button "Remove Item" [ref=e480] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e481]: 
+                - generic [ref=e482]:
+                  - generic [ref=e483]: Pages
+                  - button "Remove Item" [ref=e484] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e485]: 
+                - generic [ref=e486]:
+                  - generic [ref=e487]: Media
+                  - button "Remove Item" [ref=e488] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e489]: 
+              - generic [ref=e490]:
+                - generic [ref=e491]:
+                  - img [ref=e493]
+                  - generic [ref=e494]:
+                    - heading "The Workplace Innovation Gap.pdf" [level=2] [ref=e496]:
+                      - link "The Workplace Innovation Gap.pdf" [ref=e497] [cursor=pointer]:
+                        - /url: https://akbps.sharepoint.com/sites/ufa-sandbox-delivery/_layouts/15/embed.aspx?UniqueId=%7B8eb76220-f17f-4740-9d84-f9f7c5f5903f%7D
+                    - generic [ref=e498]: ufa-sandbox-delivery
+                    - list [ref=e499]:
+                      - listitem [ref=e500]:
+                        - generic [ref=e501]: "Created By:"
+                        - link "Jaikrishnan Srinivasagam" [ref=e502] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=amFpa3Jpc2huYW4uc3Jpbml2YXNhZ2FtQGFrYnBzLm9ubWljcm9zb2Z0LmNvbQ%3D%3D
+                        - text: "|"
+                      - listitem [ref=e503]:
+                        - generic [ref=e504]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e505] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e506]:
+                        - generic [ref=e507]: "Last Modified On:"
+                        - text: Jul 14, 2021 |
+                      - listitem [ref=e508]:
+                        - link "Preview" [ref=e509] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e510]:
+                      - generic [ref=e511]: "Tags:"
+                      - text: Information Technology, Americas, North America,
+                      - generic [ref=e512]: Digital Workplace,
+                      - text: Innovation, Global
+                    - generic [ref=e513]: This is a workplace innovation GAP ak
+                  - button "Toggle Action" [ref=e515] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e516]: 
+                - generic [ref=e517]:
+                  - img [ref=e519]
+                  - generic [ref=e520]:
+                    - heading "Akumina and Microsoft" [level=2] [ref=e522]:
+                      - link "Akumina and Microsoft" [ref=e523] [cursor=pointer]:
+                        - /url: https://akbps.sharepoint.com/sites/ufa-sandbox-delivery/_layouts/15/embed.aspx?UniqueId=%7B995eb1ec-df91-4aac-b3ca-eaed364c9c87%7D
+                    - generic [ref=e524]: ufa-sandbox-delivery
+                    - list [ref=e525]:
+                      - listitem [ref=e526]:
+                        - generic [ref=e527]: "Created By:"
+                        - link "Jaikrishnan Srinivasagam" [ref=e528] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=amFpa3Jpc2huYW4uc3Jpbml2YXNhZ2FtQGFrYnBzLm9ubWljcm9zb2Z0LmNvbQ%3D%3D
+                        - text: "|"
+                      - listitem [ref=e529]:
+                        - generic [ref=e530]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e531] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e532]:
+                        - generic [ref=e533]: "Last Modified On:"
+                        - text: Mar 08, 2022 |
+                      - listitem [ref=e534]:
+                        - link "Preview" [ref=e535] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e536]:
+                      - generic [ref=e537]: "Tags:"
+                      - text: Engineering, Americas, Integration
+                    - generic [ref=e538]: This is a short description example 02 ak
+                  - button "Toggle Action" [ref=e540] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e541]: 
+                - generic [ref=e542]:
+                  - generic [ref=e544]: 
+                  - generic [ref=e545]:
+                    - generic [ref=e546]:
+                      - heading "State of the Digital Workplace Webinar" [level=2] [ref=e547]:
+                        - link "State of the Digital Workplace Webinar" [ref=e548] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/events/en-us/state-of-the-digital-workplace-webinar?caldate=2025-05-28
+                      - generic [ref=e549]: ufa-sandbox-delivery
+                    - list [ref=e550]:
+                      - listitem [ref=e551]:
+                        - generic [ref=e552]: "Event time:"
+                        - text: May 28, 2025 00:00 - 23:59 |
+                      - listitem [ref=e553]:
+                        - generic [ref=e554]: 
+                        - text: Recurring
+                    - list [ref=e555]:
+                      - listitem [ref=e556]:
+                        - link "Preview" [ref=e557] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e558]: In this on-demand webinar, we provide a deep dive into the results of our 2022 State of the Digital Workplace and Modern Intranet survey, discuss trends to be aware of for the upcoming year and answer questions on intranet implementation strategy and digital workplace use cases.
+                  - button "Toggle Action" [ref=e560] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e561]: 
+                - generic [ref=e562]:
+                  - generic [ref=e564]: 
+                  - generic [ref=e565]:
+                    - generic [ref=e566]:
+                      - heading "Region Specified - Copy" [level=2] [ref=e567]:
+                        - link "Region Specified - Copy" [ref=e568] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/events/en-us/region-specified-copy
+                      - generic [ref=e569]: ufa-sandbox-delivery
+                    - list [ref=e570]:
+                      - listitem [ref=e571]:
+                        - generic [ref=e572]: "Event time:"
+                        - text: Mar 15, 2026 06:14 - Mar 18, 2026 06:14
+                    - list [ref=e573]:
+                      - listitem [ref=e574]:
+                        - link "Preview" [ref=e575] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e576]:
+                      - generic [ref=e577]: "Tags:"
+                      - text: Activity Streams, Analysts, Awards, Azure, Cloud, Collaboration, Global,
+                      - generic [ref=e578]: Digital Workplace,
+                      - text: Communication, Innovation, Integration, Healthcare, Engineering, Finance, Human Resources, Information Technology, Leadership, Legal, Marketing, Operations, Sales, Americas
+                  - button "Toggle Action" [ref=e580] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e581]: 
+                - generic [ref=e582]:
+                  - generic [ref=e584]: 
+                  - generic [ref=e585]:
+                    - generic [ref=e586]:
+                      - heading "Region Specified" [level=2] [ref=e587]:
+                        - link "Region Specified" [ref=e588] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/events/en-us/america-region-specified
+                      - generic [ref=e589]: ufa-sandbox-delivery
+                    - list [ref=e590]:
+                      - listitem [ref=e591]:
+                        - generic [ref=e592]: "Event time:"
+                        - text: Mar 15, 2026 06:14 - Mar 18, 2026 06:14
+                    - list [ref=e593]:
+                      - listitem [ref=e594]:
+                        - link "Preview" [ref=e595] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e596]:
+                      - generic [ref=e597]: "Tags:"
+                      - text: Activity Streams, Analysts, Awards, Azure, Cloud, Collaboration, Global,
+                      - generic [ref=e598]: Digital Workplace,
+                      - text: Communication, Innovation, Integration, Healthcare, Engineering, Finance, Human Resources, Information Technology, Leadership, Legal, Marketing, Operations, Sales, Americas
+                  - button "Toggle Action" [ref=e600] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e601]: 
+                - generic [ref=e602]:
+                  - generic [ref=e604]: 
+                  - generic [ref=e605]:
+                    - generic [ref=e606]:
+                      - heading "America in title, Desc" [level=2] [ref=e607]:
+                        - link "America in title, Desc" [ref=e608] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/events/en-us/america-in-title-desc
+                      - generic [ref=e609]: ufa-sandbox-delivery
+                    - list [ref=e610]:
+                      - listitem [ref=e611]:
+                        - generic [ref=e612]: "Event time:"
+                        - text: Mar 19, 2026 06:15 - Mar 26, 2026 06:15
+                    - list [ref=e613]:
+                      - listitem [ref=e614]:
+                        - link "Preview" [ref=e615] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e616]:
+                      - generic [ref=e617]: "Tags:"
+                      - text: Activity Streams, Azure, Analysts, Awards, Cloud, Collaboration, Communication,
+                      - generic [ref=e618]: Digital Workplace,
+                      - text: Global, Engineering, Human Resources, Information Technology, Finance, Leadership, Legal, Marketing, Operations, Sales, Services, Asia Pacific, Europe, Middle East and Africa
+                    - generic [ref=e619]: America in title, Desc
+                  - button "Toggle Action" [ref=e621] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e622]: 
+                - generic [ref=e623]:
+                  - generic [ref=e624]:
+                    - generic [ref=e626]: 
+                    - img "2022 State of the Global Digital Workplace Research Report" [ref=e627]
+                  - generic [ref=e628]:
+                    - generic [ref=e629]:
+                      - heading "2022 State of the Global Digital Workplace Research Report" [level=2] [ref=e630]:
+                        - link "2022 State of the Global Digital Workplace Research Report" [ref=e631] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/foundationnews/en-us/2022-state-of-the-global-digital-workplace-research-report
+                      - generic [ref=e632]: ufa-sandbox-delivery
+                    - list [ref=e633]:
+                      - listitem [ref=e634]: Dec 06, 2024 11:18 AM |
+                      - listitem [ref=e635]: 3 min read |
+                      - listitem [ref=e636]:
+                        - link "Preview" [ref=e637] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e638]:
+                      - generic [ref=e639]: "Tags:"
+                      - generic [ref=e640]: Digital Workplace,
+                      - text: Reports, Research, Trends, Engineering, Europe
+                    - generic [ref=e641]: In conjunction with digital workplace leaders, Akumina launched the research survey in the Fall of 2021 to gather industry insight and provide the most recent digital workplace data trends. With professionals weighing in from all over the globe, common themes that were found included measuring moder...
+                  - button "Toggle Action" [ref=e643] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e644]: 
+                - generic [ref=e645]:
+                  - img [ref=e647]
+                  - generic [ref=e648]:
+                    - heading "tools-systems.aspx" [level=2] [ref=e650]:
+                      - link "tools-systems.aspx" [ref=e651] [cursor=pointer]:
+                        - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                    - generic [ref=e652]: ufa-sandbox-delivery
+                    - list [ref=e653]:
+                      - listitem [ref=e654]:
+                        - generic [ref=e655]: "Created By:"
+                        - link "Akumina Inc." [ref=e656] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e657]:
+                        - generic [ref=e658]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e659] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e660]:
+                        - generic [ref=e661]: "Last Modified On:"
+                        - text: Feb 27, 2026 |
+                      - listitem [ref=e662]:
+                        - link "Preview" [ref=e663] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                  - button "Toggle Action" [ref=e665] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e666]: 
+                - generic [ref=e667]:
+                  - img [ref=e669]
+                  - generic [ref=e670]:
+                    - heading "Modern Intranet Buyers Guide" [level=2] [ref=e672]:
+                      - link "Modern Intranet Buyers Guide" [ref=e673] [cursor=pointer]:
+                        - /url: https://akbps.sharepoint.com/sites/ufa-sandbox-delivery/_layouts/15/embed.aspx?UniqueId=%7Bd378a3b0-c7f1-4878-833a-9ba0f3238daa%7D
+                    - generic [ref=e674]: ufa-sandbox-delivery
+                    - list [ref=e675]:
+                      - listitem [ref=e676]:
+                        - generic [ref=e677]: "Created By:"
+                        - link "Jaikrishnan Srinivasagam" [ref=e678] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=amFpa3Jpc2huYW4uc3Jpbml2YXNhZ2FtQGFrYnBzLm9ubWljcm9zb2Z0LmNvbQ%3D%3D
+                        - text: "|"
+                      - listitem [ref=e679]:
+                        - generic [ref=e680]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e681] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e682]:
+                        - generic [ref=e683]: "Last Modified On:"
+                        - text: Jul 14, 2021 |
+                      - listitem [ref=e684]:
+                        - link "Preview" [ref=e685] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e686]:
+                      - generic [ref=e687]: "Tags:"
+                      - text: Engineering, Americas, Integration
+                    - generic [ref=e688]: Modern Intranet is awesome! ak
+                  - button "Toggle Action" [ref=e690] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e691]: 
+                - generic [ref=e692]:
+                  - img [ref=e694]
+                  - generic [ref=e695]:
+                    - heading "Safety Management System" [level=2] [ref=e697]:
+                      - link "Safety Management System" [ref=e698] [cursor=pointer]:
+                        - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                    - generic [ref=e699]: ufa-sandbox-delivery
+                    - list [ref=e700]:
+                      - listitem [ref=e701]:
+                        - generic [ref=e702]: "Created By:"
+                        - link "Akumina Inc." [ref=e703] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e704]:
+                        - generic [ref=e705]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e706] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e707]:
+                        - generic [ref=e708]: "Last Modified On:"
+                        - text: Jan 07, 2026 |
+                      - listitem [ref=e709]:
+                        - link "Preview" [ref=e710] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e711]: Comprehensive system for managing workplace safety protocols, incident tracking, and compliance reporting.
+                  - button "Toggle Action" [ref=e713] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e714]: 
+                - generic [ref=e715]:
+                  - img [ref=e717]
+                  - generic [ref=e718]:
+                    - heading "Incident Reporting" [level=2] [ref=e720]:
+                      - link "Incident Reporting" [ref=e721] [cursor=pointer]:
+                        - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                    - generic [ref=e722]: ufa-sandbox-delivery
+                    - list [ref=e723]:
+                      - listitem [ref=e724]:
+                        - generic [ref=e725]: "Created By:"
+                        - link "Akumina Inc." [ref=e726] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e727]:
+                        - generic [ref=e728]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e729] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e730]:
+                        - generic [ref=e731]: "Last Modified On:"
+                        - text: Jan 07, 2026 |
+                      - listitem [ref=e732]:
+                        - link "Preview" [ref=e733] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                    - generic [ref=e734]: Real-time incident reporting tool for documenting safety events, near misses, and workplace hazards.
+                  - button "Toggle Action" [ref=e736] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e737]: 
+                - generic [ref=e738]:
+                  - img [ref=e740]
+                  - generic [ref=e741]:
+                    - heading "nopagedatatest01.aspx" [level=2] [ref=e743]:
+                      - link "nopagedatatest01.aspx" [ref=e744] [cursor=pointer]:
+                        - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/nopagedatatest01.aspx
+                    - generic [ref=e745]: ufa-sandbox-delivery
+                    - list [ref=e746]:
+                      - listitem [ref=e747]:
+                        - generic [ref=e748]: "Created By:"
+                        - link "Akumina Inc." [ref=e749] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e750]:
+                        - generic [ref=e751]: "Last Modified By:"
+                        - link "Akumina Inc." [ref=e752] [cursor=pointer]:
+                          - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/employeedetail.aspx?uid=YWt1bWluYUBha2Jwcy5vbm1pY3Jvc29mdC5jb20%3D
+                        - text: "|"
+                      - listitem [ref=e753]:
+                        - generic [ref=e754]: "Last Modified On:"
+                        - text: Dec 29, 2025 |
+                      - listitem [ref=e755]:
+                        - link "Preview" [ref=e756] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                  - button "Toggle Action" [ref=e758] [cursor=pointer]:
+                    - generic "Toggle Action" [ref=e759]: 
+              - button "Load More" [ref=e761] [cursor=pointer]:
+                - text: Load More
+                - generic [ref=e762]: 
+          - text: 
+      - generic [ref=e763]:
+        - text: 
+        - generic [ref=e764]:
+          - generic [ref=e765]: How do you like the intranet?
+          - link "Tell Us What You Think" [ref=e766] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e767]: 
+            - text: Tell Us What You Think
+        - list [ref=e771]:
+          - listitem [ref=e772]:
+            - link "Get to know us" [ref=e773] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e776]:
+              - listitem [ref=e777]:
+                - link "Akumina Community" [ref=e778] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e779]:
+                - link "Support" [ref=e780] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e781]:
+                - link "Developer Portal" [ref=e782] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e783]:
+            - link "Privacy" [ref=e784] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e787]:
+              - listitem [ref=e788]:
+                - link "Privacy policy" [ref=e789] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+              - listitem [ref=e790]:
+                - link "Cookie policy" [ref=e791] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+          - listitem [ref=e792]:
+            - link "Terms & conditions" [ref=e793] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+        - generic [ref=e794]:
+          - generic [ref=e795]:
+            - link "" [ref=e796] [cursor=pointer]:
+              - /url: https://x.com/UFAcooperative
+              - generic [ref=e797]: 
+            - link "" [ref=e798] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/ufa-co-operative-ltd/
+              - generic [ref=e799]: 
+            - link "" [ref=e800] [cursor=pointer]:
+              - /url: https://www.facebook.com/UFA-Co-operative-Limited-223810904432346/
+              - generic [ref=e801]: 
+            - link "" [ref=e802] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/UFACooperativeLtd
+              - generic [ref=e803]: 
+            - link "" [ref=e804] [cursor=pointer]:
+              - /url: https://www.instagram.com/ufacooperative/
+              - generic [ref=e805]: 
+          - text: "|"
+          - generic [ref=e806]: Homestead - Made for United Farmers of Alberta Co-operative Ltd.
+    - text:    
+  - navigation [ref=e808]:
+    - generic [ref=e809]:
+      - generic [ref=e810]:
+        - button "Create New" [ref=e813] [cursor=pointer]:
+          - generic "Create New" [ref=e814]: 
+        - button "Pages" [ref=e817] [cursor=pointer]:
+          - generic "Pages" [ref=e818]: 
+        - button "Structured Content" [ref=e821] [cursor=pointer]:
+          - generic "Structured Content" [ref=e822]: 
+        - button "Asset Library" [ref=e825] [cursor=pointer]:
+          - generic "Asset Library" [ref=e826]: 
+        - button "Menus" [ref=e829] [cursor=pointer]:
+          - generic "Menus" [ref=e830]: 
+        - button "Analytics" [ref=e833] [cursor=pointer]:
+          - generic "Analytics" [ref=e834]: 
+        - button "Awards & Recognitions" [ref=e837] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e838]: 
+        - button "Broadcast Center" [ref=e841] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e842]: 
+        - button "Workflows" [ref=e845] [cursor=pointer]:
+          - generic "Workflows" [ref=e846]: 
+        - button "Editorial Notifications" [ref=e849] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e850]: 
+      - generic [ref=e851]:
+        - button "Show Management Rail" [ref=e854] [cursor=pointer]:
+          - generic "Show Management Rail" [ref=e855]: 
+        - button "Launch App Manager" [ref=e858] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e859]: 
+        - button "Debug" [ref=e862] [cursor=pointer]:
+          - generic "Debug" [ref=e863]: 
+        - generic [ref=e865]:
+          - img "Akumina Inc." [ref=e867] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e868] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e869]: 

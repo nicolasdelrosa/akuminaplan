@@ -1,0 +1,10 @@
+{
+  "ticket": "Browser-Handoff-Workflow",
+  "filePath": "C:\\AkuminaPlan\\AkuminaTasks\\Browser-Handoff-Workflow.md",
+  "status": "Pending",
+  "owner": "Ren / Copilot",
+  "environment": "sandbox name here",
+  "targetPage": "/sitepages/search.aspx",
+  "generatedAt": "2026-03-21T14:10:40.252Z",
+  "promptPath": "C:\\AkuminaPlan\\AkuminaTasks\\.browser-requests\\Browser-Handoff-Workflow.prompt.txt"
+}

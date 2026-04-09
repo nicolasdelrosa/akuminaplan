@@ -1,0 +1,12 @@
+@Ren read C:\AkuminaPlan\AkuminaTasks\Browser-Handoff-Workflow.md and fulfill the Browser Request section.
+
+Use MCP/browser tools in the sandbox name here.
+Open /sitepages/search.aspx.
+Collect exactly this data:
+- Fulfill the Browser Request section exactly as written.
+Return it in this format:
+- Update Browser Findings in the same file.
+Write the results into the Browser Findings section in the same file.
+Do not rewrite other sections.
+
+Reason: - Codex needs live widget wiring before changing callback logic

@@ -1,0 +1,12 @@
+{
+  "Browser-Handoff-Workflow": {
+    "requestFingerprint": "Pending|sandbox name here|/sitepages/search.aspx|",
+    "completionFingerprint": "",
+    "migratedAt": "2026-03-21T15:20:44.912Z"
+  },
+  "LAC-250": {
+    "requestFingerprint": "Pending|LA Courts sandbox|https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/search.aspx|capture `request.lookIn` when the `Resources` option is selected in typeahead|capture `request.lookIn` when the `Resources` option is selected on the full search page|confirm whether only Court Resource items are returned under `Resources`|capture one example result payload for a Court Resource item after the new callback/view wiring|confirm whether the rendered click target is `CourtResourceURLOWSURLH` or still a SharePoint item URL",
+    "completionFingerprint": "Not started|false",
+    "lastGeneratedAt": "2026-03-21T16:03:00.918Z"
+  }
+}

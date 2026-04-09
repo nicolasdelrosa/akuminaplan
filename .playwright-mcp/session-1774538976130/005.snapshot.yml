@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - text: 
+            - generic [ref=e11]:
+              - generic: 
+              - heading "Mission Control" [level=1] [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Company logo." [ref=e17] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - text: 
+              - generic [ref=e21]:
+                - textbox "Search this site." [ref=e22]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e23] [cursor=pointer]:
+                  - generic "Search this site." [ref=e24]: 
+            - text: 
+            - generic "Notifications" [ref=e55]:
+              - generic [ref=e57]:
+                - link "" [ref=e58] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e59]: 
+                - generic:  
+            - list [ref=e25]:
+              - listitem [ref=e26]:
+                - button "Notifications" [ref=e27] [cursor=pointer]:
+                  - img "My profile picture." [ref=e28]
+                  - generic "Offline" [ref=e60]
+                - text:    
+        - navigation [ref=e30]:
+          - generic [ref=e62]:
+            - text: 
+            - navigation [ref=e63]:
+              - text: 
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - generic [ref=e66]:
+                    - link "Company" [ref=e67] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e69]: 
+                  - text:   
+                - listitem [ref=e70]:
+                  - generic [ref=e71]:
+                    - link "Departments" [ref=e72] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e74]: 
+                  - text: 
+                - listitem [ref=e75]:
+                  - link "News Center" [ref=e77] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                - listitem [ref=e78]:
+                  - link "Activity Stream" [ref=e80] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/activitystream.aspx
+                - listitem [ref=e81]:
+                  - generic [ref=e82]:
+                    - link "Directory" [ref=e83] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e85]: 
+                  - text:  
+                - listitem [ref=e86]:
+                  - generic [ref=e87]:
+                    - link "Alison Menu" [ref=e88] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e90]: 
+                - listitem [ref=e91]:
+                  - generic [ref=e92]:
+                    - link "AlisonTest" [ref=e93] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e95]: 
+      - generic [ref=e31]:
+        - navigation "breadcrumb" [ref=e99]:
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Home" [ref=e102] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e103]: / Tools & Systems
+        - generic [ref=e116]:
+          - heading "Tools & System" [level=2] [ref=e118]
+          - generic [ref=e120]:
+            - generic: 
+            - textbox "Search links" [ref=e121]:
+              - /placeholder: Search...
+          - generic [ref=e122]:
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - link "word-icon.png" [ref=e127] [cursor=pointer]:
+                  - /url: https://www.google.com
+                  - img "word-icon.png" [ref=e128]
+                - heading "Salesforce CRM with a longer title as well possibly too long. What could it look like with maybe 4 lines?" [level=3] [ref=e129]:
+                  - link "Salesforce CRM with a longer title as well possibly too long. What could it look like with maybe 4 lines?" [ref=e130] [cursor=pointer]:
+                    - /url: https://www.google.com
+              - generic [ref=e132]:
+                - paragraph [ref=e133]: Customer relationship management platform for sales automation, marketing, and customer service operations.
+                - paragraph [ref=e134]: And having a space. With some extra text to make it too long. What could it look like with maybe 4 lines?
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - link "https://picsum.photos/id/17/300/200" [ref=e139] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/17/300/200" [ref=e140]
+                - heading "Workday HCM" [level=3] [ref=e141]:
+                  - link "Workday HCM" [ref=e142] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e144]: Human capital management system for workforce planning, talent management, payroll, and HR analytics.
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - link "https://picsum.photos/id/18/300/200" [ref=e149] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/18/300/200" [ref=e150]
+                - heading "Microsoft Azure" [level=3] [ref=e151]:
+                  - link "Microsoft Azure" [ref=e152] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e154]: Cloud computing platform providing infrastructure, services, and tools for building and managing applications.
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - link "https://picsum.photos/id/19/300/200" [ref=e159] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/19/300/200" [ref=e160]
+                - heading "Oracle Database" [level=3] [ref=e161]:
+                  - link "Oracle Database" [ref=e162] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e164]: Robust relational database management system for data storage, processing, and enterprise applications.
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - link "TestImage2.jpg" [ref=e169] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "TestImage2.jpg" [ref=e170]
+                - heading "SuccessFactors" [level=3] [ref=e171]:
+                  - link "SuccessFactors" [ref=e172] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e174]: Sucess factor is blah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a quam diam. Integer ultrices sapien et turpis consequat efficitur. Nulla porta ex vel elit rutrum lacinia. Nam vel enim augue. Integer est velit, dig Akumina System
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - link "ppt.png" [ref=e179] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "ppt.png" [ref=e180]
+                - heading "Service Now" [level=3] [ref=e181]:
+                  - link "Service Now" [ref=e182] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e184]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a quam diam. Integer ultrices sapien et turpis consequat efficitur. Nulla porta ex vel elit rutrum lacinia. Nam vel enim augue. Integer est velit, dig Akumina UFA System
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - link "ppt.png" [ref=e189] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "ppt.png" [ref=e190]
+                - heading "Emergency Response" [level=3] [ref=e191]:
+                  - link "Emergency Response" [ref=e192] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e194]: Emergency management system with response procedures, evacuation plans, and crisis communication tools.
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - link "https://picsum.photos/id/12/300/200" [ref=e199] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/12/300/200" [ref=e200]
+                - heading "Training Portal" [level=3] [ref=e201]:
+                  - link "Training Portal" [ref=e202] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e204]: Online safety training platform with certification tracking, course management, and employee progress monitoring.
+            - generic [ref=e206]:
+              - generic [ref=e207]:
+                - link "https://picsum.photos/id/1/300/200" [ref=e209] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/1/300/200" [ref=e210]
+                - heading "Equipment Inspection" [level=3] [ref=e211]:
+                  - link "Equipment Inspection" [ref=e212] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e214]: Digital inspection platform for equipment safety checks, maintenance logs, and compliance verification.
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - link "https://picsum.photos/id/14/300/200" [ref=e219] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/14/300/200" [ref=e220]
+                - heading "Incident Reporting" [level=3] [ref=e221]:
+                  - link "Incident Reporting" [ref=e222] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e224]: Real-time incident reporting tool for documenting safety events, near misses, and workplace hazards.
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - link "https://picsum.photos/id/15/300/200" [ref=e229] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/15/300/200" [ref=e230]
+                - heading "Safety Management System" [level=3] [ref=e231]:
+                  - link "Safety Management System" [ref=e232] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e234]: Comprehensive system for managing workplace safety protocols, incident tracking, and compliance reporting.
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - link "outlook.png" [ref=e239] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "outlook.png" [ref=e240]
+                - heading "Finance" [level=3] [ref=e241]:
+                  - link "Finance" [ref=e242] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - paragraph [ref=e245]: Finance is blah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a quam diam. Integer ultrices sapien et turpis consequat efficitur. Nulla porta ex vel elit rutrum lacinia. Nam vel enim augue. Integer est velit, dig Akumina System
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - link "outlook.png" [ref=e250] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "outlook.png" [ref=e251]
+                - heading "Supplier Portal" [level=3] [ref=e252]:
+                  - link "Supplier Portal" [ref=e253] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e255]: Self-service supplier portal for invoice submission, order status, and performance dashboards.
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - link "https://picsum.photos/id/7/300/200" [ref=e260] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/7/300/200" [ref=e261]
+                - heading "Inventory Control" [level=3] [ref=e262]:
+                  - link "Inventory Control" [ref=e263] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e265]: Real-time inventory management system with stock tracking, reorder alerts, and warehouse optimization.
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - link "https://picsum.photos/id/8/300/200" [ref=e270] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/8/300/200" [ref=e271]
+                - heading "Purchase Orders" [level=3] [ref=e272]:
+                  - link "Purchase Orders" [ref=e273] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e275]: Purchase order creation, tracking, and approval system with automated workflows and budget controls.
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - link "https://picsum.photos/id/9/300/200" [ref=e280] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/9/300/200" [ref=e281]
+                - heading "Vendor Management" [level=3] [ref=e282]:
+                  - link "Vendor Management" [ref=e283] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e285]: Vendor relationship management with performance tracking, contract management, and supplier evaluation.
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - link "https://picsum.photos/id/10/300/200" [ref=e290] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/10/300/200" [ref=e291]
+                - heading "Procurement System" [level=3] [ref=e292]:
+                  - link "Procurement System" [ref=e293] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e295]: Streamlined procurement platform for requisitions, approvals, and vendor order management.
+            - generic [ref=e297]:
+              - generic [ref=e298]:
+                - link "https://picsum.photos/id/21/300/200" [ref=e300] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/21/300/200" [ref=e301]
+                - heading "Operations" [level=3] [ref=e302]:
+                  - link "Operations" [ref=e303] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e305]: Operations is blah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a quam diam. Integer ultrices sapien et turpis consequat efficitur. Nulla porta ex vel elit rutrum lacinia. Nam vel enim augue. Integer est velit, dig UFA System
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - link "planner.png" [ref=e310] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "planner.png" [ref=e311]
+                - heading "Help Desk" [level=3] [ref=e312]:
+                  - link "Help Desk" [ref=e313] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e315]: IT service desk platform for ticket management, support requests, and technical issue resolution.
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - link "https://picsum.photos/id/2/300/200" [ref=e320] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/2/300/200" [ref=e321]
+                - heading "Expense Reports" [level=3] [ref=e322]:
+                  - link "Expense Reports" [ref=e323] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e325]: Automated expense reporting with receipt capture, approval workflows, and reimbursement processing.
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - link "https://picsum.photos/id/3/300/200" [ref=e330] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/3/300/200" [ref=e331]
+                - heading "Time Tracking" [level=3] [ref=e332]:
+                  - link "Time Tracking" [ref=e333] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e335]: Employee time tracking system for timesheet management, project billing, and attendance reporting.
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - link "https://picsum.photos/id/5/300/200" [ref=e340] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/5/300/200" [ref=e341]
+                - heading "Project Tracker" [level=3] [ref=e342]:
+                  - link "Project Tracker" [ref=e343] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e345]: Project management tool with task tracking, milestone monitoring, and resource allocation features.
+            - generic [ref=e347]:
+              - generic [ref=e348]:
+                - link "https://picsum.photos/id/4/300/200" [ref=e350] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "https://picsum.photos/id/4/300/200" [ref=e351]
+                - heading "Document Management" [level=3] [ref=e352]:
+                  - link "Document Management" [ref=e353] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e355]: Enterprise document management with version control, collaboration features, and secure file sharing.
+            - generic [ref=e357]:
+              - generic [ref=e358]:
+                - link "initiative.png" [ref=e360] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "initiative.png" [ref=e361]
+                - heading "Fiori" [level=3] [ref=e362]:
+                  - link "Fiori" [ref=e363] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e365]: Fiori is blah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a quam diam. Integer ultrices sapien et turpis consequat efficitur. Nulla porta ex vel elit rutrum lacinia. Nam vel enim augue. Integer est velit, dig Akumina System
+            - generic [ref=e367]:
+              - generic [ref=e368]:
+                - link "todo.png" [ref=e370] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+                  - img "todo.png" [ref=e371]
+                - heading "This is an Item of the Fifth Group" [level=3] [ref=e372]:
+                  - link "This is an Item of the Fifth Group" [ref=e373] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/tools-systems.aspx
+              - generic [ref=e375]: This is a description for the item for the fifth group
+      - generic [ref=e35]:
+        - text: 
+        - generic [ref=e36]:
+          - generic [ref=e37]: How do you like the intranet?
+          - link "Tell Us What You Think" [ref=e38] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e39]: 
+            - text: Tell Us What You Think
+        - list [ref=e378]:
+          - listitem [ref=e379]:
+            - link "Get to know us" [ref=e380] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e383]:
+              - listitem [ref=e384]:
+                - link "Akumina Community" [ref=e385] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e386]:
+                - link "Support" [ref=e387] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e388]:
+                - link "Developer Portal" [ref=e389] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e390]:
+            - link "Privacy" [ref=e391] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e394]:
+              - listitem [ref=e395]:
+                - link "Privacy policy" [ref=e396] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+              - listitem [ref=e397]:
+                - link "Cookie policy" [ref=e398] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+          - listitem [ref=e399]:
+            - link "Terms & conditions" [ref=e400] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - link "" [ref=e43] [cursor=pointer]:
+              - /url: https://x.com/UFAcooperative
+              - generic [ref=e44]: 
+            - link "" [ref=e45] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/ufa-co-operative-ltd/
+              - generic [ref=e46]: 
+            - link "" [ref=e47] [cursor=pointer]:
+              - /url: https://www.facebook.com/UFA-Co-operative-Limited-223810904432346/
+              - generic [ref=e48]: 
+            - link "" [ref=e49] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/UFACooperativeLtd
+              - generic [ref=e50]: 
+            - link "" [ref=e51] [cursor=pointer]:
+              - /url: https://www.instagram.com/ufacooperative/
+              - generic [ref=e52]: 
+          - text: "|"
+          - generic [ref=e53]: Homestead - Made for United Farmers of Alberta Co-operative Ltd.
+    - text:    
+  - navigation [ref=e402]:
+    - generic [ref=e403]:
+      - generic [ref=e404]:
+        - button "Create New" [ref=e407] [cursor=pointer]:
+          - generic "Create New" [ref=e408]: 
+        - button "Pages" [ref=e411] [cursor=pointer]:
+          - generic "Pages" [ref=e412]: 
+        - button "Structured Content" [ref=e415] [cursor=pointer]:
+          - generic "Structured Content" [ref=e416]: 
+        - button "Asset Library" [ref=e419] [cursor=pointer]:
+          - generic "Asset Library" [ref=e420]: 
+        - button "Menus" [ref=e423] [cursor=pointer]:
+          - generic "Menus" [ref=e424]: 
+        - button "Analytics" [ref=e427] [cursor=pointer]:
+          - generic "Analytics" [ref=e428]: 
+        - button "Awards & Recognitions" [ref=e431] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e432]: 
+        - button "Broadcast Center" [ref=e435] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e436]: 
+        - button "Workflows" [ref=e439] [cursor=pointer]:
+          - generic "Workflows" [ref=e440]: 
+        - button "Editorial Notifications" [ref=e443] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e444]: 
+      - generic [ref=e445]:
+        - button "Show Management Rail" [ref=e448] [cursor=pointer]:
+          - generic "Show Management Rail" [ref=e449]: 
+        - button "Launch App Manager" [ref=e452] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e453]: 
+        - button "Debug" [ref=e456] [cursor=pointer]:
+          - generic "Debug" [ref=e457]: 
+        - generic [ref=e459]:
+          - img "Akumina Inc." [ref=e461] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e462] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e463]: 

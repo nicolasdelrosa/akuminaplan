@@ -1,0 +1,544 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e70] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e71]: 
+            - generic [ref=e74]:
+              - generic: 
+              - heading "Mission Control" [level=1] [ref=e75]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "Company logo." [ref=e13] [cursor=pointer]:
+            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+            - img "Company logo." [ref=e14]
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - text: 
+              - generic [ref=e17]:
+                - textbox "Search this site." [ref=e18]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e19] [cursor=pointer]:
+                  - generic "Search this site." [ref=e20]: 
+            - button "Save Bookmark" [ref=e77] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e78]: 
+            - generic "Notifications" [ref=e79]:
+              - generic [ref=e81]:
+                - link "Show Notifications" [ref=e82] [cursor=pointer]:
+                  - /url: "#"
+                  - generic "Show Notifications" [ref=e83]: 
+                - generic:   
+            - list [ref=e21]:
+              - listitem [ref=e22]:
+                - button "Notifications" [ref=e23] [cursor=pointer]:
+                  - img "My profile picture." [ref=e24]
+                  - generic "Offline" [ref=e25]
+                - text:    
+        - generic [ref=e86]:
+          - text: 
+          - navigation [ref=e87]:
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - generic [ref=e90]:
+                  - link "Our Company" [ref=e91] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e93]: 
+              - listitem [ref=e94]:
+                - generic [ref=e95]:
+                  - link "Employee Resources" [ref=e96] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e98]: 
+              - listitem [ref=e99]:
+                - generic [ref=e100]:
+                  - link "Employee Advocacy" [ref=e101] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e103]: 
+      - generic [ref=e26]:
+        - generic [ref=e106]:
+          - paragraph [ref=e112]:
+            - strong [ref=e113]: Testing site alert
+            - text: Corporate office is closed for the week between Christmas and New Year's.
+          - generic [ref=e115]:
+            - text: 
+            - generic [ref=e116]: 1 of 1
+            - text: 
+        - generic:
+          - generic:
+            - navigation "breadcrumb":
+              - list
+        - generic [ref=e30]:
+          - generic [ref=e123]:
+            - generic [ref=e124]: Friday, March 20
+            - generic [ref=e125]: Good Morning, Akumina
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - paragraph [ref=e133]: No News Found
+              - text: 
+            - generic [ref=e135]:
+              - heading "Our People" [level=2] [ref=e138]
+              - generic [ref=e139]:
+                - text: 
+                - generic [ref=e141]:
+                  - tabpanel [ref=e142]:
+                    - link "More Details" [ref=e144] [cursor=pointer]:
+                      - /url: "#/employee/en-US/theresa.ferris1"
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: Theresa Ferris
+                        - generic [ref=e150]: Project Manager
+                        - generic [ref=e151]: Burlington, MA
+                        - generic [ref=e152]: Promotion
+                        - generic [ref=e153]: March 19 2026
+                  - tabpanel [ref=e154]:
+                    - link "More Details" [ref=e156] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Jason-Arden
+                      - generic [ref=e160]:
+                        - generic [ref=e161]: Jason Arden
+                        - generic [ref=e162]: VP of Engineering**
+                        - generic [ref=e163]: somewhere
+                        - generic [ref=e164]: New Hire
+                        - generic [ref=e165]: March 12 2026
+                  - tabpanel [ref=e166]:
+                    - link "More Details" [ref=e168] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Ren-tetraut
+                      - generic [ref=e172]:
+                        - generic [ref=e173]: Ren Tetrault
+                        - generic [ref=e174]: QA Lead
+                        - generic [ref=e175]: Somewhere
+                        - generic [ref=e176]: Promotion
+                        - generic [ref=e177]: February 26 2026
+                  - tabpanel [ref=e178]:
+                    - link "More Details" [ref=e180] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/tyler-shuck
+                      - generic [ref=e184]:
+                        - generic [ref=e185]: Tyler Shuck
+                        - generic [ref=e186]: Best Trainer
+                        - generic [ref=e187]: remote
+                        - generic [ref=e188]: Welcome
+                        - generic [ref=e189]: February 26 2026
+                  - tabpanel [ref=e190]:
+                    - link [ref=e192] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Andy-Frades
+                      - generic [ref=e196]:
+                        - generic [ref=e197]: Andy Frades
+                        - generic [ref=e198]: CFO
+                        - generic [ref=e199]: NY
+                        - generic [ref=e200]: New Role
+                        - generic [ref=e201]: February 25 2026
+                  - tabpanel [ref=e202]:
+                    - link [ref=e204] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Scott-Kearney
+                      - generic [ref=e208]:
+                        - generic [ref=e209]: Scott Kearney
+                        - generic [ref=e210]: CTO
+                        - generic [ref=e211]: Mountains
+                        - generic [ref=e212]: Retirement
+                        - generic [ref=e213]: February 25 2026
+                  - tabpanel [ref=e214]:
+                    - link [ref=e216] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Diego-Rosa
+                      - generic [ref=e220]:
+                        - generic [ref=e221]: Diego Nícolas-Rosa
+                        - generic [ref=e222]: Tech Lead
+                        - generic [ref=e223]: Home
+                        - generic [ref=e224]: New Role
+                        - generic [ref=e225]: February 19 2026
+                  - tabpanel [ref=e226]:
+                    - link [ref=e228] [cursor=pointer]:
+                      - /url: /sites/smuckers-sandbox-delivery#/employee/en-US/Alison-Haynes
+                      - generic [ref=e232]:
+                        - generic [ref=e233]: Alison Haynes
+                        - generic [ref=e234]: IT Director
+                        - generic [ref=e235]: NH
+                        - generic [ref=e236]: Promotion
+                        - generic [ref=e237]: February 05 2026
+                  - tabpanel [ref=e238]:
+                    - link [ref=e240] [cursor=pointer]:
+                      - /url: "#/sitepages/employeespotlightlist.aspx"
+                      - text: View All
+                - button "Next" [ref=e241] [cursor=pointer]: Next
+                - tablist [ref=e242]:
+                  - tab "1 of 3" [selected] [ref=e243] [cursor=pointer]: • 1
+                  - tab "2 of 3" [ref=e244] [cursor=pointer]: • 2
+                  - tab "3 of 3" [ref=e245] [cursor=pointer]: • 3
+                  - tab "4 of 3" [ref=e246] [cursor=pointer]: • 4
+                  - tab "5 of 3" [ref=e247] [cursor=pointer]: • 5
+                  - tab "6 of 3" [ref=e248] [cursor=pointer]: • 6
+          - generic [ref=e33]:
+            - generic [ref=e38]:
+              - navigation [ref=e39]:
+                - tablist [ref=e40]:
+                  - generic [ref=e250]:
+                    - tab "Company News" [expanded] [selected] [ref=e41]:
+                      - link "Company News" [ref=e42] [cursor=pointer]:
+                        - /url: "#ak-tabwidget-tabs-773e4981-04ea-4042-8bbf-23f5bf42e189"
+                    - tab [ref=e251]:
+                      - link [ref=e252] [cursor=pointer]:
+                        - /url: "#ak-tabwidget-tabs-6c9c2fd5-323e-4c25-9364-bd0903ef589c"
+                        - text: Featured News
+              - tabpanel "Company News" [ref=e253]:
+                - generic [ref=e255]:
+                  - generic [ref=e256]:
+                    - button "Grid View" [ref=e257] [cursor=pointer]:
+                      - generic "Grid View" [ref=e258]: 
+                    - button "List View" [ref=e260] [cursor=pointer]:
+                      - generic "List View" [ref=e261]: 
+                  - generic [ref=e262]:
+                    - generic [ref=e265]:
+                      - generic [ref=e266]: "Filter by:"
+                      - button "All Company News" [ref=e267] [cursor=pointer]
+                      - button "Top Reacted" [ref=e268] [cursor=pointer]
+                      - button "Popular" [ref=e269] [cursor=pointer]
+                    - link "View All Company News" [ref=e272] [cursor=pointer]:
+                      - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                  - generic [ref=e273]:
+                    - generic [ref=e275]:
+                      - generic [ref=e276]:
+                        - img [ref=e277]
+                        - generic [ref=e278]: Featured
+                      - generic [ref=e279]:
+                        - generic [ref=e280]:
+                          - generic [ref=e281]: "#Activity Streams"
+                          - link "+2" [ref=e282] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "THIS IS AN ARTICLE WITH A REALLY LONG TITLE - THIS IS AN ARTICLE WITH A REALLY LONG TITLE - and some small chars too" [level=3] [ref=e283]:
+                          - link "THIS IS AN ARTICLE WITH A REALLY LONG TITLE - THIS IS AN ARTICLE WITH A REALLY LONG TITLE - and some small chars too" [ref=e284] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/this-is-an-article-with-a-really-long-title-this-is-an-article-with-a-really-long-title-and-some-small-chars-too
+                        - generic [ref=e285]:
+                          - generic [ref=e286]:
+                            - img "Akumina Inc. (loading)" [ref=e288]
+                            - generic [ref=e290]:
+                              - link "Akumina Inc." [ref=e292] [cursor=pointer]:
+                                - /url: javascript:void(0);
+                              - generic [ref=e293]:
+                                - generic [ref=e294]: Mar 04, 2026|
+                                - generic [ref=e295]: 1 min read
+                          - generic [ref=e297]:
+                            - generic "Number of views" [ref=e298]:
+                              - generic [ref=e299]: 
+                              - text: "7"
+                            - generic "Number of comments" [ref=e300]:
+                              - generic [ref=e301]: 
+                              - text: "0"
+                    - generic [ref=e303]:
+                      - img [ref=e305]
+                      - generic [ref=e306]:
+                        - generic [ref=e307]:
+                          - generic [ref=e308]: "#Human Resources"
+                          - link "+2" [ref=e309] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "SM PBJ is the best" [level=3] [ref=e310]:
+                          - link "SM PBJ is the best" [ref=e311] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/sm-pbj-is-the-best
+                        - generic [ref=e312]:
+                          - generic [ref=e313]:
+                            - img "Tyler Shuck (loading)" [ref=e315]
+                            - generic [ref=e317]:
+                              - generic [ref=e318]: Tyler Shuck
+                              - generic [ref=e319]:
+                                - generic [ref=e320]: Dec 11, 2025|
+                                - generic [ref=e321]: 1 min read
+                          - generic [ref=e323]:
+                            - generic "Number of views" [ref=e324]:
+                              - generic [ref=e325]: 
+                              - text: "2"
+                            - generic "Number of comments" [ref=e326]:
+                              - generic [ref=e327]: 
+                              - text: "0"
+                    - generic [ref=e329]:
+                      - img [ref=e331]
+                      - generic [ref=e332]:
+                        - generic [ref=e333]:
+                          - generic [ref=e334]: "#Information Technology"
+                          - link "+1" [ref=e335] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "SM - INTRODUCING SMUCKER’S FATHER NATURE CAMPAIGN" [level=3] [ref=e336]:
+                          - link "SM - INTRODUCING SMUCKER’S FATHER NATURE CAMPAIGN" [ref=e337] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/sm-introducing-smucker’s-father-nature-campaign
+                        - generic [ref=e338]:
+                          - generic [ref=e339]:
+                            - img "Theresa Ferris (loading)" [ref=e341]
+                            - generic [ref=e343]:
+                              - link "Theresa Ferris" [ref=e345] [cursor=pointer]:
+                                - /url: javascript:void(0);
+                              - generic [ref=e346]:
+                                - generic [ref=e347]: Dec 10, 2025|
+                                - generic [ref=e348]: 2 min read
+                          - generic [ref=e349]:
+                            - generic "LIKE" [ref=e351]:
+                              - generic [ref=e352]: 
+                              - text: "3"
+                            - generic [ref=e353]:
+                              - generic "Number of views" [ref=e354]:
+                                - generic [ref=e355]: 
+                                - text: "51"
+                              - generic "Number of comments" [ref=e356]:
+                                - generic [ref=e357]: 
+                                - text: "0"
+                    - generic [ref=e361]:
+                      - generic [ref=e362]:
+                        - generic [ref=e363]: "#Activity Streams"
+                        - link "+3" [ref=e364] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                      - heading "SM - Non Featured - No Image" [level=3] [ref=e365]:
+                        - link "SM - Non Featured - No Image" [ref=e366] [cursor=pointer]:
+                          - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/sm-non-featured-no-image
+                      - generic [ref=e367]:
+                        - generic [ref=e368]:
+                          - img "Akumina Inc. (loading)" [ref=e370]
+                          - generic [ref=e372]:
+                            - link "Akumina Inc." [ref=e374] [cursor=pointer]:
+                              - /url: javascript:void(0);
+                            - generic [ref=e375]:
+                              - generic [ref=e376]: Nov 13, 2025|
+                              - generic [ref=e377]: 1 min read
+                        - generic [ref=e379]:
+                          - generic "Number of views" [ref=e380]:
+                            - generic [ref=e381]: 
+                            - text: "4"
+                          - generic "Number of comments" [ref=e382]:
+                            - generic [ref=e383]: 
+                            - text: "5"
+                    - generic [ref=e385]:
+                      - generic [ref=e387]: Featured
+                      - generic [ref=e388]:
+                        - generic [ref=e389]:
+                          - generic [ref=e390]: "#Activity Streams"
+                          - link "+2" [ref=e391] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "SM - Featured - No Image" [level=3] [ref=e392]:
+                          - link "SM - Featured - No Image" [ref=e393] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/sm-featured-no-image
+                        - generic [ref=e394]:
+                          - generic [ref=e395]:
+                            - img "Akumina Inc. (loading)" [ref=e397]
+                            - generic [ref=e399]:
+                              - link "Akumina Inc." [ref=e401] [cursor=pointer]:
+                                - /url: javascript:void(0);
+                              - generic [ref=e402]:
+                                - generic [ref=e403]: Nov 13, 2025|
+                                - generic [ref=e404]: 1 min read
+                          - generic [ref=e406]:
+                            - generic "Number of views" [ref=e407]:
+                              - generic [ref=e408]: 
+                              - text: "2"
+                            - generic "Number of comments" [ref=e409]:
+                              - generic [ref=e410]: 
+                              - text: "0"
+                    - generic [ref=e412]:
+                      - img [ref=e414]
+                      - generic [ref=e415]:
+                        - generic [ref=e416]:
+                          - generic [ref=e417]: "#Activity Streams"
+                          - link "+7" [ref=e418] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "The Value of Activity Streams" [level=3] [ref=e419]:
+                          - link "The Value of Activity Streams" [ref=e420] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/the-value-of-activity-streams
+                        - generic [ref=e421]:
+                          - generic [ref=e422]:
+                            - img "Jaikrishnan Srinivasagam (loading)" [ref=e424]
+                            - generic [ref=e426]:
+                              - generic [ref=e427]: Jaikrishnan Srinivasagam
+                              - generic [ref=e428]:
+                                - generic [ref=e429]: Oct 23, 2025|
+                                - generic [ref=e430]: 2 min read
+                          - generic [ref=e432]:
+                            - generic "Number of views" [ref=e433]:
+                              - generic [ref=e434]: 
+                              - text: "0"
+                            - generic "Number of comments" [ref=e435]:
+                              - generic [ref=e436]: 
+                              - text: "0"
+                    - generic [ref=e438]:
+                      - img [ref=e440]
+                      - generic [ref=e441]:
+                        - generic [ref=e442]:
+                          - generic [ref=e443]: "#Cloud"
+                          - link "+5" [ref=e444] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "Akumina Announces Major Update to Its Employee Experience Platform" [level=3] [ref=e445]:
+                          - link "Akumina Announces Major Update to Its Employee Experience Platform" [ref=e446] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/akumina-announces-major-update-to-its-employee-experience-platform
+                        - generic [ref=e447]:
+                          - generic [ref=e448]:
+                            - img "Jaikrishnan Srinivasagam (loading)" [ref=e450]
+                            - generic [ref=e452]:
+                              - generic [ref=e453]: Jaikrishnan Srinivasagam
+                              - generic [ref=e454]:
+                                - generic [ref=e455]: Oct 23, 2025|
+                                - generic [ref=e456]: 1 min read
+                          - generic [ref=e458]:
+                            - generic "Number of views" [ref=e459]:
+                              - generic [ref=e460]: 
+                              - text: "0"
+                            - generic "Number of comments" [ref=e461]:
+                              - generic [ref=e462]: 
+                              - text: "0"
+                    - generic [ref=e464]:
+                      - generic [ref=e466]: Featured
+                      - generic [ref=e467]:
+                        - generic [ref=e468]:
+                          - generic [ref=e469]: "#Digital Workplace"
+                          - link "+5" [ref=e470] [cursor=pointer]:
+                            - /url: javascript:void(0);
+                        - heading "2022 State of the Global Digital Workplace Research Report" [level=3] [ref=e471]:
+                          - link "2022 State of the Global Digital Workplace Research Report" [ref=e472] [cursor=pointer]:
+                            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/foundationnews/en-us/2022-state-of-the-global-digital-workplace-research-report
+                        - generic [ref=e473]:
+                          - generic [ref=e474]:
+                            - img "Jaikrishnan Srinivasagam (loading)" [ref=e476]
+                            - generic [ref=e478]:
+                              - generic [ref=e479]: Jaikrishnan Srinivasagam
+                              - generic [ref=e480]:
+                                - generic [ref=e481]: Oct 23, 2025|
+                                - generic [ref=e482]: 3 min read
+                          - generic [ref=e484]:
+                            - generic "Number of views" [ref=e485]:
+                              - generic [ref=e486]: 
+                              - text: "1"
+                            - generic "Number of comments" [ref=e487]:
+                              - generic [ref=e488]: 
+                              - text: "0"
+                  - button "Load More" [ref=e490] [cursor=pointer]
+            - generic [ref=e493]:
+              - generic [ref=e495]:
+                - generic [ref=e496]: 
+                - text: Upcoming Events
+              - generic [ref=e497]:
+                - generic [ref=e498]:
+                  - generic [ref=e499]: Today
+                  - generic [ref=e500]:
+                    - link "Lunch and Learn" [ref=e502] [cursor=pointer]:
+                      - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/events/en-us/lunch-and-learn
+                    - generic [ref=e503]:
+                      - generic [ref=e504]:
+                        - text: 
+                        - paragraph [ref=e506]: Sunday, January 04, 2026-Monday, August 30, 2027
+                      - link "" [ref=e508] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e509]: 
+                - link "Calendar View" [ref=e511] [cursor=pointer]:
+                  - /url: https://akbps-smuckers-sandbox-headless.onakumina.com#/sitepages/eventlist.aspx
+          - generic [ref=e48]:
+            - generic [ref=e514]:
+              - generic [ref=e515]:
+                - link "Teams Teams" [ref=e516] [cursor=pointer]:
+                  - /url: https://teams.microsoft.com/
+                  - img "Teams" [ref=e518]
+                  - generic [ref=e519]: Teams
+                - link "Outlook Outlook" [ref=e520] [cursor=pointer]:
+                  - /url: https://outlook.office.com/mail/
+                  - img "Outlook" [ref=e522]
+                  - generic [ref=e523]: Outlook
+                - link "Word Word" [ref=e524] [cursor=pointer]:
+                  - /url: https://www.office.com/launch/word/
+                  - img "Word" [ref=e526]
+                  - generic [ref=e527]: Word
+                - link "Planner Planner" [ref=e528] [cursor=pointer]:
+                  - /url: https://tasks.office.com/
+                  - img "Planner" [ref=e530]
+                  - generic [ref=e531]: Planner
+                - link "Excel Excel" [ref=e532] [cursor=pointer]:
+                  - /url: https://www.office.com/launch/excel/
+                  - img "Excel" [ref=e534]
+                  - generic [ref=e535]: Excel
+                - link "PowerPoint PowerPoint" [ref=e536] [cursor=pointer]:
+                  - /url: https://www.office.com/launch/powerpoint/
+                  - img "PowerPoint" [ref=e538]
+                  - generic [ref=e539]: PowerPoint
+                - link "To To Do" [ref=e540] [cursor=pointer]:
+                  - /url: https://to-do.office.com/
+                  - img "To" [ref=e542]
+                  - generic [ref=e543]: To Do
+                - link "Help Help Desk" [ref=e544] [cursor=pointer]:
+                  - /url: https://www.askhr.com/
+                  - img "Help" [ref=e546]
+                  - generic [ref=e547]: Help Desk
+                - text: 
+                - button "Add Apps" [ref=e548] [cursor=pointer]:
+                  - generic [ref=e550]: 
+                  - generic [ref=e551]: Add Apps
+              - text: 
+            - paragraph [ref=e55]:
+              - strong [ref=e56]:
+                - text: Guest Wifi for the Dec 2025
+                - img "wifi-icon-15" [ref=e57]
+              - text: XXyyZZxxYYzz
+      - generic [ref=e58]:
+        - text: 
+        - generic [ref=e59]:
+          - generic [ref=e60]: How do you like the intranet?
+          - link "Tell Us What You Think" [ref=e61] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e62]: 
+            - text: Tell Us What You Think
+        - list [ref=e554]:
+          - listitem [ref=e555]:
+            - link "Getting to Know Us" [ref=e556] [cursor=pointer]:
+              - /url: https://akbps-smuckers-sandbox-headless.onakumina.com/
+            - list [ref=e559]:
+              - listitem [ref=e560]:
+                - link "Akumina Community" [ref=e561] [cursor=pointer]:
+                  - /url: https://akbps-smuckers-sandbox-headless.onakumina.com/
+              - listitem [ref=e562]:
+                - link "Support" [ref=e563] [cursor=pointer]:
+                  - /url: https://akbps-smuckers-sandbox-headless.onakumina.com/
+          - listitem [ref=e564]:
+            - link "Privacy" [ref=e565] [cursor=pointer]:
+              - /url: https://akbps-smuckers-sandbox-headless.onakumina.com/
+            - list [ref=e568]:
+              - listitem [ref=e569]:
+                - link "Privacy Policy" [ref=e570] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e571]:
+                - link "Cookie Policy" [ref=e572] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - listitem [ref=e573]:
+            - link "Terms and Conditions" [ref=e574] [cursor=pointer]:
+              - /url: https://akbps-smuckers-sandbox-headless.onakumina.com/
+        - generic [ref=e64]:
+          - link "Company Logo. (loading)" [ref=e66] [cursor=pointer]:
+            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+            - img "Company Logo. (loading)" [ref=e67]
+          - text: "|"
+          - generic [ref=e68]: © 2026 The J.M. Smucker Co. All rights reserved.
+    - text:    
+  - navigation [ref=e576]:
+    - generic [ref=e577]:
+      - generic [ref=e578]:
+        - button "Create New" [ref=e581] [cursor=pointer]:
+          - generic "Create New" [ref=e582]: 
+        - button "Pages" [ref=e585] [cursor=pointer]:
+          - generic "Pages" [ref=e586]: 
+        - button "Structured Content" [ref=e589] [cursor=pointer]:
+          - generic "Structured Content" [ref=e590]: 
+        - button "Asset Library" [ref=e593] [cursor=pointer]:
+          - generic "Asset Library" [ref=e594]: 
+        - button "Menus" [ref=e597] [cursor=pointer]:
+          - generic "Menus" [ref=e598]: 
+        - button "Analytics" [ref=e601] [cursor=pointer]:
+          - generic "Analytics" [ref=e602]: 
+        - button "Awards & Recognitions" [ref=e605] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e606]: 
+        - button "Broadcast Center" [ref=e609] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e610]: 
+        - button "Workflows" [ref=e613] [cursor=pointer]:
+          - generic "Workflows" [ref=e614]: 
+        - button "Editorial Notifications" [ref=e617] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e618]: 
+      - generic [ref=e619]:
+        - button "Show Management Rail" [ref=e622] [cursor=pointer]:
+          - generic "Show Management Rail" [ref=e623]: 
+        - button "Launch App Manager" [ref=e626] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e627]: 
+        - button "Debug" [ref=e630] [cursor=pointer]:
+          - generic "Debug" [ref=e631]: 
+        - generic [ref=e633]:
+          - img "Akumina Inc." [ref=e635] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e636] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e637]: 

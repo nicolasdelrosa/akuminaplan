@@ -1,0 +1,93 @@
+- generic [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e42] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e43]: 
+            - generic [ref=e46]:
+              - generic: 
+              - heading "Dashboard" [level=1] [ref=e47]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "Company logo." [ref=e13] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e14]
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - text: 
+              - generic [ref=e17]:
+                - generic [ref=e48]:
+                  - textbox "Search this site." [ref=e49]
+                  - textbox "Search this site." [active] [ref=e18]:
+                    - /placeholder: Search
+                    - text: small
+                - button "Search this site." [ref=e19] [cursor=pointer]:
+                  - generic "Search this site." [ref=e20]: 
+              - generic [ref=e52]:
+                - list [ref=e54]:
+                  - listitem [ref=e55]:
+                    - link "Pages" [ref=e56] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                      - generic [ref=e57]: 
+                      - generic [ref=e58]: Pages
+                  - listitem [ref=e59]:
+                    - link "Documents" [ref=e60] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                      - generic [ref=e61]: 
+                      - generic [ref=e62]: Documents
+                  - listitem [ref=e63]:
+                    - link "People" [ref=e64] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                      - generic [ref=e65]: 
+                      - generic [ref=e66]: People
+                  - listitem [ref=e67]:
+                    - link "Media" [ref=e68] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                      - generic [ref=e69]: 
+                      - generic [ref=e70]: Media
+                  - listitem [ref=e71]:
+                    - link "Resources" [ref=e72] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                      - generic [ref=e73]: 
+                      - generic [ref=e74]: Resources
+                - generic [ref=e76]:
+                  - 'link "Mesh for Microsoft Teams More than a year and a half into a global pandemic that forced workers around the world to abandon their offices and learn to collaborate online, Microsoft productivity experts have observed two trends: remote workers are far more efficient than most business leaders ever imagined, and they miss..." [ref=e79] [cursor=pointer]':
+                    - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/foundationnews/en-us/mesh-for-microsoft-teams
+                    - img [ref=e81]
+                    - generic [ref=e82]:
+                      - generic [ref=e83]: Mesh for Microsoft Teams
+                      - generic [ref=e84]: "More than a year and a half into a global pandemic that forced workers around the world to abandon their offices and learn to collaborate online, Microsoft productivity experts have observed two trends: remote workers are far more efficient than most business leaders ever imagined, and they miss..."
+                  - link "Go to search results" [ref=e86] [cursor=pointer]:
+                    - /url: javascript:void(0)
+            - button "Save Bookmark" [ref=e88] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e89]: 
+            - text:    
+            - list [ref=e21]:
+              - listitem [ref=e22]:
+                - button "Notifications" [ref=e23] [cursor=pointer]:
+                  - img "My profile picture." [ref=e24]
+                  - generic "Offline" [ref=e90]
+                - text:    
+        - generic [ref=e91]:
+          - text: 
+          - navigation [ref=e92]:
+            - text: 
+            - list [ref=e93]:
+              - listitem [ref=e94]:
+                - link "Home" [ref=e96] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+              - listitem [ref=e97]:
+                - generic [ref=e98]:
+                  - link "Court Info" [ref=e99] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e101]: 
+              - listitem [ref=e102]:
+                - link "Events" [ref=e104] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/eventlist.aspx
+              - listitem [ref=e105]:
+                - link "Staff Directory" [ref=e107] [cursor=pointer]:
+                  - /url:

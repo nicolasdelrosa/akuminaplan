@@ -1,0 +1,228 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e9] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e10]: 
+            - generic [ref=e13]:
+              - generic: 
+              - heading "Dashboard" [level=1] [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - link "Company logo." [ref=e19] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - text: 
+              - generic [ref=e23]:
+                - textbox "Search this site." [ref=e24]:
+                  - /placeholder: Search
+                  - text: Small Claims Form
+                - button "Search this site." [ref=e25] [cursor=pointer]:
+                  - generic "Search this site." [ref=e26]: 
+            - button "Save Bookmark" [ref=e28] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e29]: 
+            - text:    
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - generic [ref=e37]:
+          - text: 
+          - navigation [ref=e38]:
+            - text: 
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - link "Home" [ref=e42] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+              - listitem [ref=e43]:
+                - generic [ref=e44]:
+                  - link "Court Info" [ref=e45] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e47]: 
+              - listitem [ref=e48]:
+                - link "Events" [ref=e50] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/eventlist.aspx
+              - listitem [ref=e51]:
+                - link "Staff Directory" [ref=e53] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/sitepages/peoplefinder.aspx
+              - listitem [ref=e54]:
+                - generic [ref=e55]:
+                  - link "Department Site" [ref=e56] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e58]: 
+      - generic [ref=e59]:
+        - navigation "breadcrumb" [ref=e65]:
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "Home" [ref=e68] [cursor=pointer]:
+                - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e69]: / Search
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - heading "Filters" [level=2] [ref=e84]
+                - text: 
+              - button "Clear Filters" [ref=e87] [cursor=pointer]
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - generic [ref=e90]:
+                    - heading "Look in" [level=3] [ref=e91]
+                    - link "" [ref=e92] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e93]: 
+                  - list [ref=e95]:
+                    - listitem [ref=e96]:
+                      - generic [ref=e97]: Site Content
+                      - list [ref=e98]:
+                        - listitem [ref=e99]:
+                          - generic [ref=e100] [cursor=pointer]:
+                            - checkbox "Document" [checked] [ref=e101]
+                            - generic [ref=e102]: Document
+                        - listitem [ref=e104]:
+                          - generic [ref=e105] [cursor=pointer]:
+                            - checkbox "Pages" [checked] [ref=e106]
+                            - generic [ref=e107]: Pages
+                        - listitem [ref=e109]:
+                          - generic [ref=e110] [cursor=pointer]:
+                            - checkbox "Media" [checked] [ref=e111]
+                            - generic [ref=e112]: Media
+                    - listitem [ref=e114]:
+                      - generic [ref=e115] [cursor=pointer]:
+                        - checkbox "People" [ref=e116]
+                        - generic [ref=e117]: People
+                - generic [ref=e119]:
+                  - generic [ref=e120]:
+                    - heading "Last Modified On" [level=3] [ref=e121]
+                    - link "" [ref=e122] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e123]: 
+                  - generic [ref=e124]:
+                    - generic [ref=e125]:
+                      - generic [ref=e127] [cursor=pointer]:
+                        - radio "Any date" [checked] [ref=e128]
+                        - generic [ref=e130]: Any date
+                      - generic [ref=e132] [cursor=pointer]:
+                        - radio "Today" [ref=e133]
+                        - generic [ref=e135]: Today
+                      - generic [ref=e137] [cursor=pointer]:
+                        - radio "Last 7 days" [ref=e138]
+                        - generic [ref=e140]: Last 7 days
+                      - generic [ref=e142] [cursor=pointer]:
+                        - radio "Last 30 days" [ref=e143]
+                        - generic [ref=e145]: Last 30 days
+                      - generic [ref=e147] [cursor=pointer]:
+                        - radio "Last 90 days" [ref=e148]
+                        - generic [ref=e150]: Last 90 days
+                      - generic [ref=e152] [cursor=pointer]:
+                        - radio "Date range" [ref=e153]
+                        - generic [ref=e155]: Date range
+                    - text:  
+            - generic [ref=e156]:
+              - generic:
+                - generic: 
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Document
+                  - button "Remove Item" [ref=e160] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e161]: 
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Pages
+                  - button "Remove Item" [ref=e164] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e165]: 
+                - generic [ref=e166]:
+                  - generic [ref=e167]: Media
+                  - button "Remove Item" [ref=e168] [cursor=pointer]:
+                    - generic "Remove Item" [ref=e169]: 
+              - generic [ref=e170]:
+                - paragraph [ref=e171]:
+                  - text: Your search for "
+                  - strong [ref=e172]: Small Claims Form
+                  - text: "\" did not return any results, try searching again."
+                - heading "Search Tips" [level=3] [ref=e173]
+                - list [ref=e174]:
+                  - listitem [ref=e175]: Check your spelling and try again
+                  - listitem [ref=e176]: Try a similar but different search term
+                  - listitem [ref=e177]: Try looking within site or subsite
+                  - listitem [ref=e178]: Try changing your filters
+          - text: 
+      - generic [ref=e179]:
+        - text: 
+        - generic [ref=e180]: 
+        - list [ref=e184]:
+          - listitem [ref=e185]:
+            - link "Get to know us" [ref=e186] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e189]:
+              - listitem [ref=e190]:
+                - link "Akumina Community" [ref=e191] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e192]:
+                - link "Support" [ref=e193] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e194]:
+                - link "Developer Portal" [ref=e195] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e196]:
+            - link "Privacy" [ref=e197] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e200]:
+              - listitem [ref=e201]:
+                - link "Privacy policy" [ref=e202] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e203]:
+                - link "Cookie policy" [ref=e204] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - listitem [ref=e205]:
+            - link "Terms & conditions" [ref=e206] [cursor=pointer]:
+              - /url: javascript:void(0)
+        - generic [ref=e207]:
+          - link "Company Logo." [ref=e209] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+            - img "Company Logo." [ref=e210]
+          - text: "|"
+          - generic [ref=e211]: © Superior Court of California, County of Los Angeles All rights reserved.
+    - text:    
+  - navigation [ref=e213]:
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - button "Expand Menu" [ref=e217] [cursor=pointer]:
+          - generic "Expand Menu" [ref=e218]: 
+        - button "Create New" [ref=e221] [cursor=pointer]:
+          - generic "Create New" [ref=e222]: 
+        - button "Pages" [ref=e224] [cursor=pointer]:
+          - generic "Pages" [ref=e225]: 
+        - button "Structured Content" [ref=e227] [cursor=pointer]:
+          - generic "Structured Content" [ref=e228]: 
+        - button "Asset Library" [ref=e230] [cursor=pointer]:
+          - generic "Asset Library" [ref=e231]: 
+        - button "Menus" [ref=e233] [cursor=pointer]:
+          - generic "Menus" [ref=e234]: 
+        - button "Analytics" [ref=e237] [cursor=pointer]:
+          - generic "Analytics" [ref=e238]: 
+        - button "Awards & Recognitions" [ref=e240] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e241]: 
+        - button "Broadcast Center" [ref=e243] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e244]: 
+        - button "Workflows" [ref=e246] [cursor=pointer]:
+          - generic "Workflows" [ref=e247]: 
+        - button "Editorial Notifications" [ref=e249] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e250]: 
+        - button "Launch App Manager" [ref=e252] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e253]: 
+      - generic [ref=e254]:
+        - button "Debug" [ref=e256] [cursor=pointer]:
+          - generic "Debug" [ref=e257]: 
+        - generic [ref=e259]:
+          - img "Akumina Inc." [ref=e261] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e262] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e263]: 

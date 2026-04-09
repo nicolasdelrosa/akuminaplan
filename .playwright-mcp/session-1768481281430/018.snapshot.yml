@@ -1,0 +1,26 @@
+- generic [ref=e5]:
+  - img "Imagem do plano de fundo da organização" [ref=e6]
+  - generic [ref=e8]:
+    - generic [ref=e14]:
+      - img "Logotipo da faixa da organização" [ref=e17]
+      - main [ref=e18]:
+        - generic [ref=e21]:
+          - heading "Escolha uma conta" [level=1] [ref=e25]
+          - list "Escolha uma conta" [ref=e28]:
+            - listitem [ref=e30] [cursor=pointer]:
+              - button "Entre com a conta corporativa ou de estudante akumina@akbps.onmicrosoft.com." [active] [ref=e31]:
+                - generic [ref=e34]:
+                  - generic [ref=e35]: Akumina Inc.
+                  - generic [ref=e36]: akumina@akbps.onmicrosoft.com
+                  - generic [ref=e37]: Entrou
+              - button "Abrir o menu" [ref=e39]
+            - listitem [ref=e40] [cursor=pointer]:
+              - button "Use outra conta" [ref=e41]:
+                - generic [ref=e45]: Use outra conta
+    - contentinfo [ref=e46]:
+      - generic [ref=e47]:
+        - link "Termos de uso" [ref=e48] [cursor=pointer]:
+          - /url: https://www.microsoft.com/pt-BR/servicesagreement/
+        - link "Privacidade e cookies" [ref=e49] [cursor=pointer]:
+          - /url: https://privacy.microsoft.com/pt-BR/privacystatement
+        - button "Clique aqui para obter informações sobre solução de problemas" [ref=e50] [cursor=pointer]: ...

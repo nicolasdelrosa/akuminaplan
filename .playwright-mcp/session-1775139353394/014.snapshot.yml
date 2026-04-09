@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:  
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Company logo." [ref=e17] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - text: 
+              - generic [ref=e21]:
+                - textbox "Search this site." [ref=e22]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e23] [cursor=pointer]:
+                  - generic "Search this site." [ref=e24]: 
+            - text: 
+            - generic "Notifications" [ref=e25]:
+              - generic [ref=e27]:
+                - link "" [ref=e28] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e29]: 
+                - generic:  
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - generic [ref=e37]:
+          - text: 
+          - navigation [ref=e38]:
+            - text: 
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - generic [ref=e41]:
+                  - link "Company" [ref=e42] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e44]: 
+                - text:   
+              - listitem [ref=e45]:
+                - generic [ref=e46]:
+                  - link "Departments" [ref=e47] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e49]: 
+                - text: 
+              - listitem [ref=e50]:
+                - link "News Center" [ref=e52] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/sites/ufa-sandbox-delivery#/sitepages/newslist.aspx
+              - listitem [ref=e53]:
+                - link "Activity Stream" [ref=e55] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/sites/ufa-sandbox-delivery#/sitepages/activitystream.aspx
+              - listitem [ref=e56]:
+                - generic [ref=e57]:
+                  - link "Directory" [ref=e58] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e60]: 
+                - text:  
+              - listitem [ref=e61]:
+                - generic [ref=e62]:
+                  - link "Alison

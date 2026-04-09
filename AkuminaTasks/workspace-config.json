@@ -1,0 +1,60 @@
+{
+  "workspaceName": "AkuminaPlan",
+  "jira": {
+    "site": "akumina.atlassian.net",
+    "defaultProject": null,
+    "projectMappings": {
+      "JMSMUC": {
+        "name": "JM Smuckers",
+        "repoHints": [
+          "tests/JMSMUC",
+          "deployments/JMSMUC"
+        ]
+      },
+      "LAC": {
+        "name": "LA Courts",
+        "repoHints": [
+          "tests/LAC",
+          "deployments/LASC"
+        ]
+      },
+      "UFA": {
+        "name": "UFA",
+        "repoHints": [
+          "tests/UFA",
+          "deployments/UFA"
+        ]
+      },
+      "WCB": {
+        "name": "WCB",
+        "repoHints": [
+          "AkuminaTasks",
+          "deployments/WCB"
+        ]
+      },
+      "BCRS": {
+        "name": "Ball Corp",
+        "repoHints": [
+          "deployments/BCRS"
+        ]
+      },
+      "POM": {
+        "name": "Pomerleau",
+        "repoHints": [
+          "deployments/POM"
+        ]
+      }
+    }
+  },
+  "paths": {
+    "taskDir": "AkuminaTasks",
+    "taskDataDir": "AkuminaTasks/.data",
+    "taskTemplate": "AkuminaTasks/templates/task-context-template.md",
+    "playwrightArtifacts": ".playwright-mcp"
+  },
+  "commands": {
+    "setupAtlassianCli": "powershell -File scripts/setup-atlassian-cli.ps1",
+    "playwrightAll": "npx playwright test",
+    "playwrightAuth": "npx playwright test --project=setup"
+  }
+}

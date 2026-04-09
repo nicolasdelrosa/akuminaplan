@@ -1,0 +1,34 @@
+{
+  "Get My Jira Issues": {
+    "scope": "",
+    "prefix": "myissues",
+    "body": [
+      "Update #file:my-jira-issues.csv with all my Jira issues using @atlassian - fetch issues assigned to me with status in (In Progress, Backlog, To Do, Selected for Development, Open) or updated in the last 7 days. Export to CSV with columns: Key, Summary, Status, Priority, Type, Project, Created, Updated"
+    ],
+    "description": "Fetch and update my-jira-issues.csv with current Jira issues"
+  },
+  "Get In Progress Jira Issues": {
+    "scope": "",
+    "prefix": "inprogress",
+    "body": [
+      "@atlassian show my in progress issues"
+    ],
+    "description": "Show only in progress Jira issues"
+  },
+  "Get All My Jira Issues": {
+    "scope": "",
+    "prefix": "allissues",
+    "body": [
+      "@atlassian show all issues assigned to me"
+    ],
+    "description": "Show all Jira issues assigned to me"
+  },
+  "Jira Issue Details": {
+    "scope": "",
+    "prefix": "jiradetails",
+    "body": [
+      "@atlassian get details for issue $1"
+    ],
+    "description": "Get details for a specific Jira issue"
+  }
+}

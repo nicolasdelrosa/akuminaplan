@@ -1,0 +1,29 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img "Imagem do plano de fundo da organização" [ref=e2]
+          - generic [ref=e3]:
+            - generic [ref=e9]:
+              - img "Microsoft" [ref=e12]
+              - main [ref=e13]:
+                - generic [ref=e14]:
+                  - generic "akumina@akbps.onmicrosoft.com" [ref=e18]
+                  - generic [ref=e20]:
+                    - heading "Continuar conectado?" [level=1] [ref=e21]
+                    - generic [ref=e23]: Faça isso para reduzir o número de vezes que será solicitado a entrar.
+                    - generic [ref=e24]:
+                      - generic [ref=e27] [cursor=pointer]:
+                        - checkbox "Não mostrar isso novamente" [ref=e28]
+                        - text: Não mostrar isso novamente
+                      - generic [ref=e29]:
+                        - button "Não" [ref=e31] [cursor=pointer]
+                        - button "Sim" [active] [ref=e33] [cursor=pointer]
+            - contentinfo [ref=e34]:
+              - generic [ref=e35]:
+                - link "Termos de uso" [ref=e36] [cursor=pointer]:
+                  - /url: https://www.microsoft.com/pt-BR/servicesagreement/
+                - link "Privacidade e cookies" [ref=e37] [cursor=pointer]:
+                  - /url: https://privacy.microsoft.com/pt-BR/privacystatement
+                - button "Clique aqui para obter informações sobre solução de problemas" [ref=e38] [cursor=pointer]: ...

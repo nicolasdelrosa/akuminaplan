@@ -1,0 +1,37 @@
+- main "main-header" [ref=e4]:
+  - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+  - button "Skip to content" [ref=e6] [cursor=pointer]
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - link "Company logo." [ref=e13] [cursor=pointer]:
+        - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+        - img "Company logo." [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - text: 
+          - generic [ref=e17]:
+            - textbox "Search this site." [ref=e18]
+            - button "Search this site." [ref=e19] [cursor=pointer]:
+              - generic "Search this site." [ref=e20]: 
+        - generic: 
+        - generic "Notifications"
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - button "Notifications" [ref=e23] [cursor=pointer]:
+              - img "My profile picture." [ref=e24]
+            - text:    
+    - generic [ref=e27]:
+      - text: 
+      - generic [ref=e28]:
+        - generic [ref=e29]: How do you like the intranet?
+        - link "Tell Us What You Think" [ref=e30] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e31]: 
+          - text: Tell Us What You Think
+      - generic [ref=e33]:
+        - link "Company Logo. (loading)" [ref=e35] [cursor=pointer]:
+          - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+          - img "Company Logo. (loading)" [ref=e36]
+        - text: "|"
+        - generic [ref=e37]: © 2026 The J.M. Smucker Co. All rights reserved.
+  - text:    

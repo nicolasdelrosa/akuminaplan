@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e38] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e39]: 
+            - generic [ref=e42]:
+              - generic: 
+              - heading "Mission Control" [level=1] [ref=e43]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "Company logo." [ref=e13] [cursor=pointer]:
+            - /url: https://akbps-smuckers-sandbox-headless.onakumina.com
+            - img "Company logo." [ref=e14]
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - text: 
+              - generic [ref=e17]:
+                - textbox "Search this site." [ref=e18]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e19] [cursor=pointer]:
+                  - generic "Search this site." [ref=e20]: 
+            - button "Save Bookmark" [ref=e45] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e46]: 
+            - generic "Notifications" [ref=e47]:
+              - generic [ref=e49]:
+                - link "Show Notifications" [ref=e50] [cursor=pointer]:
+                  - /url: "#"
+                  - generic "Show Notifications" [ref=e51]: 
+                - generic:   
+            - list [ref=e21]:
+              - listitem [ref=e22]:
+                - button "Notifications" [ref=e23] [cursor=pointer]:
+                  - img "My profile picture." [ref=e24]
+                  - generic "Offline" [ref=e52]
+                - text:    
+        - generic [ref=e55]:
+          - text: 
+          - navigation [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - generic [ref=e59]:
+                  - link "Our Company"

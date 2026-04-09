@@ -1,0 +1,296 @@
+- generic [ref=e1]:
+  - generic [ref=e332]:
+    - banner [ref=e333]:
+      - heading "Add Favorites" [level=2] [ref=e334]
+    - generic [ref=e335]:
+      - generic [ref=e336]:
+        - generic [ref=e337]: Title
+        - textbox "Add a Title" [ref=e339]: Small Claims Forms
+      - generic [ref=e340]:
+        - generic [ref=e341]: URL
+        - textbox "Add a URL" [ref=e343]: https://courtspace.lacourt.ca.gov/smallclaimsforms.pdf#external
+      - generic [ref=e346] [cursor=pointer]:
+        - checkbox "Open in new window" [checked] [ref=e347]
+        - generic [ref=e348]: Open in new window
+      - generic [ref=e350]:
+        - generic [ref=e351]: Type
+        - combobox [ref=e353]:
+          - option "Shortcuts"
+          - option "News"
+          - option "Contacts"
+          - option "Quick Links" [selected]
+    - contentinfo [ref=e354]:
+      - button "Cancel" [ref=e355] [cursor=pointer]
+      - button "Save" [ref=e356] [cursor=pointer]
+    - button "×" [ref=e357] [cursor=pointer]
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e9] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e10]: 
+            - generic [ref=e13]:
+              - generic: 
+              - heading "Dashboard" [level=1] [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - link "Company logo." [ref=e19] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - text: 
+              - generic [ref=e23]:
+                - textbox "Search this site." [ref=e24]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e25] [cursor=pointer]:
+                  - generic "Search this site." [ref=e26]: 
+            - button "Save Bookmark" [ref=e28] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e29]: 
+            - text:    
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - generic [ref=e37]:
+          - text: 
+          - navigation [ref=e38]:
+            - text: 
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - link "Home" [ref=e42] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+              - listitem [ref=e43]:
+                - generic [ref=e44]:
+                  - link "Court Info" [ref=e45] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e47]: 
+              - listitem [ref=e48]:
+                - link "Events" [ref=e50] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/eventlist.aspx
+              - listitem [ref=e51]:
+                - link "Staff Directory" [ref=e53] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/sitepages/peoplefinder.aspx
+              - listitem [ref=e54]:
+                - generic [ref=e55]:
+                  - link "Department Site" [ref=e56] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e58]: 
+      - generic [ref=e59]:
+        - navigation "breadcrumb" [ref=e65]:
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "Home" [ref=e68] [cursor=pointer]:
+                - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e69]: / Court Resources
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e171]:
+              - textbox "Search court resources." [ref=e172]:
+                - /placeholder: Search court resources...
+              - button "Search" [ref=e173] [cursor=pointer]:
+                - generic [ref=e174]: 
+            - generic [ref=e175]:
+              - button "Grid View" [ref=e176] [cursor=pointer]:
+                - generic [ref=e177]: 
+              - button "List View" [ref=e178] [cursor=pointer]:
+                - generic [ref=e179]: 
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading "Filters" [level=2] [ref=e184]
+              - button "Clear Filters" [ref=e187] [cursor=pointer]
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - generic [ref=e190]:
+                    - heading "Litigation Type" [level=3] [ref=e191]
+                    - link "" [ref=e192] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e193]: 
+                  - generic [ref=e194]:
+                    - textbox "Search Litigation Type" [ref=e195]:
+                      - /placeholder: Search
+                    - list [ref=e196]:
+                      - listitem [ref=e197]:
+                        - generic [ref=e198] [cursor=pointer]:
+                          - checkbox "Appellate" [ref=e199]
+                          - generic [ref=e201]: Appellate
+                      - listitem [ref=e202]:
+                        - generic [ref=e203] [cursor=pointer]:
+                          - checkbox "Civil" [ref=e204]
+                          - generic [ref=e206]: Civil
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - heading "Resource Type" [level=3] [ref=e209]
+                    - link "" [ref=e210] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e211]: 
+                  - generic [ref=e212]:
+                    - textbox "Search Resource Type" [ref=e213]:
+                      - /placeholder: Search
+                    - list [ref=e214]:
+                      - listitem [ref=e215]:
+                        - generic [ref=e216] [cursor=pointer]:
+                          - checkbox "Court Application" [ref=e217]
+                          - generic [ref=e219]: Court Application
+                      - listitem [ref=e220]:
+                        - generic [ref=e221] [cursor=pointer]:
+                          - checkbox "Forms" [ref=e222]
+                          - generic [ref=e224]: Forms
+                      - listitem [ref=e225]:
+                        - generic [ref=e226] [cursor=pointer]:
+                          - checkbox "PDF" [ref=e227]
+                          - generic [ref=e229]: PDF
+                - generic [ref=e230]:
+                  - generic [ref=e231]:
+                    - heading "Department" [level=3] [ref=e232]
+                    - link "" [ref=e233] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e234]: 
+                  - generic [ref=e235]:
+                    - textbox "Search Department" [ref=e236]:
+                      - /placeholder: Search
+                    - list [ref=e237]:
+                      - listitem [ref=e238]:
+                        - generic [ref=e239] [cursor=pointer]:
+                          - checkbox "Administration and Finance" [ref=e240]
+                          - generic [ref=e242]: Administration and Finance
+                      - listitem [ref=e243]:
+                        - generic [ref=e244] [cursor=pointer]:
+                          - checkbox "Court Technology (CTS)" [ref=e245]
+                          - generic [ref=e247]: Court Technology (CTS)
+                      - listitem [ref=e248]:
+                        - generic [ref=e249] [cursor=pointer]:
+                          - checkbox "Courtroom Support" [ref=e250]
+                          - generic [ref=e252]: Courtroom Support
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - heading "Court Resources" [level=2] [ref=e256]
+                - generic [ref=e257]: 14 resources found
+              - text:     
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - generic [ref=e262]: 
+                  - button "Add Small Claims Forms" [ref=e263] [cursor=pointer]:
+                    - generic [ref=e264]: 
+                  - generic [ref=e266]:
+                    - link "Small Claims Forms" [ref=e267] [cursor=pointer]:
+                      - /url: https://courtspace.lacourt.ca.gov/smallclaimsforms.pdf#external
+                      - heading "Small Claims Forms" [level=3] [ref=e268]
+                    - generic [ref=e271]: Forms and documents for small claims court proceedings
+                - generic [ref=e272]:
+                  - img "Test 5" [ref=e275]
+                  - button "Add Test 5" [ref=e276] [cursor=pointer]:
+                    - generic [ref=e277]: 
+                  - link "Test 5" [ref=e280] [cursor=pointer]:
+                    - /url: https://www.test5.com
+                    - heading "Test 5" [level=3] [ref=e281]
+                - generic [ref=e282]:
+                  - generic [ref=e285]: 
+                  - button "Add Case Calendar" [ref=e286] [cursor=pointer]:
+                    - generic [ref=e287]: 
+                  - generic [ref=e289]:
+                    - link "Case Calendar" [ref=e290] [cursor=pointer]:
+                      - /url: https://courtspace.lacourt.ca.gov/calendar
+                      - heading "Case Calendar" [level=3] [ref=e291]
+                    - generic [ref=e294]: View and manage court case calendar
+                - generic [ref=e295]:
+                  - generic [ref=e298]: 
+                  - button "Add Policies and Procedures" [ref=e299] [cursor=pointer]:
+                    - generic [ref=e300]: 
+                  - generic [ref=e302]:
+                    - link "Policies and Procedures" [ref=e303] [cursor=pointer]:
+                      - /url: https://courtspace.lacourt.ca.gov/policies
+                      - heading "Policies and Procedures" [level=3] [ref=e304]
+                    - generic [ref=e306]: Court policies and procedural guidelines
+                - generic [ref=e307]:
+                  - generic [ref=e310]: 
+                  - button "Add Appointment Scheduler" [ref=e311] [cursor=pointer]:
+                    - generic [ref=e312]: 
+                  - link "Appointment Scheduler" [ref=e315] [cursor=pointer]:
+                    - /url: https://courtspace.lacourt.ca.gov/appointmentscheduler
+                    - heading "Appointment Scheduler" [level=3] [ref=e316]
+                - generic [ref=e317]:
+                  - generic [ref=e320]: 
+                  - button "Add Case File Locator (Version 2)" [ref=e321] [cursor=pointer]:
+                    - generic [ref=e322]: 
+                  - link "Case File Locator (Version 2)" [ref=e325] [cursor=pointer]:
+                    - /url: https://courtspace.lacourt.ca.gov/casefilelocator
+                    - heading "Case File Locator (Version 2)" [level=3] [ref=e326]
+              - button "Show More" [ref=e328] [cursor=pointer]
+      - generic [ref=e70]:
+        - text: 
+        - generic [ref=e71]: 
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Get to know us" [ref=e77] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e80]:
+              - listitem [ref=e81]:
+                - link "Akumina Community" [ref=e82] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e83]:
+                - link "Support" [ref=e84] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e85]:
+                - link "Developer Portal" [ref=e86] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e87]:
+            - link "Privacy" [ref=e88] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e91]:
+              - listitem [ref=e92]:
+                - link "Privacy policy" [ref=e93] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e94]:
+                - link "Cookie policy" [ref=e95] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - listitem [ref=e96]:
+            - link "Terms & conditions" [ref=e97] [cursor=pointer]:
+              - /url: javascript:void(0)
+        - generic [ref=e98]:
+          - link "Company Logo." [ref=e100] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+            - img "Company Logo." [ref=e101]
+          - text: "|"
+          - generic [ref=e102]: © Superior Court of California, County of Los Angeles All rights reserved.
+    - text:    
+  - navigation [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - button "Expand Menu" [ref=e108] [cursor=pointer]:
+          - generic "Expand Menu" [ref=e109]: 
+        - button "Create New" [ref=e112] [cursor=pointer]:
+          - generic "Create New" [ref=e113]: 
+        - button "Pages" [ref=e115] [cursor=pointer]:
+          - generic "Pages" [ref=e116]: 
+        - button "Structured Content" [ref=e118] [cursor=pointer]:
+          - generic "Structured Content" [ref=e119]: 
+        - button "Asset Library" [ref=e121] [cursor=pointer]:
+          - generic "Asset Library" [ref=e122]: 
+        - button "Menus" [ref=e124] [cursor=pointer]:
+          - generic "Menus" [ref=e125]: 
+        - button "Analytics" [ref=e128] [cursor=pointer]:
+          - generic "Analytics" [ref=e129]: 
+        - button "Awards & Recognitions" [ref=e131] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e132]: 
+        - button "Broadcast Center" [ref=e134] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e135]: 
+        - button "Workflows" [ref=e137] [cursor=pointer]:
+          - generic "Workflows" [ref=e138]: 
+        - button "Editorial Notifications" [ref=e140] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e141]: 
+        - button "Launch App Manager" [ref=e143] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e144]: 
+      - generic [ref=e145]:
+        - button "Debug" [ref=e147] [cursor=pointer]:
+          - generic "Debug" [ref=e148]: 
+        - generic [ref=e150]:
+          - img "Akumina Inc." [ref=e152] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e153] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e154]: 

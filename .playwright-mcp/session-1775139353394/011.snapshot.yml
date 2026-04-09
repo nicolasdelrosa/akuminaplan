@@ -1,0 +1,126 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - text: 
+            - generic [ref=e11]:
+              - generic: 
+              - heading "Mission Control" [level=1] [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Company logo." [ref=e17] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - text: 
+              - generic [ref=e21]:
+                - textbox "Search this site." [ref=e22]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e23] [cursor=pointer]:
+                  - generic "Search this site." [ref=e24]: 
+            - text: 
+            - generic "Notifications" [ref=e25]:
+              - generic [ref=e27]:
+                - link "" [ref=e28] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e29]: 
+                - generic:  
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - generic [ref=e37]:
+          - text: 
+          - navigation [ref=e38]:
+            - text: 
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - generic [ref=e41]:
+                  - link "Company" [ref=e42] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e44]: 
+                - text:   
+              - listitem [ref=e45]:
+                - generic [ref=e46]:
+                  - link "Departments" [ref=e47] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e49]: 
+                - text: 
+              - listitem [ref=e50]:
+                - link "News Center" [ref=e52] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/sites/ufa-sandbox-delivery#/sitepages/newslist.aspx
+              - listitem [ref=e53]:
+                - link "Activity Stream" [ref=e55] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.com/sites/ufa-sandbox-delivery#/sitepages/activitystream.aspx
+              - listitem [ref=e56]:
+                - generic [ref=e57]:
+                  - link "Directory" [ref=e58] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e60]: 
+                - text:  
+              - listitem [ref=e61]:
+                - generic [ref=e62]:
+                  - link "Alison Menu" [ref=e63] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e65]: 
+              - listitem [ref=e66]:
+                - generic [ref=e67]:
+                  - link "AlisonTest" [ref=e68] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                  - generic [ref=e70]: 
+      - generic [ref=e71]:
+        - navigation "breadcrumb" [ref=e74]:
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "Home" [ref=e77] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - listitem [ref=e78]:
+              - text: /
+              - link "ufa-sandbox-department" [ref=e79] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/sites/ufa-sandbox-department
+            - listitem [ref=e80]: / Department News 1
+        - generic [ref=e82]:
+          - button "department menu Information Technology" [ref=e89] [cursor=pointer]:
+            - generic "department menu" [ref=e90]: 
+            - generic [ref=e91]: Information Technology
+          - article [ref=e100]:
+            - generic [ref=e102]:
+              - img "Testimage4" [ref=e105]
+              - generic [ref=e107]:
+                - heading "Department News 1" [level=2] [ref=e108]
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic [ref=e111]:
+                      - img "Alison Haynes" [ref=e113]
+                      - generic [ref=e115]:
+                        - link "Alison Haynes" [ref=e117] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                        - generic [ref=e118]: 263 days ago | 2 min read
+                    - text: 
+                  - generic [ref=e119]:
+                    - generic [ref=e120]:
+                      - generic [ref=e123] [cursor=pointer]:
+                        - generic [ref=e124]:
+                          - generic [ref=e125]: 
+                          - text: LIKE
+                        - text: 
+                      - list [ref=e130]:
+                        - listitem [ref=e131]:
+                          - generic [ref=e132]: Be the first to LIKE this
+                    - generic [ref=e133]:
+                      - generic "Number of views" [ref=e134]:
+                        - generic [ref=e135]: 
+                        - text: "8"
+                      - generic "Number of comments" [ref=e136]:
+                        - generic [ref=e137]: 
+                        - text: "0"
+            - generic [ref=e140]:
+              - generic [ref=e141]: Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1 Department News 1Department News 1Department News 1Department News
+              - paragraph [ref=e145]: Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News 1Department News

@@ -1,0 +1,30 @@
+- generic [ref=e5]:
+  - img "Imagem do plano de fundo da organização" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e13]:
+      - img "Microsoft" [ref=e16]
+      - main [ref=e17]:
+        - generic [ref=e20]:
+          - heading "Entrar" [level=1] [ref=e24]
+          - generic [ref=e25]:
+            - alert
+            - generic [ref=e27]:
+              - textbox "Insira o seu email, telefone ou Skype." [active] [ref=e28]:
+                - /placeholder: Email, telefone ou Skype
+              - textbox [ref=e29]
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - text: Não tem uma conta?
+              - link "Criar uma conta da Microsoft" [ref=e35] [cursor=pointer]:
+                - /url: https://signup.live.com/signup?id=12&uiflavor=web&lw=1&fl=easi2&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQQIARAA02I21DO0UjE1NkwyMTA30E1LSUnVNbFINddNSrYw1U1MMjU1TDOxsExOMywS4hKwS-t3idwf7rjDLPb3hldLtXYwMl5gZHzByHiLid_fsbQkwwhE5BdlVqWuYpbOKCkpKLbS108vSizI0MvNTC7KL85PK9FLzs_dxMwGJHPz804xs-UXpOZlptxgZrzAwviKhceA2YqDg0uAQYJBgeEHC-MiVqC9l05yM3-Y7O-8_RRH1fYYNoZTrPoW5j6ORUFF5u7aziVe3u4l6XlmVeUmoelBJo4m5pV5JZmOxgUFublBEemetuZWhhPYGD-wMXawM-zitIK5KzE7qaBYNycxOb-0qKRYtzgxLyUpv0I3MVcvPy8xuzQ3My8R5Fb9_ESQz_QTk4tXcWk76rqmZOX5OZV6exRnZgW4pGX4pyYlmXiVelbl5hgFeGcYO0UVR5p7O5uYbOBiPMDL8IPvUVfT7qNtU997vOLXcUou9AkPS_YKjqgyMfDP8y11N3QM8U6q8jE2d6r0DPPO1I8ISw7MzPJMcbXdIMDwAIgEGX4IKnQIMQAA0&uaid=448f663ebf594157b8365dfbb0eaa52a
+                - text: Crie uma!
+            - link "Não consegue acessar sua conta?" [ref=e37] [cursor=pointer]:
+              - /url: "#"
+          - button "Avançar" [ref=e40] [cursor=pointer]
+    - contentinfo [ref=e41]:
+      - generic [ref=e42]:
+        - link "Termos de uso" [ref=e43] [cursor=pointer]:
+          - /url: https://www.microsoft.com/pt-BR/servicesagreement/
+        - link "Privacidade e cookies" [ref=e44] [cursor=pointer]:
+          - /url: https://privacy.microsoft.com/pt-BR/privacystatement
+        - button "Clique aqui para obter informações sobre solução de problemas" [ref=e45] [cursor=pointer]: ...

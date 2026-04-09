@@ -1,0 +1,49 @@
+{
+  "tasks.autoRun": "on",
+  "task.allowAutomaticTasks": "on",
+  "files.associations": {
+    "*.csv": "csv"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.playwright-mcp": true,
+    "**/blob-report": true,
+    "**/node_modules": true,
+    "**/playwright-report": true,
+    "**/test-results": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.playwright-mcp/**": true,
+    "**/blob-report/**": true,
+    "**/node_modules/**": true,
+    "**/playwright-report/**": true,
+    "**/reports/**": true,
+    "**/test-results/**": true
+  },
+  "search.exclude": {
+    "**/.playwright-mcp": true,
+    "**/blob-report": true,
+    "**/node_modules": true,
+    "**/playwright-report": true,
+    "**/reports": true,
+    "**/test-results": true
+  },
+  "git.autoRepositoryDetection": "openEditors",
+  "git.detectSubmodules": false,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "chat.tools.terminal.autoApprove": {
+    "/^git clone https://akuminadev\\.visualstudio\\.com/BP/_git/BP \"\\$env:TEMP\\\\BP-repo-search\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^node generate-release-notes\\.js$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "git pull": true,
+    "git checkout": true,
+    "Move-Item": true
+  }
+}

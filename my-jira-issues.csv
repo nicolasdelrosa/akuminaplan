@@ -1,0 +1,49 @@
+Key,Summary,Status,Priority,Type,Project,Created,Updated
+JMSMUC-63,Performance Tuning,Backlog,Medium,Story,JMSmuckers,2025-11-12,2026-01-12
+JMSMUC-64,Pre-Launch Checklist,Backlog,Medium,Story,JMSmuckers,2025-11-12,2026-01-12
+JMSMUC-31,Configure Taxonomy,In Progress,Medium,Story,JMSmuckers,2025-11-12,2026-01-09
+LAC-219,"PeopleSync - Filters are populated with some incorrect entries",In Progress,Medium,Bug,LA Courts,2026-01-08,2026-01-09
+LAC-215,Production Deployment 1/12,Backlog,High,Story,LA Courts,2026-01-05,2026-01-08
+LAC-216,Dev Deployment 1/9,Backlog,Highest,Story,LA Courts,2026-01-05,2026-01-08
+LAC-195,Update App Manager Settings,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-194,BPS-225 Footer and Header - default height,In Progress,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-206,HTTP 2.0 protocol,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-189,Hide loading bars and spinner,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-188,Curated Content,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-187,Slider Apps,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-186,Baseline Page,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-193,BPS-205 - Lazy loading images,In Progress,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-192,Vanity URL,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-191,Widget loading views,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-179,Performance Checklist,Backlog,Medium,Story,LA Courts,2025-11-26,2025-12-22
+LAC-190,Top menu properties,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+LAC-185,Baseline Page Cold Load,Backlog,Medium,Sub-task,LA Courts,2025-12-08,2025-12-22
+JMSMUC-4,PeopleSync Configuration,In Progress,High,Story,JMSmuckers,2025-11-12,2025-12-22
+BCRS-15,QA Deployment - December,To Do,Medium,Subtask,Ball Corp - Retained Services,2025-12-12,2025-12-12
+WCB-200,Image Sizes,In Progress,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-217,Baseline Page Warm Load,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-218,Home Page Warm Load,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-216,Home Page Cold Load,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-215,Baseline Page Cold Load,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-214,Baseline Page,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-213,Slider Apps,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-212,Curated Content,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-209,Widget loading views,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-196,HTTP 404s,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-205,Update App Manager Settings,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-203,Update Headless Settings,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-202,HTTP Protocol,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-201,List sizes,Backlog,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-198,CDN for static files,In Progress,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-197,CDN for images,In Progress,Medium,Sub-task,WCB,2025-12-02,2025-12-02
+WCB-193,Performance Checklist hub.wcb.ab.ca,In Progress,Highest,Story,WCB,2025-11-26,2025-12-02
+BCRS-14,Create Release Document,To Do,Medium,Subtask,Ball Corp - Retained Services,2025-12-01,2025-12-01
+JMSMUC-76,Populate tickets with technical details/AC using AI,In Progress,Medium,Task,JMSmuckers,2025-11-14,2025-11-20
+ATB-74,Populate technical and acceptance criteria for OOTB tickets,To Do,Medium,Task,AI Test Board,2025-11-13,2025-11-13
+BCRS-7,LOE to pull minimal data from ServiceNow into a widget for placement on a page,To Do,Medium,Task,Ball Corp - Retained Services,2025-10-31,2025-11-12
+UFA-256,Update post deployment dept steps,To Do,Medium,Subtask,UFA,2025-11-10,2025-11-10
+UFA-251,Inconsistent loading behavior for announcements,In Progress,Medium,Subtask,UFA,2025-11-05,2025-11-06
+UFA-224,Notify customer of Microsoft launch planning validation,To Do,Medium,Subtask,UFA,2025-10-24,2025-10-24
+POM-645,[SPIKE] Language Default - EN-US versus FR-CAN,In Progress,Medium,Task,Pomerleau,2025-10-17,2025-10-22
+AEI-2,Mission Control,To Do,Medium,Story,AKBPS Environment Improvements,2025-06-12,2025-10-20
+WCB-118,Department Site - Blogs Content app name misspelled,Backlog,Low,Bug,WCB,2025-09-04,2025-09-16

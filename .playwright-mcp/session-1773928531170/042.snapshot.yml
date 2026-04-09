@@ -1,0 +1,176 @@
+- generic [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:  
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Company logo." [ref=e17] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - text: 
+              - generic [ref=e21]:
+                - generic [ref=e391]:
+                  - textbox "Search this site." [ref=e392]
+                  - textbox "Search this site." [active] [ref=e22]:
+                    - /placeholder: Search
+                    - text: America
+                - button "Search this site." [ref=e23] [cursor=pointer]:
+                  - generic "Search this site." [ref=e24]: 
+              - text:        
+            - text: 
+            - generic "Notifications" [ref=e25]:
+              - generic [ref=e27]:
+                - link "" [ref=e28] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e29]: 
+                - generic:  
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - navigation [ref=e35]:
+          - generic [ref=e37]:
+            - text: 
+            - navigation [ref=e38]:
+              - text: 
+              - list [ref=e39]:
+                - listitem [ref=e40]:
+                  - generic [ref=e41]:
+                    - link "Company" [ref=e42] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e44]: 
+                  - text:   
+                - listitem [ref=e45]:
+                  - generic [ref=e46]:
+                    - link "Departments" [ref=e47] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e49]: 
+                  - text: 
+                - listitem [ref=e50]:
+                  - link "News Center" [ref=e52] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                - listitem [ref=e53]:
+                  - link "Activity Stream" [ref=e55] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/activitystream.aspx
+                - listitem [ref=e56]:
+                  - generic [ref=e57]:
+                    - link "Directory" [ref=e58] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e60]: 
+                  - text:  
+                - listitem [ref=e61]:
+                  - generic [ref=e62]:
+                    - link "Alison Menu" [ref=e63] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e65]: 
+                - listitem [ref=e66]:
+                  - generic [ref=e67]:
+                    - link "AlisonTest" [ref=e68] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e70]: 
+      - generic [ref=e71]:
+        - navigation "breadcrumb" [ref=e503]:
+          - list [ref=e504]:
+            - listitem [ref=e505]:
+              - link "Home" [ref=e506] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e507]: / Search
+        - generic [ref=e515]: "Error Occurred: a00efba6-69ba-fe12-0649-637628dc7106 : Error occured while calling kql query endpoint"
+      - generic [ref=e284]:
+        - text: 
+        - generic [ref=e285]:
+          - generic [ref=e286]: How do you like the intranet?
+          - link "Tell Us What You Think" [ref=e287] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e288]: 
+            - text: Tell Us What You Think
+        - list [ref=e292]:
+          - listitem [ref=e293]:
+            - link "Get to know us" [ref=e294] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e297]:
+              - listitem [ref=e298]:
+                - link "Akumina Community" [ref=e299] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e300]:
+                - link "Support" [ref=e301] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e302]:
+                - link "Developer Portal" [ref=e303] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e304]:
+            - link "Privacy" [ref=e305] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+            - list [ref=e308]:
+              - listitem [ref=e309]:
+                - link "Privacy policy" [ref=e310] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+              - listitem [ref=e311]:
+                - link "Cookie policy" [ref=e312] [cursor=pointer]:
+                  - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+          - listitem [ref=e313]:
+            - link "Terms & conditions" [ref=e314] [cursor=pointer]:
+              - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+        - generic [ref=e315]:
+          - generic [ref=e316]:
+            - link "" [ref=e317] [cursor=pointer]:
+              - /url: https://x.com/UFAcooperative
+              - generic [ref=e318]: 
+            - link "" [ref=e319] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/ufa-co-operative-ltd/
+              - generic [ref=e320]: 
+            - link "" [ref=e321] [cursor=pointer]:
+              - /url: https://www.facebook.com/UFA-Co-operative-Limited-223810904432346/
+              - generic [ref=e322]: 
+            - link "" [ref=e323] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/UFACooperativeLtd
+              - generic [ref=e324]: 
+            - link "" [ref=e325] [cursor=pointer]:
+              - /url: https://www.instagram.com/ufacooperative/
+              - generic [ref=e326]: 
+          - text: "|"
+          - generic [ref=e327]: Homestead - Made for United Farmers of Alberta Co-operative Ltd.
+    - text:    
+  - navigation [ref=e329]:
+    - generic [ref=e330]:
+      - generic [ref=e331]:
+        - button "Create New" [ref=e334] [cursor=pointer]:
+          - generic "Create New" [ref=e335]: 
+        - button "Pages" [ref=e338] [cursor=pointer]:
+          - generic "Pages" [ref=e339]: 
+        - button "Structured Content" [ref=e342] [cursor=pointer]:
+          - generic "Structured Content" [ref=e343]: 
+        - button "Asset Library" [ref=e346] [cursor=pointer]:
+          - generic "Asset Library" [ref=e347]: 
+        - button "Menus" [ref=e350] [cursor=pointer]:
+          - generic "Menus" [ref=e351]: 
+        - button "Analytics" [ref=e354] [cursor=pointer]:
+          - generic "Analytics" [ref=e355]: 
+        - button "Awards & Recognitions" [ref=e358] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e359]: 
+        - button "Broadcast Center" [ref=e362] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e363]: 
+        - button "Workflows" [ref=e366] [cursor=pointer]:
+          - generic "Workflows" [ref=e367]: 
+        - button "Editorial Notifications" [ref=e370] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e371]: 
+      - generic [ref=e372]:
+        - button "Show Management Rail" [ref=e375] [cursor=pointer]:
+          - generic "Show Management Rail" [ref=e376]: 
+        - button "Launch App Manager" [ref=e379] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e380]: 
+        - button "Debug" [ref=e383] [cursor=pointer]:
+          - generic "Debug" [ref=e384]: 
+        - generic [ref=e386]:
+          - img "Akumina Inc." [ref=e388] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e389] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e390]: 

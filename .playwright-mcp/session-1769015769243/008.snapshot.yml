@@ -1,0 +1,40 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img "Imagem do plano de fundo da organização" [ref=e2]
+          - generic [ref=e3]:
+            - generic [ref=e8]:
+              - generic [ref=e9]:
+                - img "Microsoft" [ref=e12]
+                - main [ref=e13]:
+                  - generic [ref=e16]:
+                    - heading "Entrar" [level=1] [ref=e17]
+                    - paragraph [ref=e19]: Estamos com problemas para fazer com que você entre.
+                    - generic [ref=e20]: "AADSTS700016: Application with identifier '08ac2650-b9ef-42c9-8c22-16b036376ceb' was not found in the directory 'Akumina, Inc.,'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant."
+              - generic [ref=e23]:
+                - generic [ref=e24]:
+                  - generic [ref=e25]:
+                    - heading "Detalhes da solução de problemas" [level=2] [ref=e26]
+                    - generic [ref=e27]: Se você entrar em contato com o administrador, envie estas informações para ele.
+                    - button "Copiar informações para a área de transferência" [ref=e28] [cursor=pointer]
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: "Request Id: 12558ea5-39db-4637-8d54-8c1ab2bb2200"
+                    - generic [ref=e31]: "Correlation Id: 04a989bb-d62a-4c26-a8a7-9162cccff528"
+                    - generic [ref=e32]: "Timestamp: 2026-01-21T17:19:36Z"
+                    - generic [ref=e33]: "Message: AADSTS700016: Application with identifier '08ac2650-b9ef-42c9-8c22-16b036376ceb' was not found in the directory 'Akumina, Inc.,'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant."
+                  - generic [ref=e34]:
+                    - generic [ref=e35]:
+                      - text: "Sinalizar os erros de entrada para revisão:"
+                      - button "Habilitar a sinalização" [ref=e36] [cursor=pointer]
+                    - generic [ref=e37]: Se você planeja obter ajuda para este problema, habilite a sinalização e tente reproduzir o erro em 20 minutos. Os eventos sinalizados disponibilizam o diagnóstico e chamam a atenção do administrador.
+                - button "Fechar os detalhes da solução de problemas" [ref=e38] [cursor=pointer]
+            - contentinfo [ref=e39]:
+              - generic [ref=e40]:
+                - link "Termos de uso" [ref=e41] [cursor=pointer]:
+                  - /url: https://www.microsoft.com/pt-BR/servicesagreement/
+                - link "Privacidade e cookies" [ref=e42] [cursor=pointer]:
+                  - /url: https://privacy.microsoft.com/pt-BR/privacystatement
+                - button "Clique aqui para obter informações sobre solução de problemas" [ref=e43] [cursor=pointer]: ...
+  - textbox [ref=e44]: "Request Id: 12558ea5-39db-4637-8d54-8c1ab2bb2200 Correlation Id: 04a989bb-d62a-4c26-a8a7-9162cccff528 Timestamp: 2026-01-21T17:19:36Z Message: AADSTS700016: Application with identifier '08ac2650-b9ef-42c9-8c22-16b036376ceb' was not found in the directory 'Akumina, Inc.,'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant."

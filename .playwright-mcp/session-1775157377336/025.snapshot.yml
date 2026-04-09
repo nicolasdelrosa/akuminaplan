@@ -1,0 +1,160 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:  
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Company logo." [ref=e17] [cursor=pointer]:
+            - /url: https://akbps-ufa-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - text: 
+              - generic [ref=e21]:
+                - textbox "Search this site." [ref=e22]:
+                  - /placeholder: Search
+                  - text: workplace
+                - button "Search this site." [ref=e23] [cursor=pointer]:
+                  - generic "Search this site." [ref=e24]: 
+            - text: 
+            - generic "Notifications" [ref=e25]:
+              - generic [ref=e27]:
+                - link "" [ref=e28] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e29]: 
+                - generic:  
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - button "Notifications" [ref=e32] [cursor=pointer]:
+                  - img "My profile picture." [ref=e33]
+                  - generic "Offline" [ref=e34]
+                - text:    
+        - navigation [ref=e35]:
+          - generic [ref=e37]:
+            - text: 
+            - navigation [ref=e38]:
+              - text: 
+              - list [ref=e39]:
+                - listitem [ref=e40]:
+                  - generic [ref=e41]:
+                    - link "Company" [ref=e42] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e44]: 
+                  - text:   
+                - listitem [ref=e45]:
+                  - generic [ref=e46]:
+                    - link "Departments" [ref=e47] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e49]: 
+                  - text: 
+                - listitem [ref=e50]:
+                  - link "News Center" [ref=e52] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                - listitem [ref=e53]:
+                  - link "Activity Stream" [ref=e55] [cursor=pointer]:
+                    - /url: https://akbps-ufa-sandbox-headless.onakumina.com#/sitepages/activitystream.aspx
+                - listitem [ref=e56]:
+                  - generic [ref=e57]:
+                    - link "Directory" [ref=e58] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e60]: 
+                  - text:  
+                - listitem [ref=e61]:
+                  - generic [ref=e62]:
+                    - link "Alison Menu" [ref=e63] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e65]: 
+                - listitem [ref=e66]:
+                  - generic [ref=e67]:
+                    - link "AlisonTest" [ref=e68] [cursor=pointer]:
+                      - /url: https://akbps-ufa-sandbox-headless.onakumina.comjavascript:void(0)
+                    - generic [ref=e70]: 
+      - generic [ref=e71]:
+        - navigation "breadcrumb" [ref=e672]:
+          - list [ref=e673]:
+            - listitem [ref=e674]:
+              - link "Home" [ref=e675] [cursor=pointer]:
+                - /url: https://akbps-ufa-sandbox-headless.onakumina.com/#/sitepages/home.aspx
+            - listitem [ref=e676]: / Search
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - generic [ref=e686]:
+              - generic [ref=e687]:
+                - heading "Filters" [level=2] [ref=e688]
+                - text: 
+              - generic [ref=e690]:
+                - button "Apply Filters" [ref=e691] [cursor=pointer]
+                - button "Clear Filters" [ref=e692] [cursor=pointer]
+              - generic [ref=e693]:
+                - generic [ref=e694]:
+                  - generic [ref=e695]:
+                    - heading "Look in" [level=3] [ref=e696]
+                    - link "" [ref=e697] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e698]: 
+                  - list [ref=e700]:
+                    - listitem [ref=e701]:
+                      - generic [ref=e702]: Site Content
+                      - list [ref=e703]:
+                        - listitem [ref=e704]:
+                          - generic [ref=e705] [cursor=pointer]:
+                            - checkbox "Document" [checked] [ref=e706]
+                            - generic [ref=e707]: Document
+                        - listitem [ref=e709]:
+                          - generic [ref=e710] [cursor=pointer]:
+                            - checkbox "Pages" [checked] [ref=e711]
+                            - generic [ref=e712]: Pages
+                        - listitem [ref=e714]:
+                          - generic [ref=e715] [cursor=pointer]:
+                            - checkbox "Media" [checked] [ref=e716]
+                            - generic [ref=e717]: Media
+                    - listitem [ref=e719]:
+                      - generic [ref=e720] [cursor=pointer]:
+                        - checkbox "People" [ref=e721]
+                        - generic [ref=e722]: People
+                - generic [ref=e724]:
+                  - generic [ref=e725]:
+                    - heading "Created By" [level=3] [ref=e726]
+                    - link "" [ref=e727] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e728]: 
+                  - generic [ref=e729]:
+                    - textbox "Search" [ref=e730]
+                    - list [ref=e731]:
+                      - listitem [ref=e732]:
+                        - generic [ref=e733] [cursor=pointer]:
+                          - checkbox "Jaikrishnan Srinivasagam (14)" [ref=e734]
+                          - generic [ref=e736]: Jaikrishnan Srinivasagam (14)
+                      - listitem [ref=e737]:
+                        - generic [ref=e738] [cursor=pointer]:
+                          - checkbox "Akumina Inc. (5)" [ref=e739]
+                          - generic [ref=e741]: Akumina Inc. (5)
+                      - listitem [ref=e742]:
+                        - generic [ref=e743] [cursor=pointer]:
+                          - checkbox "Puramsetti, Saikiran (AK) (2)" [ref=e744]
+                          - generic [ref=e746]: Puramsetti, Saikiran (AK) (2)
+                      - listitem [ref=e747]:
+                        - generic [ref=e748] [cursor=pointer]:
+                          - checkbox "Alison Haynes (1)" [ref=e749]
+                          - generic [ref=e751]: Alison Haynes (1)
+                      - listitem [ref=e752]:
+                        - generic [ref=e753] [cursor=pointer]:
+                          - checkbox "Gil St. Brum (1)" [ref=e754]
+                          - generic [ref=e756]: Gil St. Brum (1)
+                - generic [ref=e757]:
+                  - generic [ref=e758]:
+                    - heading "FileType" [level=3] [ref=e759]
+                    - link "" [ref=e760] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e761]: 
+                  - generic [ref=e762]:
+                    - textbox "Search" [ref=e763]
+                    - list [ref=e764]:
+                      - listitem [ref=e765]:
+                        - generic [ref=e766] [cursor=pointer]:
+                          - checkbox "pdf (9)" [ref=e767]
+                          - generic [ref=e769]: pdf (9)

@@ -1,0 +1,10 @@
+{
+  "ticket": "LAC-250",
+  "filePath": "c:\\AkuminaPlan\\AkuminaTasks\\LAC-250.md",
+  "status": "Pending",
+  "owner": "Ren / Copilot",
+  "environment": "LA Courts sandbox",
+  "targetPage": "https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/search.aspx",
+  "generatedAt": "2026-03-21T16:21:59.845Z",
+  "promptPath": "c:\\AkuminaPlan\\AkuminaTasks\\.browser-requests\\LAC-250.prompt.txt"
+}

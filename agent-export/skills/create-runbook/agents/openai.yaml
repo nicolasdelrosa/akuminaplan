@@ -1,0 +1,7 @@
+interface:
+  display_name: "Create Runbook"
+  short_description: "Build Akumina runbooks in MD and DOCX."
+  default_prompt: "Use $create-runbook to create or regenerate an Akumina client runbook in Markdown and DOCX."
+
+policy:
+  allow_implicit_invocation: true

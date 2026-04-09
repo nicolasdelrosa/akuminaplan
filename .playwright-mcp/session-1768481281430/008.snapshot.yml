@@ -1,0 +1,324 @@
+- generic [active] [ref=e1]:
+  - main "main-header" [ref=e4]:
+    - heading "Akumina Foundation Root Site" [level=1] [ref=e5]
+    - button "Skip to content" [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic:
+        - generic:
+          - generic:
+            - button "Toggle Dashboard" [ref=e9] [cursor=pointer]:
+              - generic "Toggle Dashboard" [ref=e10]: 
+            - generic [ref=e13]:
+              - generic: 
+              - heading "Dashboard" [level=1] [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - link "Company logo." [ref=e19] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/
+            - img "Company logo." [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - text: 
+              - generic [ref=e23]:
+                - textbox "Search this site." [ref=e24]:
+                  - /placeholder: Search
+                - button "Search this site." [ref=e25] [cursor=pointer]:
+                  - generic "Search this site." [ref=e26]: 
+            - button "Save Bookmark" [ref=e28] [cursor=pointer]:
+              - generic "Save Bookmark" [ref=e29]: 
+            - generic "Notifications" [ref=e30]:
+              - generic [ref=e32]:
+                - link "" [ref=e33] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e34]: 
+                - generic:   
+            - list [ref=e35]:
+              - listitem [ref=e36]:
+                - button "Notifications" [ref=e37] [cursor=pointer]:
+                  - img "My profile picture." [ref=e38]
+                  - generic "Offline" [ref=e39]
+                - text:    
+        - generic [ref=e42]:
+          - text: 
+          - navigation [ref=e43]:
+            - text: 
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Home" [ref=e47] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+              - listitem [ref=e48]:
+                - generic [ref=e49]:
+                  - link "Court Info" [ref=e50] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e52]: 
+              - listitem [ref=e53]:
+                - link "Events" [ref=e55] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com/#/sitepages/eventlist.aspx
+              - listitem [ref=e56]:
+                - link "Staff Directory" [ref=e58] [cursor=pointer]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/sitepages/peoplefinder.aspx
+              - listitem [ref=e59]:
+                - generic [ref=e60]:
+                  - link "Department Site" [ref=e61] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                  - generic [ref=e63]: 
+      - generic [ref=e64]:
+        - generic:
+          - generic:
+            - navigation "breadcrumb":
+              - list
+        - generic [ref=e71]:
+          - generic [ref=e78]:
+            - generic [ref=e79]: Thursday, January 15
+            - generic [ref=e80]: Good Morning, Akumina
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - text: 
+              - generic [ref=e90]:
+                - generic [ref=e96]:
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: Featured
+                    - generic [ref=e99]: "#Engineering"
+                    - link "+11" [ref=e100] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                  - heading "Akumina Ranks as a Strong Performer in Intranet Platforms" [level=2] [ref=e101]:
+                    - link "Akumina Ranks as a Strong Performer in Intranet Platforms" [ref=e102] [cursor=pointer]:
+                      - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Akumina-Ranks-as-a-Strong-Performer-in-Intranet-Platforms
+                  - generic [ref=e103]:
+                    - generic [ref=e107]: Jan 10, 2025
+                    - generic [ref=e108]:
+                      - generic:
+                        - list
+                      - generic "Number of views" [ref=e110]:
+                        - generic [ref=e111]: 
+                        - generic [ref=e112]: "16"
+                - generic [ref=e118]:
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: "#Human Resources"
+                    - link [ref=e121] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: "+7"
+                  - heading [level=2] [ref=e122]:
+                    - link [ref=e123] [cursor=pointer]:
+                      - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Akumina-Named-Clearbox-Intranet-Choice-North-America-2021
+                      - text: Akumina Named Clearbox Intranet Choice North America 2021
+                  - generic [ref=e124]:
+                    - generic [ref=e128]: Jan 10, 2025
+                    - generic [ref=e131]:
+                      - generic [ref=e132]: 
+                      - generic [ref=e133]: "0"
+                - generic [ref=e139]:
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: "#Human Resources"
+                    - link [ref=e142] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: "+7"
+                  - heading [level=2] [ref=e143]:
+                    - link [ref=e144] [cursor=pointer]:
+                      - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Mesh-for-Microsoft-Teams
+                      - text: Mesh for Microsoft Teams
+                  - generic [ref=e145]:
+                    - generic [ref=e149]: Jan 10, 2025
+                    - generic [ref=e152]:
+                      - generic [ref=e153]: 
+                      - generic [ref=e154]: "0"
+                - generic [ref=e160]:
+                  - generic [ref=e161]:
+                    - generic [ref=e162]: "#Human Resources"
+                    - link [ref=e163] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - text: "+5"
+                  - heading [level=2] [ref=e164]:
+                    - link [ref=e165] [cursor=pointer]:
+                      - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Chief-Technology-Officer-Wins-Microsoft-MVP-Award
+                      - text: Chief Technology Officer Wins Microsoft MVP Award
+                  - generic [ref=e166]:
+                    - generic [ref=e170]: Jan 10, 2025
+                    - generic [ref=e173]:
+                      - generic [ref=e174]: 
+                      - generic [ref=e175]: "4"
+              - button "Next" [ref=e176] [cursor=pointer]: Next
+            - generic [ref=e179]:
+              - link "Akumina Ranks as a Strong Performer in Intranet Platforms" [ref=e182] [cursor=pointer]:
+                - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Akumina-Ranks-as-a-Strong-Performer-in-Intranet-Platforms
+              - generic [ref=e183] [cursor=pointer]:
+                - img [ref=e185]
+                - link [ref=e186]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Akumina-Named-Clearbox-Intranet-Choice-North-America-2021
+                  - text: Akumina Named Clearbox Intranet Choice North America 2021
+              - generic [ref=e187] [cursor=pointer]:
+                - img [ref=e189]
+                - link [ref=e190]:
+                  - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Mesh-for-Microsoft-Teams
+                  - text: Mesh for Microsoft Teams
+              - link [ref=e193] [cursor=pointer]:
+                - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/FoundationNews/en-US/Chief-Technology-Officer-Wins-Microsoft-MVP-Award
+                - text: Chief Technology Officer Wins Microsoft MVP Award
+            - text: 
+          - generic [ref=e201]:
+            - navigation [ref=e202]:
+              - tablist [ref=e203]:
+                - generic [ref=e205]:
+                  - tab "News & Updates" [expanded] [selected] [ref=e206]:
+                    - link "News & Updates" [ref=e207] [cursor=pointer]:
+                      - /url: "#ak-tabwidget-tabs-3cd2b4b1-fff2-a079-31b5-edcdcc626b20"
+                  - tab [ref=e208]:
+                    - link [ref=e209] [cursor=pointer]:
+                      - /url: "#ak-tabwidget-tabs-99388622-63c6-8ea3-7bec-ca660503c5e0"
+                      - text: Events
+            - tabpanel "News & Updates" [ref=e210]:
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - button "Grid View" [ref=e214] [cursor=pointer]:
+                    - generic "Grid View" [ref=e215]: 
+                  - button "List View" [ref=e217] [cursor=pointer]:
+                    - generic "List View" [ref=e218]: 
+                - generic [ref=e219]:
+                  - generic [ref=e222]:
+                    - generic [ref=e223]: "Filter by:"
+                    - button "My Interests" [ref=e224] [cursor=pointer]
+                    - button "Change your preferences" [ref=e225] [cursor=pointer]:
+                      - generic "Change your preferences" [ref=e226]: 
+                    - button "All News" [ref=e227] [cursor=pointer]
+                  - link "View All News & Updates" [ref=e230] [cursor=pointer]:
+                    - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/sitepages/newslist.aspx
+                - generic [ref=e231]:
+                  - generic [ref=e233]:
+                    - img [ref=e235]
+                    - generic [ref=e236]:
+                      - generic [ref=e237]:
+                        - generic [ref=e238]: "#Activity Streams"
+                        - link "+23" [ref=e239] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                      - heading "Featured News Card - LACOURTS" [level=3] [ref=e240]:
+                        - link "Featured News Card - LACOURTS" [ref=e241] [cursor=pointer]:
+                          - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/foundationnews/en-us/featured-news-card-lacourts
+                      - generic [ref=e242]:
+                        - generic [ref=e246]: Sep 26, 2025
+                        - generic [ref=e248]:
+                          - generic "Number of views" [ref=e249]:
+                            - generic [ref=e250]: 
+                            - text: "18"
+                          - text: 
+                  - generic [ref=e252]:
+                    - img [ref=e254]
+                    - generic [ref=e255]:
+                      - generic [ref=e256]:
+                        - generic [ref=e257]: "#Activity Streams"
+                        - link "+42" [ref=e258] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                      - heading "Feature News Card" [level=3] [ref=e259]:
+                        - link "Feature News Card" [ref=e260] [cursor=pointer]:
+                          - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/foundationnews/en-us/feature-news-card
+                      - generic [ref=e261]:
+                        - generic [ref=e265]: Sep 05, 2025
+                        - generic [ref=e267]:
+                          - generic "Number of views" [ref=e268]:
+                            - generic [ref=e269]: 
+                            - text: "0"
+                          - text: 
+                  - generic [ref=e273]:
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: "#Engineering"
+                      - link "+0" [ref=e276] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                    - heading "LA Courts News Region Optional" [level=3] [ref=e277]:
+                      - link "LA Courts News Region Optional" [ref=e278] [cursor=pointer]:
+                        - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/foundationnews/en-us/la-courts-news-region-optional
+                    - generic [ref=e279]:
+                      - generic [ref=e283]: May 09, 2025
+                      - generic [ref=e285]:
+                        - generic "Number of views" [ref=e286]:
+                          - generic [ref=e287]: 
+                          - text: "0"
+                        - text: 
+                  - generic [ref=e289]:
+                    - img [ref=e291]
+                    - generic [ref=e292]:
+                      - generic [ref=e293]:
+                        - generic [ref=e294]: "#Awards"
+                        - link "+5" [ref=e295] [cursor=pointer]:
+                          - /url: javascript:void(0);
+                      - heading "Featured - With Image" [level=3] [ref=e296]:
+                        - link "Featured - With Image" [ref=e297] [cursor=pointer]:
+                          - /url: https://akbps-lacourts-sandbox-headless.onakumina.com#/foundationnews/en-us/featured-with-image
+                      - generic [ref=e298]:
+                        - generic [ref=e302]: Apr 30, 2025
+                        - generic [ref=e304]:
+                          - generic "Number of views" [ref=e305]:
+                            - generic [ref=e306]: 
+                            - text: "0"
+                          - text: 
+                - button "Show More" [ref=e308] [cursor=pointer]
+      - generic [ref=e309]:
+        - text: 
+        - generic [ref=e310]: 
+        - list [ref=e314]:
+          - listitem [ref=e315]:
+            - link "Get to know us" [ref=e316] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e319]:
+              - listitem [ref=e320]:
+                - link "Akumina Community" [ref=e321] [cursor=pointer]:
+                  - /url: https://community.akumina.com/
+              - listitem [ref=e322]:
+                - link "Support" [ref=e323] [cursor=pointer]:
+                  - /url: https://akumina.com/support/
+              - listitem [ref=e324]:
+                - link "Developer Portal" [ref=e325] [cursor=pointer]:
+                  - /url: https://akumina.github.io/
+          - listitem [ref=e326]:
+            - link "Privacy" [ref=e327] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - list [ref=e330]:
+              - listitem [ref=e331]:
+                - link "Privacy policy" [ref=e332] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e333]:
+                - link "Cookie policy" [ref=e334] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - listitem [ref=e335]:
+            - link "Terms & conditions" [ref=e336] [cursor=pointer]:
+              - /url: javascript:void(0)
+        - generic [ref=e337]:
+          - link "Company Logo." [ref=e339] [cursor=pointer]:
+            - /url: https://akbps-lacourts-sandbox-headless.onakumina.com
+            - img "Company Logo." [ref=e340]
+          - text: "|"
+          - generic [ref=e341]: © Superior Court of California, County of Los Angeles All rights reserved.
+    - text:    
+  - navigation [ref=e343]:
+    - generic [ref=e344]:
+      - generic [ref=e345]:
+        - button "Expand Menu" [ref=e347] [cursor=pointer]:
+          - generic "Expand Menu" [ref=e348]: 
+        - button "Create New" [ref=e351] [cursor=pointer]:
+          - generic "Create New" [ref=e352]: 
+        - button "Pages" [ref=e354] [cursor=pointer]:
+          - generic "Pages" [ref=e355]: 
+        - button "Structured Content" [ref=e357] [cursor=pointer]:
+          - generic "Structured Content" [ref=e358]: 
+        - button "Asset Library" [ref=e360] [cursor=pointer]:
+          - generic "Asset Library" [ref=e361]: 
+        - button "Menus" [ref=e363] [cursor=pointer]:
+          - generic "Menus" [ref=e364]: 
+        - button "Analytics" [ref=e367] [cursor=pointer]:
+          - generic "Analytics" [ref=e368]: 
+        - button "Awards & Recognitions" [ref=e370] [cursor=pointer]:
+          - generic "Awards & Recognitions" [ref=e371]: 
+        - button "Broadcast Center" [ref=e373] [cursor=pointer]:
+          - generic "Broadcast Center" [ref=e374]: 
+        - button "Workflows" [ref=e376] [cursor=pointer]:
+          - generic "Workflows" [ref=e377]: 
+        - button "Editorial Notifications" [ref=e379] [cursor=pointer]:
+          - generic "Editorial Notifications" [ref=e380]: 
+        - button "Launch App Manager" [ref=e382] [cursor=pointer]:
+          - generic "Launch App Manager" [ref=e383]: 
+      - generic [ref=e384]:
+        - button "Debug" [ref=e386] [cursor=pointer]:
+          - generic "Debug" [ref=e387]: 
+        - generic [ref=e389]:
+          - img "Akumina Inc." [ref=e391] [cursor=pointer]
+          - text:    
+        - button "Toggle page builder bars" [ref=e392] [cursor=pointer]:
+          - generic "Toggle page builder bars" [ref=e393]: 

@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "jira:fetch": "node scripts/tasks/fetch-jira-ticket.js",
+    "task:init": "node scripts/tasks/init-task.js",
+    "browser:request": "node scripts/tasks/browser-request-watcher.js scan",
+    "browser:watch": "node scripts/tasks/browser-request-watcher.js watch",
+    "browser:complete": "node scripts/tasks/browser-request-watcher.js completion-scan",
+    "browser:auto": "powershell -ExecutionPolicy Bypass -File scripts/tasks/invoke-browser-request-dispatch.ps1 -Watch"
+  },
+  "dependencies": {
+    "chrome-devtools-mcp": "^0.13.0",
+    "docx": "^9.5.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9",
+    "ts-node": "^10.9.2"
+  }
+}
