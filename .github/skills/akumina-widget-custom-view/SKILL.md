@@ -124,26 +124,81 @@ Handlebars.registerHelper('cleanPdfUrl', function (url) {
     {
       "Name": "Client Custom Instance",
       "Id": "2c8f4a6b-7d3e-4c92-a1b5-9f8e3d6c2b4a",
-      "IsPartialDefinition": true,
+      "partialdefinition": true,
       "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",  // ← REQUIRED: must match view Id
-      "Properties": {
-        "callbackmethod": "CustomCallback",
-        "pagesize": 25,
-        "selectfields": "Title,Path,Author,...",
-        "displayfields": [
-          {"name": "Title", "colspan": "large-5", "defaultsort": "true"},
-          {"name": "Author", "colspan": "large-3"}
-        ]
-      }
+      "Properties": [
+        {
+          "name": "callbackmethod",
+          "value": "CustomCallback"
+        },
+        {
+          "name": "pagesize",
+          "value": 25
+        },
+        {
+          "name": "selectfields",
+          "value": "Title,Path,Author,..."
+        }
+      ]
     }
-  ]
+  ],
+  "Options": {
+    "IsPartialDefinition": true,
+    "IsDashboardWidget": false,
+    "IsAppManagerWidget": false
+  }
+}
+```
+
+### Options Object (Root Level)
+
+The `Options` object at the root level controls widget packaging behavior:
+
+**IsPartialDefinition** (boolean):
+- `true` - Widget package contains only customizations (recommended for client widgets)
+- `false` - Widget package contains complete widget definition (replaces all existing config)
+- **Use `true` for custom views to avoid overwriting core widget definition**
+
+**IsDashboardWidget** (boolean):
+- `true` - Widget appears in dashboard widget library
+- `false` - Standard content widget (most common)
+
+**IsAppManagerWidget** (boolean):
+- `true` - Widget is AppManager-specific
+- `false` - Standard content widget (most common)
+
+**Best Practice**: Always include the `Options` object with `IsPartialDefinition: true` when extending existing widgets with custom views/instances.
+
+### Instance-Level vs Root-Level Partial Definition
+
+**Two different properties control partial definition behavior:**
+
+1. **Instance-level**: `partialdefinition: true` (lowercase, inside instance object)
+   - Controls whether THIS instance replaces or merges with existing instances
+   - Use when updating an existing widget instance on a page
+
+2. **Root-level**: `Options.IsPartialDefinition: true` (capitalized, in Options object)
+   - Controls whether the ENTIRE widget package replaces or merges with existing widget definition
+   - Use when extending core widgets without replacing their full definition
+
+**Standard pattern for custom views:**
+```json
+{
+  "Instances": [
+    {
+      "partialdefinition": true,   // ← Instance merges with existing
+      ...
+    }
+  ],
+  "Options": {
+    "IsPartialDefinition": true    // ← Package merges with core widget
+  }
 }
 ```
 
 Important:
 - `Path` in Views points to CDN destination (build deploys view from `views/` to this location)
 - `Id` for view must be unique GUID
-- `IsPartialDefinition: true` prevents replacing entire widget definition
 - **`SelectedView` property is REQUIRED** - must match view `Id` from Definition.Views
 - **CRITICAL**: Missing `SelectedView` causes packaging failure with "Cannot read properties of undefined (reading 'toLowerCase')" error
 
@@ -179,7 +234,8 @@ When updating an instance already rendered in master pages or virtual pages:
 3. **Match existing properties** from page widget:
    - Copy `pagesize`, `selectfields`, `displayfields`, `refiners`, etc.
    - Only change properties needed for new functionality
-   - Use `IsPartialDefinition: true` to merge with existing config
+   - Use `partialdefinition: true` at instance level to merge with existing config
+   - Use `Options.IsPartialDefinition: true` at root level to merge widget package
 
 **WHY**: Creating new instance ID causes duplicate widget instances in AppManager. Pages reference widgets by instance ID, so reusing ID updates existing widgets cleanly.
 
@@ -190,8 +246,9 @@ When page already has widget configured:
 1. **Export current widget properties** (from page or AppManager)
 2. **Copy to new config.json instance**
 3. **Add only new property changes** (callbackmethod, SelectedView, etc.)
-4. **Set `IsPartialDefinition: true`**
-5. **Deploy** - AppManager merges new properties into existing instance
+5. **Set `partialdefinition: true` at instance level**
+6. **Include `Options.IsPartialDefinition: true` at root level**
+7. **Deploy** - AppManager merges new properties into existing instance
 
 Example - if page widget has:
 ```json
@@ -205,14 +262,31 @@ Example - if page widget has:
 Your new instance MUST include these same properties plus your changes:
 ```json
 {
-  "Id": "<existing-page-widget-id>",
-  "IsPartialDefinition": true,
-  "SelectedView": "<new-view-id>",
-  "Properties": {
-    "callbackmethod": "NewCallback",
-    "pagesize": 25,
-    "selectfields": "Title,Path,Author",
-    "displayfields": [{"name": "Title", "colspan": "large-5"}]
+  "Instances": [
+    {
+      "Id": "<existing-page-widget-id>",
+      "partialdefinition": true,
+      "SelectedView": "<new-view-id>",
+      "Properties": [
+        {
+          "name": "callbackmethod",
+          "value": "NewCallback"
+        },
+        {
+          "name": "pagesize",
+          "value": 25
+        },
+        {
+          "name": "selectfields",
+          "value": "Title,Path,Author"
+        }
+      ]
+    }
+  ],
+  "Options": {
+    "IsPartialDefinition": true,
+    "IsDashboardWidget": false,
+    "IsAppManagerWidget": false
   }
 }
 ```
@@ -242,10 +316,14 @@ File: `src/js/widgets/XWidget/views/client-custom.html`
 ### Step 3: Register Handlebars Helpers (if needed)
 
 File: `src/js/library/digitalworkplace.custom.js` or equivalent
-
-```javascript
-Handlebars.registerHelper('helperName', function(value) {
-    // Transform value
+partialdefinition: true` at instance level
+   - **Set `SelectedView` to new view ID (REQUIRED - always include this)**
+   - Copy existing properties + add changes
+3. Add `Options` object at root level:
+   - Set `IsPartialDefinition: true`
+   - Set `IsDashboardWidget: false` (unless dashboard widget)
+   - Set `IsAppManagerWidget: false` (unless AppManager widget)
+4   // Transform value
     return transformedValue;
 });
 ```
@@ -315,7 +393,8 @@ Example:
 ```
 
 ## Callback Wiring Checklist
-
+partialdefinition: true` at instance level.
+- Include `Options.IsPartialDefinition: true` at root level
 - Add callback function in client custom JS (`digitalworkplace.custom.js` or equivalent).
 - Set instance property `callbackmethod` to that function name (lowercase property name).
 - **Set `SelectedView` property to the new custom view ID (REQUIRED - packaging will fail without it)**.
@@ -326,7 +405,9 @@ Example:
 
 Before deployment:
 - [ ] Build succeeds (`npm run build:minify`)
-- [ ] Package succeeds (`npm run package`)
+- [ ] Package shas `partialdefinition: true` (if updating existing instance)
+- [ ] Root-level `Options` object exists with `IsPartialDefinition: true`
+- [ ] Instance ucceeds (`npm run package`)
 - [ ] Widget structure includes `js/widgets/{WidgetName}.js` file (even if empty)
 - [ ] config.json is valid JSON (test with validation methods)
 - [ ] **Instance has `SelectedView` property set (REQUIRED for custom views)**
@@ -437,10 +518,11 @@ TypeError: Cannot read properties of undefined (reading 'toLowerCase')
 3. Checked for GenericSearchWidget inheritance - widget doesn't inherit
 4. Concluded: Need template-level processing
 
-**Solution**:
-1. Created Handlebars helper `cleanPdfUrl` in digitalworkplace.custom.js
-2. Created custom view applying helper to all URL references
-3. Created instance with `IsPartialDefinition: true` and existing properties
+**Solution**:partialdefinition: true` and existing properties
+4. **Added required `SelectedView` property** pointing to new custom view (UFA-333 fix)
+5. Added `Options.IsPartialDefinition: true` at root level
+6. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
+7. Created instance with `IsPartialDefinition: true` and existing properties
 4. **Added required `SelectedView` property** pointing to new custom view (UFA-333 fix)
 5. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
 6. Deployed successfully
