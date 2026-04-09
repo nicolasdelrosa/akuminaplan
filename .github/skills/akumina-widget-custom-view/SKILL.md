@@ -125,7 +125,7 @@ Handlebars.registerHelper('cleanPdfUrl', function (url) {
       "Name": "Client Custom Instance",
       "Id": "2c8f4a6b-7d3e-4c92-a1b5-9f8e3d6c2b4a",
       "IsPartialDefinition": true,
-      "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",
+      "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",  // ← REQUIRED: must match view Id
       "Properties": {
         "callbackmethod": "CustomCallback",
         "pagesize": 25,
@@ -144,7 +144,8 @@ Important:
 - `Path` in Views points to CDN destination (build deploys view from `views/` to this location)
 - `Id` for view must be unique GUID
 - `IsPartialDefinition: true` prevents replacing entire widget definition
-- `SelectedView` must match view `Id` from Definition.Views
+- **`SelectedView` property is REQUIRED** - must match view `Id` from Definition.Views
+- **CRITICAL**: Missing `SelectedView` causes packaging failure with "Cannot read properties of undefined (reading 'toLowerCase')" error
 
 ### JSON Validation Methods
 
@@ -259,9 +260,11 @@ File: `src/js/widgets/XWidget/config/config.json`
 2. Add/update instance in `Instances`:
    - Use existing page instance ID if updating
    - Set `IsPartialDefinition: true`
-   - Set `SelectedView` to new view ID
+   - **Set `SelectedView` to new view ID (REQUIRED - always include this)**
    - Copy existing properties + add changes
 3. Validate JSON syntax (see validation methods above)
+
+**Critical**: The `SelectedView` property is MANDATORY when using custom views. Omitting it causes packaging to fail with "Cannot read properties of undefined (reading 'toLowerCase')" error.
 
 ### Step 5: Build and Package
 
@@ -315,7 +318,7 @@ Example:
 
 - Add callback function in client custom JS (`digitalworkplace.custom.js` or equivalent).
 - Set instance property `callbackmethod` to that function name (lowercase property name).
-- Set `SelectedView` to the new custom view ID.
+- **Set `SelectedView` property to the new custom view ID (REQUIRED - packaging will fail without it)**.
 - Keep `IsPartialDefinition: true` unless the project explicitly needs full definition replacement.
 - **Understand callback timing**: Runs BEFORE Success(), cannot modify Success() transformations.
 
@@ -326,6 +329,7 @@ Before deployment:
 - [ ] Package succeeds (`npm run package`)
 - [ ] Widget structure includes `js/widgets/{WidgetName}.js` file (even if empty)
 - [ ] config.json is valid JSON (test with validation methods)
+- [ ] **Instance has `SelectedView` property set (REQUIRED for custom views)**
 - [ ] View ID in instance `SelectedView` matches view ID in `Definition.Views`
 - [ ] Instance ID matches existing page widget ID (if updating)
 - [ ] All existing widget properties preserved in new config
@@ -389,6 +393,38 @@ After deployment:
 **Fix**:
 1. Find correct instance ID from page
 2. Update config.json to use that ID
+
+### Packaging Fails: "Cannot read properties of undefined (reading 'toLowerCase')"
+
+**Cause**: Widget instance is missing the `SelectedView` property when using custom views.
+
+**Error Example**:
+```
+TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at C:\...\node_modules\akumina-widget-builder\lib\awb.js:9:169272
+```
+
+**Fix**:
+1. Add `SelectedView` property to the instance in config.json
+2. Set value to the custom view's `Id` from `Definition.Views` array
+3. Re-run `npm run package`
+
+**Example**:
+```json
+{
+  "Instances": [
+    {
+      "Name": "My Custom Instance",
+      "Id": "2c8f4a6b-7d3e-4c92-a1b5-9f8e3d6c2b4a",
+      "partialdefinition": true,
+      "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",  // ← REQUIRED
+      "Properties": { ... }
+    }
+  ]
+}
+```
+
+**Root Cause**: The Akumina widget packager expects `SelectedView` to reference which template the instance uses. Without it, the packager tries to call `.toLowerCase()` on undefined during view name processing.
 3. Redeploy (old duplicate may need manual cleanup)
 
 ## Real-World Example: DocumentViewerWidget PDF Download Fix
@@ -405,8 +441,9 @@ After deployment:
 1. Created Handlebars helper `cleanPdfUrl` in digitalworkplace.custom.js
 2. Created custom view applying helper to all URL references
 3. Created instance with `IsPartialDefinition: true` and existing properties
-4. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
-5. Deployed successfully
+4. **Added required `SelectedView` property** pointing to new custom view (UFA-333 fix)
+5. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
+6. Deployed successfully
 
 **Code**:
 ```javascript
