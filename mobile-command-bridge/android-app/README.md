@@ -52,3 +52,4 @@ Automatic trigger:
 - Keep laptop bridge service running first.
 - Use your existing bridge token from `.env`.
 - For outside LAN, use Tailscale and connect to laptop Tailscale IP.
+- App allows cleartext traffic for local `ws://` bridge connections (Android blocks this by default).
