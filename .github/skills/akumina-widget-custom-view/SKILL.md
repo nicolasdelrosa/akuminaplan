@@ -125,7 +125,7 @@ Handlebars.registerHelper('cleanPdfUrl', function (url) {
       "Name": "Client Custom Instance",
       "Id": "2c8f4a6b-7d3e-4c92-a1b5-9f8e3d6c2b4a",
       "partialdefinition": true,
-      "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",  // ← REQUIRED: must match view Id
+      "SelectedView": "Custom Client View",  // ← REQUIRED: must match view Name (not Id)
       "Properties": [
         {
           "name": "callbackmethod",
@@ -199,7 +199,7 @@ The `Options` object at the root level controls widget packaging behavior:
 Important:
 - `Path` in Views points to CDN destination (build deploys view from `views/` to this location)
 - `Id` for view must be unique GUID
-- **`SelectedView` property is REQUIRED** - must match view `Id` from Definition.Views
+- **`SelectedView` property is REQUIRED** - must match the view `Name` (string) from Definition.Views, NOT the `Id` GUID
 - **CRITICAL**: Missing `SelectedView` causes packaging failure with "Cannot read properties of undefined (reading 'toLowerCase')" error
 
 ### JSON Validation Methods
@@ -266,7 +266,7 @@ Your new instance MUST include these same properties plus your changes:
     {
       "Id": "<existing-page-widget-id>",
       "partialdefinition": true,
-      "SelectedView": "<new-view-id>",
+      "SelectedView": "<view-name>",
       "Properties": [
         {
           "name": "callbackmethod",
@@ -338,11 +338,11 @@ File: `src/js/widgets/XWidget/config/config.json`
 2. Add/update instance in `Instances`:
    - Use existing page instance ID if updating
    - Set `IsPartialDefinition: true`
-   - **Set `SelectedView` to new view ID (REQUIRED - always include this)**
+   - **Set `SelectedView` to the view `Name` string (REQUIRED - always include this, NOT the GUID)**
    - Copy existing properties + add changes
 3. Validate JSON syntax (see validation methods above)
 
-**Critical**: The `SelectedView` property is MANDATORY when using custom views. Omitting it causes packaging to fail with "Cannot read properties of undefined (reading 'toLowerCase')" error.
+**Critical**: The `SelectedView` property is MANDATORY when using custom views. It must be the view `Name` string (e.g., `"Custom Client View"`), NOT the view `Id` GUID. Omitting it causes packaging to fail with "Cannot read properties of undefined (reading 'toLowerCase')" error.
 
 ### Step 5: Build and Package
 
@@ -397,7 +397,7 @@ partialdefinition: true` at instance level.
 - Include `Options.IsPartialDefinition: true` at root level
 - Add callback function in client custom JS (`digitalworkplace.custom.js` or equivalent).
 - Set instance property `callbackmethod` to that function name (lowercase property name).
-- **Set `SelectedView` property to the new custom view ID (REQUIRED - packaging will fail without it)**.
+- **Set `SelectedView` property to the view `Name` string (REQUIRED - packaging will fail without it; use Name not GUID)**.
 - Keep `IsPartialDefinition: true` unless the project explicitly needs full definition replacement.
 - **Understand callback timing**: Runs BEFORE Success(), cannot modify Success() transformations.
 
@@ -410,8 +410,8 @@ Before deployment:
 - [ ] Instance ucceeds (`npm run package`)
 - [ ] Widget structure includes `js/widgets/{WidgetName}.js` file (even if empty)
 - [ ] config.json is valid JSON (test with validation methods)
-- [ ] **Instance has `SelectedView` property set (REQUIRED for custom views)**
-- [ ] View ID in instance `SelectedView` matches view ID in `Definition.Views`
+- [ ] **Instance has `SelectedView` property set to view `Name` string (REQUIRED for custom views - NOT the GUID)**
+- [ ] View `Name` in instance `SelectedView` matches `Name` field in `Definition.Views`
 - [ ] Instance ID matches existing page widget ID (if updating)
 - [ ] All existing widget properties preserved in new config
 
@@ -434,12 +434,12 @@ After deployment:
 ### Widget Shows Old View After Deployment
 
 **Causes**:
-1. Instance `SelectedView` doesn't match new view ID
+1. Instance `SelectedView` doesn't match view `Name` (or was set to GUID instead of Name)
 2. Cache not cleared
 3. Deployed to wrong environment
 
 **Fix**:
-1. Verify `SelectedView` value matches view `Id` in Definition.Views
+1. Verify `SelectedView` value matches view `Name` string in Definition.Views (NOT the Id GUID)
 2. Clear browser cache / hard refresh
 3. Check deployment logs for correct environment
 
@@ -487,7 +487,7 @@ TypeError: Cannot read properties of undefined (reading 'toLowerCase')
 
 **Fix**:
 1. Add `SelectedView` property to the instance in config.json
-2. Set value to the custom view's `Id` from `Definition.Views` array
+2. Set value to the custom view's `Name` string from `Definition.Views` — **NOT the GUID**
 3. Re-run `npm run package`
 
 **Example**:
@@ -498,14 +498,14 @@ TypeError: Cannot read properties of undefined (reading 'toLowerCase')
       "Name": "My Custom Instance",
       "Id": "2c8f4a6b-7d3e-4c92-a1b5-9f8e3d6c2b4a",
       "partialdefinition": true,
-      "SelectedView": "a7f3c8d9-4b2e-4f91-9c6a-8e5d71b3f2a4",  // ← REQUIRED
+      "SelectedView": "Custom Client View",  // ← REQUIRED: view Name string, NOT the Id GUID
       "Properties": { ... }
     }
   ]
 }
 ```
 
-**Root Cause**: The Akumina widget packager expects `SelectedView` to reference which template the instance uses. Without it, the packager tries to call `.toLowerCase()` on undefined during view name processing.
+**Root Cause**: The Akumina widget packager looks up the view by its `Name` string. Setting `SelectedView` to the GUID causes a name lookup failure, and the packager tries to call `.toLowerCase()` on undefined during view name processing.
 3. Redeploy (old duplicate may need manual cleanup)
 
 ## Real-World Example: DocumentViewerWidget PDF Download Fix
@@ -519,12 +519,10 @@ TypeError: Cannot read properties of undefined (reading 'toLowerCase')
 4. Concluded: Need template-level processing
 
 **Solution**:partialdefinition: true` and existing properties
-4. **Added required `SelectedView` property** pointing to new custom view (UFA-333 fix)
+4. **Added required `SelectedView` property** set to view `Name` string (e.g., `"UFA Document Viewer"`) — NOT the GUID (UFA-333 fix)
 5. Added `Options.IsPartialDefinition: true` at root level
 6. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
 7. Created instance with `IsPartialDefinition: true` and existing properties
-4. **Added required `SelectedView` property** pointing to new custom view (UFA-333 fix)
-5. Added required `js/widgets/DocumentViewerWidget.js` placeholder for build
 6. Deployed successfully
 
 **Code**:
