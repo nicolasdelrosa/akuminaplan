@@ -94,6 +94,12 @@ When the user asks to convert PDFs, DOCX, PPTX, HTML, images, or scanned documen
 - **Reference**: [.github/skills/docling-workflows/references/docling.md](.github/skills/docling-workflows/references/docling.md)
 - **MCP Option**: Add Docling MCP to `%APPDATA%\Code\User\mcp.json` when the agent should call Docling as a tool instead of shelling out to the CLI
 
+### Widget Instance Creation
+When the user asks to create a new widget, troubleshoot widget build failures, or understand widget folder structure, use the **akumina-widget-instance-creation** skill:
+- **Skill Location**: [.github/skills/akumina-widget-instance-creation/SKILL.md](.github/skills/akumina-widget-instance-creation/SKILL.md)
+- **Purpose**: Complete guide for creating Akumina widgets including project-specific folder structures, config.json setup, JavaScript patterns, webpack configuration, and build troubleshooting
+- **Critical**: ALWAYS check existing project widget structure before creating new widgets - structure varies by project (some use `js/widgets/Widget.js`, others use `js/Widget.js`)
+
 ### Widget Custom Views
 When the user asks to add or update a widget custom view/template, callback wiring, or deploy-safe widget instance configuration, use the **akumina-widget-custom-view** skill:
 - **Skill Location**: [.github/skills/akumina-widget-custom-view/SKILL.md](.github/skills/akumina-widget-custom-view/SKILL.md)
